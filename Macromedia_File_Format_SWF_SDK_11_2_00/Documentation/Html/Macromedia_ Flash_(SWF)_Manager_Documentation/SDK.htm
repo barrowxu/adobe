@@ -1,0 +1,2994 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name="Microsoft Theme 2.00" content="corporat 010">
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./SDK_files/filelist.xml">
+<link rel=Edit-Time-Data href="./SDK_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>SDK</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Troy Evans</o:Author>
+  <o:Template>Pda</o:Template>
+  <o:LastAuthor>Troy Evans</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>5</o:TotalTime>
+  <o:LastPrinted>1999-11-23T06:15:00Z</o:LastPrinted>
+  <o:Created>2000-11-02T07:49:00Z</o:Created>
+  <o:LastSaved>2000-11-02T07:49:00Z</o:LastSaved>
+  <o:Pages>8</o:Pages>
+  <o:Words>2340</o:Words>
+  <o:Characters>13339</o:Characters>
+  <o:Company>Middlesoft, Inc.</o:Company>
+  <o:Lines>111</o:Lines>
+  <o:Paragraphs>26</o:Paragraphs>
+  <o:CharactersWithSpaces>16381</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:ActiveWritingStyle Lang="EN-US" VendorID="8" DLLVersion="513" NLCheck="0">1</w:ActiveWritingStyle>
+  <w:DrawingGridHorizontalSpacing>9.35 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>9.35 pt</w:DrawingGridVerticalSpacing>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Courier;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Gill Sans MT";
+	mso-font-alt:"Century Gothic";
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:7 0 0 0 3 0;}
+@font-face
+	{font-family:Garamond;
+	panose-1:2 2 4 4 3 3 1 1 8 3;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+h1
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:"Arial Black";
+	mso-bidi-font-family:Arial;
+	color:windowtext;
+	mso-font-kerning:16.0pt;
+	mso-bidi-language:HE;
+	font-weight:normal;
+	mso-bidi-font-weight:bold;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan no-line-numbers;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	tab-stops:.5in list .75in 1.0in;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .5pt;
+	padding:0in;
+	mso-padding-alt:0in 0in 1.0pt 0in;
+	font-size:12.0pt;
+	mso-bidi-font-size:18.0pt;
+	font-family:"Century Gothic";
+	color:windowtext;
+	mso-bidi-language:HE;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	mso-bidi-font-style:italic;}
+h3
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	tab-stops:.5in list .75in 1.0in;
+	font-size:14.0pt;
+	font-family:"Gill Sans MT";
+	color:navy;
+	mso-bidi-language:HE;
+	font-weight:normal;
+	mso-bidi-font-weight:bold;}
+h4
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.2in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	tab-stops:.5in list .75in 1.0in;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	mso-bidi-language:HE;
+	font-weight:bold;}
+h5
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	tab-stops:4.5in;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+h6
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.1in;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:6;
+	tab-stops:list .25in;
+	font-size:8.0pt;
+	font-family:"Century Gothic";
+	color:#000066;
+	mso-bidi-language:HE;
+	font-weight:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:7;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:9;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:10.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:20.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:30.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:40.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:50.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:70.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:80.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoList, li.MsoList, div.MsoList
+	{mso-style-parent:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:.25in;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	tab-stops:.5in;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	letter-spacing:-.25pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{mso-style-update:auto;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.45in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	mso-list:l37 level1 lfo19;
+	tab-stops:list .45in;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:2.5in;
+	margin-left:0in;
+	text-align:center;
+	line-height:30.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	border:none;
+	mso-border-bottom-alt:solid gray .75pt;
+	padding:0in;
+	mso-padding-alt:0in 0in 14.0pt 0in;
+	font-size:24.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial Black";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:gray;
+	letter-spacing:-1.75pt;
+	mso-font-kerning:14.0pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	letter-spacing:-.25pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-parent:Title;
+	mso-style-next:"Body Text";
+	margin-top:97.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:10.0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	border:none;
+	mso-border-bottom-alt:solid gray .75pt;
+	padding:0in;
+	mso-padding-alt:0in 0in 14.0pt 0in;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:gray;
+	text-transform:uppercase;
+	letter-spacing:1.5pt;
+	mso-font-kerning:14.0pt;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.75in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.BodyTextKeep, li.BodyTextKeep, div.BodyTextKeep
+	{mso-style-name:"Body Text Keep";
+	mso-style-parent:"Body Text";
+	mso-style-next:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	letter-spacing:-.25pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.ChapterSubtitle, li.ChapterSubtitle, div.ChapterSubtitle
+	{mso-style-name:"Chapter Subtitle";
+	mso-style-next:"Body Text";
+	margin-top:0in;
+	margin-right:1.25in;
+	margin-bottom:.25in;
+	margin-left:0in;
+	mso-line-height-alt:12.0pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	letter-spacing:-1.0pt;
+	mso-font-kerning:14.0pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.runinhead1
+	{mso-style-name:runinhead1;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:11.0pt;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	font-weight:bold;}
+p.CompanyName, li.CompanyName, div.CompanyName
+	{mso-style-name:"Company Name";
+	mso-style-next:Normal;
+	margin-top:21.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:16.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan;
+	font-size:19.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	text-transform:uppercase;
+	mso-font-kerning:18.0pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.ReturnAddress, li.ReturnAddress, div.ReturnAddress
+	{mso-style-name:"Return Address";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	letter-spacing:-.15pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.SectionLabel, li.SectionLabel, div.SectionLabel
+	{mso-style-name:"Section Label";
+	mso-style-next:Normal;
+	margin-top:102.0pt;
+	margin-right:0in;
+	margin-bottom:.25in;
+	margin-left:0in;
+	line-height:24.0pt;
+	mso-pagination:widow-orphan;
+	font-size:24.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial Black";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:gray;
+	letter-spacing:-1.75pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.SubtitleCover, li.SubtitleCover, div.SubtitleCover
+	{mso-style-name:"Subtitle Cover";
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:264.0pt;
+	margin-left:0in;
+	line-height:24.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	border:none;
+	mso-border-top-alt:solid windowtext .75pt;
+	padding:0in;
+	mso-padding-alt:1.0pt 0in 0in 0in;
+	font-size:22.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	letter-spacing:-.75pt;
+	mso-font-kerning:14.0pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.TitleCover, li.TitleCover, div.TitleCover
+	{mso-style-name:"Title Cover";
+	mso-style-next:"Subtitle Cover";
+	margin-top:0in;
+	margin-right:30.0pt;
+	margin-bottom:0in;
+	margin-left:30.0pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:72.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan;
+	border:none;
+	mso-border-alt:solid white .75pt;
+	padding:0in;
+	mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+	font-size:72.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	mso-font-kerning:14.0pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.runinhead, li.runinhead, div.runinhead
+	{mso-style-name:runinhead;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-footer:url("./SDK_files/header.htm") f1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:-119;
+	mso-list-type:simple;
+	mso-list-template-ids:1046351244;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:-2;
+	mso-list-type:simple;
+	mso-list-template-ids:-1;}
+@list l1:level1
+	{mso-level-start-at:0;
+	mso-level-text:*;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l2
+	{mso-list-id:93939067;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1357629692;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:104614491;
+	mso-list-type:simple;
+	mso-list-template-ids:201916417;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:124349952;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2007643662;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:140734573;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1972183826;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:152527079;
+	mso-list-type:simple;
+	mso-list-template-ids:-1583734338;}
+@list l6:level1
+	{mso-level-number-format:none;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:.25in;
+	mso-level-legacy-space:0in;
+	margin-left:0in;
+	text-indent:0in;}
+@list l7
+	{mso-list-id:328681656;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-55382538;}
+@list l7:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8
+	{mso-list-id:362098816;
+	mso-list-type:simple;
+	mso-list-template-ids:201916431;}
+@list l8:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l9
+	{mso-list-id:401023927;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1461940862;}
+@list l9:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Times New Roman";}
+@list l9:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10
+	{mso-list-id:427195466;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-376290496;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l11
+	{mso-list-id:770900885;
+	mso-list-type:hybrid;
+	mso-list-template-ids:939420834;}
+@list l11:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l12
+	{mso-list-id:962923191;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1491618332;}
+@list l12:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l12:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l13
+	{mso-list-id:974991171;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1357629692;}
+@list l13:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l13:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l13:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l14
+	{mso-list-id:1045299694;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1673837188;}
+@list l14:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l15
+	{mso-list-id:1051340326;
+	mso-list-type:hybrid;
+	mso-list-template-ids:673467950;}
+@list l15:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l15:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l16
+	{mso-list-id:1128669951;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1309607728;}
+@list l16:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l17
+	{mso-list-id:1157038923;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-222666390;}
+@list l17:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l18
+	{mso-list-id:1164468759;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1041571562;}
+@list l18:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l19
+	{mso-list-id:1193954554;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1491618332;}
+@list l19:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l19:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l20
+	{mso-list-id:1225719937;
+	mso-list-type:hybrid;
+	mso-list-template-ids:673467950;}
+@list l20:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l20:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l21
+	{mso-list-id:1286933707;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-382073504;}
+@list l21:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.4in;
+	mso-level-number-position:left;
+	margin-left:1.4in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l22
+	{mso-list-id:1291741020;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-568556158;}
+@list l22:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l23
+	{mso-list-id:1318343796;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1576030054;}
+@list l23:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l24
+	{mso-list-id:1339432088;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1152561416;}
+@list l24:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l25
+	{mso-list-id:1392195011;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1491618332;}
+@list l25:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l25:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l26
+	{mso-list-id:1560945313;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1202209720;}
+@list l26:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l27
+	{mso-list-id:1609392208;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1491618332;}
+@list l27:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l27:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l28
+	{mso-list-id:1612786276;
+	mso-list-type:hybrid;
+	mso-list-template-ids:161222030;}
+@list l28:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l28:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l28:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l28:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l28:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l28:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l28:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l28:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l28:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l29
+	{mso-list-id:1631208455;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-156448788;}
+@list l29:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l30
+	{mso-list-id:1708991793;
+	mso-list-type:hybrid;
+	mso-list-template-ids:347527148;}
+@list l30:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l30:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l30:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l30:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l31
+	{mso-list-id:1736052403;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1544030118;}
+@list l31:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l32
+	{mso-list-id:1844583770;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1759034028;}
+@list l32:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l33
+	{mso-list-id:1849130369;
+	mso-list-type:simple;
+	mso-list-template-ids:201916417;}
+@list l33:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l34
+	{mso-list-id:1849562643;
+	mso-list-template-ids:-1234291728;}
+@list l34:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A8;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l34:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l34:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l34:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l34:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l34:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l34:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l34:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l34:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A8;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l35
+	{mso-list-id:1912694073;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-208251662;}
+@list l35:level1
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-family:"Times New Roman";}
+@list l35:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-family:"Times New Roman";}
+@list l35:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l35:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l35:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l35:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l35:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l35:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l35:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l36
+	{mso-list-id:1969583246;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-30868604;}
+@list l36:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Times New Roman";}
+@list l36:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l36:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l36:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l36:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l36:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l36:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l36:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l36:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l37
+	{mso-list-id:2011642750;
+	mso-list-template-ids:-586282478;}
+@list l37:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.45in;
+	mso-level-number-position:left;
+	margin-left:.45in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l37:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l37:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:.95in;
+	mso-level-number-position:left;
+	margin-left:.95in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l37:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.2in;
+	mso-level-number-position:left;
+	margin-left:1.2in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l37:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.45in;
+	mso-level-number-position:left;
+	margin-left:1.45in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l37:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.7in;
+	mso-level-number-position:left;
+	margin-left:1.7in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l37:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.95in;
+	mso-level-number-position:left;
+	margin-left:1.95in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l37:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.2in;
+	mso-level-number-position:left;
+	margin-left:2.2in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l37:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A8;
+	mso-level-tab-stop:2.45in;
+	mso-level-number-position:left;
+	margin-left:2.45in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l38
+	{mso-list-id:2012708321;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-406672054;}
+@list l38:level1
+	{mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.25in;}
+@list l39
+	{mso-list-id:2122650984;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-188596614;}
+@list l39:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level1 lfo58
+	{mso-level-number-format:bullet;
+	mso-level-numbering:continue;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:.25in;
+	mso-level-legacy-space:0in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050">
+  <o:colormru v:ext="edit" colors="#ddd,#f8f8f8,#ccecff"/>
+  <o:colormenu v:ext="edit" fillcolor="silver"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+  <o:regrouptable v:ext="edit">
+   <o:entry new="1" old="0"/>
+   <o:entry new="2" old="0"/>
+   <o:entry new="3" old="0"/>
+   <o:entry new="4" old="3"/>
+   <o:entry new="5" old="0"/>
+  </o:regrouptable>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1><a name="_Toc461430651"></a><a name="_Toc463681194"><span style='mso-bookmark:
+_Toc461430651'><span style='font-size:15.0pt;mso-bidi-font-size:16.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></span></a></h1>
+
+<h1 align=center style='text-align:center'><span style='mso-bookmark:_Toc463681194'><span
+style='mso-bookmark:_Toc461430651'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" alt="sample logo only"
+ style='width:90pt;height:90pt;mso-wrap-distance-left:3.75pt;
+ mso-wrap-distance-top:3.75pt;mso-wrap-distance-right:3.75pt;
+ mso-wrap-distance-bottom:3.75pt'>
+ <v:imagedata src="./SDK_files/image001.gif" o:href="http://www.macromedia.com/macromedia/style_guide/logos/flash_enabled/images/flash_enabled_print_4c_120.gif"/>
+</v:shape><![endif]--><![if !vml]><img width=120 height=120
+src="./SDK_files/image001.gif" hspace=5 vspace=5 alt="sample logo only" v:shapes="_x0000_i1025"><![endif]></span></span><span
+style='mso-bookmark:_Toc463681194'><span style='mso-bookmark:_Toc461430651'><span
+style='font-size:15.0pt;mso-bidi-font-size:16.0pt'><o:p></o:p></span></span></span></h1>
+
+<h1><span style='mso-bookmark:_Toc463681194'><span style='mso-bookmark:_Toc461430651'><span
+style='font-size:15.0pt;mso-bidi-font-size:16.0pt'>Using the Macromedia Flash
+File Format (SWF) SDK</span></span></span><span style='font-size:15.0pt;
+mso-bidi-font-size:16.0pt'><o:p></o:p></span></h1>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'>The Macromedia Flash File Format
+(SWF) SDK is a C++ Library that provides all the functionality required to
+create Macromedia Flash (SWF) files.<span style="mso-spacerun: yes">  </span>It
+is divided into two sections:</p>
+
+<p class=MsoNormal style='margin-left:1.0in'><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in;mso-list:l8 level1 lfo57;
+tab-stops:list 1.0in'><![if !supportLists]><b>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><![endif]>The<b> <a href="#LowLevelManager">Low Level Manager</a><o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in;mso-list:l8 level1 lfo57;
+tab-stops:list 1.0in'><![if !supportLists]><b>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><![endif]>The<b> <a href="#HighLevelManager">High Level Manager</a><o:p></o:p></b></p>
+
+<p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:18.0pt;font-family:"Century Gothic";mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:HE;mso-bidi-font-style:italic'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<div style='border:none;border-bottom:solid windowtext .5pt;padding:0in 0in 1.0pt 0in'>
+
+<h2>The Low Level Manager<a name=LowLevelManager></a></h2>
+
+</div>
+
+<p class=MsoNormal style='margin-left:.25in'>The Low Level Manager has been
+designed to follow the structure of Macromedia Flash (SWF) as closely as
+possible.<span style="mso-spacerun: yes">  </span>It includes a set of C++
+classes that mirror the tag structure of Macromedia Flash (SWF).<span
+style="mso-spacerun: yes">  </span>There is a C++ class for each tag that
+Macromedia Flash (SWF) defines.<span style="mso-spacerun: yes">  </span>The
+parent of each of these classes is <a
+href="..\SWF_Manager_Docs\API_Docs\class_fobj.html">FObj</a> (for Flash
+Object).<span style="mso-spacerun: yes">   </span>Sometime we use an abstract
+class when several FObjs are closely related to each other, for example similar
+tags that changed only slightly between Macromedia Flash versions. </p>
+
+<p class=MsoNormal style='margin-left:.25in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'>A <a
+href="..\SWF_Manager_Docs\API_Docs\class_fobjcollection.html">FObjCollection</a>
+is simply a list that contains all the FObjs in a Macromedia Flash (SWF) file. </p>
+
+<p class=MsoNormal style='margin-left:.25in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<div style='border:none;border-bottom:solid windowtext .5pt;padding:0in 0in 1.0pt 0in'>
+
+<h2><a name="_Toc461430652"></a><a name="_Toc463681195"><span style='mso-bookmark:
+_Toc461430652'>Low Level Classes</span></a></h2>
+
+</div>
+
+<p class=MsoNormal>Here is a breakdown of the basic classes in the Macromedia
+Flash File Format (SWF) SDK:</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:.25in;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='height:12.1pt'>
+  <td width=205 valign=top style='width:153.9pt;border:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.1pt'>
+  <h5 style='tab-stops:.5in'>The Movie Object</h5>
+  </td>
+  <td width=361 valign=top style='width:270.9pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.1pt'>
+  <p>The overall container for a Macromedia Flash movie</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=205 valign=top style='width:153.9pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <h5 style='tab-stops:.5in'><a
+  href="..\SWF_Manager_Docs\API_Docs\class_fobjcollection.html">FObjCollection</a></h5>
+  </td>
+  <td width=361 valign=top style='width:270.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p>Holds the collection of Tag objects until it’s time to write to disk.</p>
+  </td>
+ </tr>
+ <tr style='height:111.55pt'>
+  <td width=566 colspan=2 valign=top style='width:5.9in;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:111.55pt'>
+  <p><b><a href="..\SWF_Manager_Docs\API_Docs\class_fobj.html"><span
+  style='font-weight:normal'>FObj</span></a><o:p></o:p></b></p>
+  <p><b>Control Tag Classes<o:p></o:p></b></p>
+  <p>C++ Objects for Control Tags that place, move, and modify a Data Tag on
+  the Display List. <span style="mso-spacerun: yes"> </span>Control classes
+  have names beginning with “FCT”</p>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  <p><b>Data Tag Classes<o:p></o:p></b></p>
+  <p>C++ Objects for Data Tags that store the basic graphics, text, and sound
+  objects that comprise Macromedia Flash objects.<span style="mso-spacerun:
+  yes">  </span>Data classes all have names beginning with “FDT”</p>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  <p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=205 valign=top style='width:153.9pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <h5 style='tab-stops:.5in'>Primitive Data Classes</h5>
+  </td>
+  <td width=361 valign=top style='width:270.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p>Data Packing Primitives hold the “guts” of the Data Tags.<span
+  style="mso-spacerun: yes">  </span>Data Primitives know how to write
+  (serialize) themselves to a data stream so they save you from having to know
+  how about compression and byte swapping.<span style="mso-spacerun: yes">  
+  </span>You add instances of these classes to the Control and Data Classes.</p>
+  </td>
+ </tr>
+ <tr style='height:12.55pt'>
+  <td width=205 valign=top style='width:153.9pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+  height:12.55pt'>
+  <h5 style='tab-stops:.5in'>Library Classes</h5>
+  </td>
+  <td width=361 valign=top style='width:270.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:12.55pt'>
+  <p class=MsoNormal style='margin-left:0in;text-indent:15.1pt'>Helper
+  libraries for sound and bitmaps</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoBodyTextIndent style='margin-left:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyTextIndent style='margin-left:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<div style='border:none;border-bottom:solid windowtext .5pt;padding:0in 0in 1.0pt 0in'>
+
+<h2><a name="_Toc461430653"></a><a name="_Toc463681196"><span style='mso-bookmark:
+_Toc461430653'>Low Level Memory Management</span></a></h2>
+
+</div>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc463681196'><span
+style='mso-bookmark:_Toc461430653'>The low level manager takes over ownership
+of the objects passed to it. So in the following example:</span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc463681196'><span
+style='mso-bookmark:_Toc461430653'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.15pt'><span
+style='mso-bookmark:_Toc463681196'><span style='mso-bookmark:_Toc461430653'><span
+style='font-family:Courier'>FCTSetBackgroundColor* background;<o:p></o:p></span></span></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.15pt'><span
+style='mso-bookmark:_Toc463681196'><span style='mso-bookmark:_Toc461430653'><span
+style='font-family:Courier'>background = new FCTSetBackgroundColor(white);<o:p></o:p></span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc463681196'><span
+style='mso-bookmark:_Toc461430653'><span style='font-family:Courier'><span
+style='mso-tab-count:1'>    </span>allTags.AddFObj(background);<o:p></o:p></span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc463681196'><span
+style='mso-bookmark:_Toc461430653'><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc463681196'><span
+style='mso-bookmark:_Toc461430653'>The memory pointed to by ‘</span></span><span
+style='mso-bookmark:_Toc463681196'><span style='mso-bookmark:_Toc461430653'><span
+style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>background’</span>
+will be deleted by the low level manager when it writes the file stream. After
+‘</span></span><span style='mso-bookmark:_Toc463681196'><span style='mso-bookmark:
+_Toc461430653'><span style='font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>background’</span> is passed to the low level manager, it
+should be considered lost to the caller.</span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc463681196'><span
+style='mso-bookmark:_Toc461430653'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc463681196'><span
+style='mso-bookmark:_Toc461430653'>Some large objects are not deleted, owned,
+or modified by the low level manager. Specifically bitmaps and sounds, because
+of their size, are left in the control of the calling routines. The pointer to
+objects not deleted or modified by the low level manager are declared </span></span><span
+style='mso-bookmark:_Toc463681196'><span style='mso-bookmark:_Toc461430653'><span
+style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>const</span>.</span></span></p>
+
+<div style='border:none;border-bottom:solid windowtext .5pt;padding:0in 0in 1.0pt 0in'>
+
+<h2><span style='mso-bookmark:_Toc463681196'><span style='mso-bookmark:_Toc461430653'>What’s
+it like to create a simple Macromedia Flash (SWF) file with the LLM?</span></span></h2>
+
+</div>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:0in'><!--[if gte vml 1]><v:group id="_x0000_s1189"
+ style='position:absolute;margin-left:0;margin-top:7.7pt;width:234pt;height:186.6pt;
+ z-index:1;mso-position-horizontal:left' coordorigin="3300,3867" coordsize="4680,3732"
+ o:allowincell="f">
+ <v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m0,0l0,21600,21600,21600,21600,0xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="_x0000_s1122" type="#_x0000_t202" style='position:absolute;
+  left:3300;top:3867;width:4680;height:3732' fillcolor="#669">
+  <v:textbox style='mso-next-textbox:#_x0000_s1122'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal><b><span style='color:white'>Movie Header<o:p></o:p></span></b></p>
+     <p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+     <p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+     <p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+     <p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+     <p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+     <p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+     <p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+     <p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+     <p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+     <p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+     <p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+     <p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+     <p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+     <p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+     <p class=MsoNormal><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+     <p class=MsoNormal><b><span style='color:white'>End Tag FObj<o:p></o:p></span></b></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1173" type="#_x0000_t202" style='position:absolute;
+  left:3492;top:4488;width:4224;height:2532' fillcolor="silver">
+  <v:textbox style='mso-next-textbox:#_x0000_s1173'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal><b><a
+     href="..\SWF_Manager_Docs\API_Docs\class_fobjcollection.html"><span
+     style='font-weight:normal'>FObjCollection</span></a><o:p></o:p></b></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:group id="_x0000_s1178" style='position:absolute;left:3696;top:4956;
+  width:1140;height:1908' coordorigin="3696,4956" coordsize="1140,1908">
+  <v:shape id="_x0000_s1172" type="#_x0000_t202" style='position:absolute;
+   left:3696;top:4956;width:1140;height:1908'>
+   <v:textbox style='mso-next-textbox:#_x0000_s1172'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><a href="..\SWF_Manager_Docs\API_Docs\class_fobj.html">FObj</a></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1174" type="#_x0000_t202" style='position:absolute;
+   left:3888;top:5508;width:792;height:312'>
+   <v:textbox style='mso-next-textbox:#_x0000_s1174'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal style='margin-left:0in'><span style='font-size:9.0pt;
+      mso-bidi-font-size:12.0pt'>data<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1175" type="#_x0000_t202" style='position:absolute;
+   left:3888;top:5916;width:792;height:312'>
+   <v:textbox style='mso-next-textbox:#_x0000_s1175'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal style='margin-left:0in'><span style='font-size:9.0pt;
+      mso-bidi-font-size:12.0pt'>data<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1176" type="#_x0000_t202" style='position:absolute;
+   left:3888;top:6324;width:792;height:312'>
+   <v:textbox style='mso-next-textbox:#_x0000_s1176'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal style='margin-left:0in'><span style='font-size:9.0pt;
+      mso-bidi-font-size:12.0pt'>data<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape></v:group><v:group id="_x0000_s1179" style='position:absolute;
+  left:4992;top:4956;width:1140;height:1908' coordorigin="3696,4956"
+  coordsize="1140,1908">
+  <v:shape id="_x0000_s1180" type="#_x0000_t202" style='position:absolute;
+   left:3696;top:4956;width:1140;height:1908'>
+   <v:textbox style='mso-next-textbox:#_x0000_s1180'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><a href="..\SWF_Manager_Docs\API_Docs\class_fobj.html">FObj</a></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1181" type="#_x0000_t202" style='position:absolute;
+   left:3888;top:5508;width:792;height:312'>
+   <v:textbox style='mso-next-textbox:#_x0000_s1181'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal style='margin-left:0in'><span style='font-size:9.0pt;
+      mso-bidi-font-size:12.0pt'>data<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1182" type="#_x0000_t202" style='position:absolute;
+   left:3888;top:5916;width:792;height:312'>
+   <v:textbox style='mso-next-textbox:#_x0000_s1182'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal style='margin-left:0in'><span style='font-size:9.0pt;
+      mso-bidi-font-size:12.0pt'>data<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1183" type="#_x0000_t202" style='position:absolute;
+   left:3888;top:6324;width:792;height:312'>
+   <v:textbox style='mso-next-textbox:#_x0000_s1183'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal style='margin-left:0in'><span style='font-size:9.0pt;
+      mso-bidi-font-size:12.0pt'>data<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape></v:group><v:group id="_x0000_s1184" style='position:absolute;
+  left:6288;top:4956;width:1140;height:1908' coordorigin="3696,4956"
+  coordsize="1140,1908">
+  <v:shape id="_x0000_s1185" type="#_x0000_t202" style='position:absolute;
+   left:3696;top:4956;width:1140;height:1908'>
+   <v:textbox style='mso-next-textbox:#_x0000_s1185'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:12.0pt'><a
+      href="..\SWF_Manager_Docs\API_Docs\class_fobj.html"><span
+      style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>FObj</span></a><o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1186" type="#_x0000_t202" style='position:absolute;
+   left:3888;top:5508;width:792;height:312'>
+   <v:textbox style='mso-next-textbox:#_x0000_s1186'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal style='margin-left:0in'><span style='font-size:9.0pt;
+      mso-bidi-font-size:12.0pt'>data<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1187" type="#_x0000_t202" style='position:absolute;
+   left:3888;top:5916;width:792;height:312'>
+   <v:textbox style='mso-next-textbox:#_x0000_s1187'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal style='margin-left:0in'><span style='font-size:9.0pt;
+      mso-bidi-font-size:12.0pt'>data<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1188" type="#_x0000_t202" style='position:absolute;
+   left:3888;top:6324;width:792;height:312'>
+   <v:textbox style='mso-next-textbox:#_x0000_s1188'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal style='margin-left:0in'><span style='font-size:9.0pt;
+      mso-bidi-font-size:12.0pt'>data<o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape></v:group><w:wrap type="square"/>
+</v:group><![endif]--><![if !vml]><img width=315 height=252
+src="./SDK_files/image002.gif" align=left v:shapes="_x0000_s1189 _x0000_s1122 _x0000_s1173 _x0000_s1178 _x0000_s1172 _x0000_s1174 _x0000_s1175 _x0000_s1176 _x0000_s1179 _x0000_s1180 _x0000_s1181 _x0000_s1182 _x0000_s1183 _x0000_s1184 _x0000_s1185 _x0000_s1186 _x0000_s1187 _x0000_s1188"><![endif]>The
+structure of a movie being created using the Macromedia Flash File Format (SWF)
+SDK is very similar to the structure of an Macromedia Flash (SWF) file.<span
+style="mso-spacerun: yes">  </span>Here are the steps:</p>
+
+<p class=MsoNormal style='margin-left:0in'><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='margin-left:.5in;mso-list:l15 level1 lfo45;
+     tab-stops:list .5in'>Create Movie</li>
+ <li class=MsoNormal style='margin-left:.5in;mso-list:l15 level1 lfo45;
+     tab-stops:list .5in'>Create an <a
+     href="..\SWF_Manager_Docs\API_Docs\class_fobjcollection.html">FObjCollection</a>
+     for Control and Data Objects</li>
+</ul>
+
+<ul style='margin-top:0in' type=circle>
+ <ol style='margin-top:0in' start=1 type=1>
+  <li class=MsoNormal style='margin-left:.5in;mso-list:l20 level2 lfo46;
+      tab-stops:list 1.0in'>Create Data Tag Object</li>
+  <li class=MsoNormal style='margin-left:.5in;mso-list:l20 level2 lfo46;
+      tab-stops:list 1.0in'>Create a data Primitive </li>
+  <li class=MsoNormal style='margin-left:.5in;mso-list:l20 level2 lfo46;
+      tab-stops:list 1.0in'>Add the Primitive to Data Tag Object</li>
+  <li class=MsoNormal style='margin-left:.5in;mso-list:l20 level2 lfo46;
+      tab-stops:list 1.0in'>Add Data Object to Collection</li>
+  <li class=MsoNormal style='margin-left:.5in;mso-list:l20 level2 lfo46;
+      tab-stops:list 1.0in'>Create Control Object</li>
+  <li class=MsoNormal style='margin-left:.5in;mso-list:l20 level2 lfo46;
+      tab-stops:list 1.0in'>Add Control Object to Collection</li>
+ </ol>
+</ul>
+
+<ul style='margin-top:0in' type=circle>
+ <li class=MsoNormal style='margin-left:.5in;mso-list:l15 level1 lfo45;
+     tab-stops:list .5in'>repeat 1 through 6</li>
+ <li class=MsoNormal style='margin-left:.5in;mso-list:l15 level1 lfo45;
+     tab-stops:list .5in'>Write <a
+     href="..\SWF_Manager_Docs\API_Docs\class_fobjcollection.html">FObjCollection</a></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.75in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<div style='border:none;border-bottom:solid windowtext .5pt;padding:0in 0in 1.0pt 0in'>
+
+<h2><a name="_Toc461430654"></a><a name="_Toc463681197"><span style='mso-bookmark:
+_Toc461430654'>Low Level Manager Example</span></a></h2>
+
+</div>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Here is an example of a routine we’ve created that creates a
+simple movie.<span style="mso-spacerun: yes">  </span>The movie simply creates
+a red rectangle.<span style="mso-spacerun: yes">  </span>Don’t worry about the
+particulars of each routine, simply look at the overall flow.<span
+style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoFooter style='tab-stops:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoFooter style='tab-stops:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='text-indent:.3in'><span style='font-family:Courier'>#include
+&quot;F3SDK.h&quot;<span style='mso-tab-count:1'>      </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.3in'><span style='font-family:Courier'>#include
+&quot;FExample.h&quot;<span style='mso-tab-count:2'>         </span></span><b><span
+style='color:windowtext'>//just the prototypes for our examples</span></b><span
+style='font-family:Courier'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Our routine creates a one
+frame movie: a rectangle with a red fill color, a standard 1 pixel wide, <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>black line style</span></b><span
+style='color:teal'><o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in'><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoFooter style='margin-left:.5in;tab-stops:.5in'><span
+style='font-family:Courier'>void CreateRectangleMovie(){<o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in'><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:.2in'><b><span
+style='color:windowtext'>Create a collection of FObj's, allTags, to contain the
+FObjs that make the movie<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:.2in'><b><span
+style='color:windowtext'>Each </span>Macromedia Flash (SWF) </b><b><span
+style='color:windowtext'>tag in the movie will be represented by an FObj<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:.2in'><b><span
+style='color:green'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>FObjCollection allTags;<o:p></o:p></span></p>
+
+<p><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Construct first flash tag
+object (set background color)</span></b><span style='color:green'>:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:green'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Define a color for the
+background<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>const FColor white(0xff, 0xff, 0xff);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Construct the SetBackgroundColor
+object which takes a color as an argument</span></b><span style='color:green'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>All routines beginning
+with FCT create Macromedia Flash Control Tags<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='color:green'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.15pt'><span
+style='font-family:Courier'>FCTSetBackgroundColor* background;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.15pt'><span
+style='font-family:Courier'>background = new FCTSetBackgroundColor(white);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Add the SetBackgroundColor
+tag to allTags, the FObjCollection<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>allTags.AddFObj(background);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Now start creating the
+rectangle object. You must:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.7in;text-indent:-.25in;mso-list:l38 level1 lfo47;
+tab-stops:list .7in'><![if !supportLists]><b><span style='color:windowtext'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><![endif]><b><span
+style='color:windowtext'>Create the bounds Rect<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.7in;text-indent:-.25in;mso-list:l38 level1 lfo47;
+tab-stops:list .7in'><![if !supportLists]><b><span style='color:windowtext'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><![endif]><b><span
+style='color:windowtext'>Create the DefineShape FObj and remember its ID for
+use in the PlaceObject Tag<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.7in;text-indent:-.25in;mso-list:l38 level1 lfo47;
+tab-stops:list .7in'><![if !supportLists]><b><span style='color:windowtext'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><![endif]><b><span
+style='color:windowtext'>Create the Color for the fill<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.7in;text-indent:-.25in;mso-list:l38 level1 lfo47;
+tab-stops:list .7in'><![if !supportLists]><b><span style='color:windowtext'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><![endif]><b><span
+style='color:windowtext'>Create the Fill itself and pass it the color<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.7in;text-indent:-.25in;mso-list:l38 level1 lfo47;
+tab-stops:list .7in'><![if !supportLists]><b><span style='color:windowtext'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><![endif]><b><span
+style='color:windowtext'>Add the fill to the shape<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.7in;text-indent:-.25in;mso-list:l38 level1 lfo47;
+tab-stops:list .7in'><![if !supportLists]><b><span style='color:windowtext'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><![endif]><b><span
+style='color:windowtext'>Create the color for the rectangle's line style<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.7in;text-indent:-.25in;mso-list:l38 level1 lfo47;
+tab-stops:list .7in'><![if !supportLists]><b><span style='color:windowtext'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><![endif]><b><span
+style='color:windowtext'>Create the LineStyle record<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.7in;text-indent:-.25in;mso-list:l38 level1 lfo47;
+tab-stops:list .7in'><![if !supportLists]><b><span style='color:windowtext'>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><![endif]><b><span
+style='color:windowtext'>Create the Edge records that define the rectangle and
+add them to the shape<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.7in;text-indent:-.25in;mso-list:l38 level1 lfo47;
+tab-stops:list .7in'><![if !supportLists]><b><span style='color:windowtext'>9.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><![endif]><b><span
+style='color:windowtext'>construct a rect that defines the shape's bounds <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Create the bounding
+rectangle (in TWIPs)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>FRect* rectBounds = new FRect(1000, 5000, 1000, 5000);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:green'><span style="mso-spacerun:
+yes"> </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Construct the
+FDTDefineShape which will be the rectangle image<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='color:green'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>FDTDefineShape* rectangle = new FDTDefineShape(rectBounds);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Record its ID so that we
+can later refer to it when we place it on the display list<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='color:green'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>U16 rectangleID = rectangle-&gt;ID();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Construct a red Fcolor to
+fill the rectangle. Note that since a </span>FDTDefineShape was used, we have
+to use an FColor without an alpha channel.</b><b><span style='color:green'><o:p></o:p></span></b></p>
+
+<p><span style='font-family:Courier'><span style='mso-tab-count:1'>    </span>FColor
+red = FColor(0xff, 0, 0);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Use the Red FColor to
+create a FillStyle record</span></b><span style='color:green'><o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in'><span style='font-family:Courier'><span
+style='mso-tab-count:1'>    </span>FFillStyle* fill = new FFillStyleSolid(red);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Add the fill style to the
+rectangle. You must record the position of the fill style in the fill style
+array (the ID) so you can tell Flash when to use it.<span style="mso-spacerun:
+yes">  </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='color:green'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoFooter style='tab-stops:.5in'><span style='font-family:Courier'><span
+style='mso-tab-count:1'>    </span>U32 redfillID =
+rectangle-&gt;AddFillStyle(fill);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Courier'>C</span></b><b><span
+style='color:windowtext'>onstruct a black color<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='color:green'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>FColor black = FColor(0, 0, 0);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Courier'>C</span></b><b><span
+style='color:windowtext'>onstruct a black, 1 pixel (20 TWIPS) wide line style<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='color:green'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>FLineStyle* blackLineStyle = new FLineStyle(20, black);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Add the line style to the
+rectangle FObj, remembering to store the position of the line style just as in
+the fill style<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='color:green'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>U32 blackLineStyleID =
+rectangle-&gt;AddLineStyle(blackLineStyle);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Since you are done
+creating fill and line styles, tell the LL manager so.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>rectangle-&gt;FinishStyleArrays();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Construct the shape
+records which will describe the rectangle</span></b><span style='font-family:
+Courier'>. <o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-family:Courier'>T</span></b><b><span
+style='color:windowtext'>he FShapeRecChange sets the X-Y position of the
+initial line. (All points in Macromedia Flash are relative, like Postscripts
+lineto.)<span style="mso-spacerun: yes">  </span>FShapeRecEdgeStraight is used
+to create the 4 lines of the rect, and FShapeRecEnd finishes it off.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>FShapeRec* rectangleShapeRecords[6];<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>rectangleShapeRecords[0] = new FShapeRecChange(false, true, true,
+false, true, 5000, 1000, NULL, redfillID, blackLineStyleID, NULL, NULL);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Create straight edge objects
+<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>rectangleShapeRecords[1] = new FShapeRecEdgeStraight( 0, 4000);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>rectangleShapeRecords[2] = new FShapeRecEdgeStraight( -4000, 0);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>rectangleShapeRecords[3] = new FShapeRecEdgeStraight( 0, -4000);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>rectangleShapeRecords[4] = new FShapeRecEdgeStraight( 4000, 0);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>rectangleShapeRecords[5] = new FShapeRecEnd();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Add the shape records to
+the rectangle shape object<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>for (int i = 0;<span style="mso-spacerun: yes">  </span>i &lt; 6
+;<span style="mso-spacerun: yes">  </span>i++)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+2'>          </span>rectangle-&gt;AddShapeRec(rectangleShapeRecords[i]);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Add the rectangle to the
+allTags object collection<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>allTags.AddFObj(rectangle);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Create a place object tag
+which puts the rectangle on the display list<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>FCTPlaceObject2 *placeRectangle = new FCTPlaceObject2(false,
+false,false, false, true, false, 1, rectangleID, NULL, NULL, NULL, NULL);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Add the place object tag
+to the FObjCollection</span></b><span style='font-family:Courier'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>allTags.AddFObj(placeRectangle);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Construct a show frame
+object</span></b><span style='font-family:Courier'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>FCTShowFrame *showFrame = new FCTShowFrame();<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Add the show frame object
+to the FObj collection;</span></b><span style='font-family:Courier'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>allTags.AddFObj(showFrame);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Now create the movie</span></b><span
+style='font-family:Courier'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><span style='mso-tab-count:
+1'>    </span>allTags.CreateMovie(&quot;rectangle.swf&quot;, 11000, 8000, 12);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:Courier'>} <o:p></o:p></span></p>
+
+<b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:18.0pt;font-family:"Century Gothic";mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:HE;mso-bidi-font-style:italic'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<div style='border:none;border-bottom:solid windowtext .5pt;padding:0in 0in 1.0pt 0in'>
+
+<h2>Other Low Level Examples</h2>
+
+</div>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p>The Macromedia Flash File Format (SWF) SDK contains a number of C++ examples
+that demonstrate how to use the Low-Level manager.<span style="mso-spacerun:
+yes">  </span>These examples are listed below:</p>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\FExampleRectangle.cpp">FExampleRectangle.cpp</a>
+– Creates a low-level rectangle.</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\FExampleCircle.cpp">FExampleCircle.cpp</a>
+– Creates a low-level circle</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\FExampleOval.cpp">FExampleOval.cpp</a>
+– Creates a low-level oval (or ellipse)</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\FExampleOverlap.cpp">FExampleOverlap.cpp</a>
+– Creates two overlapping low-level rectangles.</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\FExampleButton.cpp">FExampleButton.cpp</a>
+– Creates a low-level button.</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\FExampleFont.cpp">FExampleFont.cpp</a>
+– Creates a low-level font and text object.</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\FExampleEditText.cpp">FExampleEditText.cpp</a>
+– Creates a low-level editable text field</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\FExampleMorph.cpp">FExampleMorph.cpp</a>
+– Creates a low-level shape morph.</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\FExampleJpeg.cpp">FExampleJpeg.cpp</a>
+– Creates a low-level bitmap with Jpeg compression.</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\FExampleBitsLossless.cpp">FExampleBitsLossless.cpp</a>
+– Creates a low-level lossless bitmap</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\FExampleSound.cpp">FExampleSound.cpp</a>
+– Creates a low-level sound from a .wav file.</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\FExampleSprite.cpp">FExampleSprite.cpp</a>
+– Creates a low-level sprite (or movie clip)</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\FExampleClip.cpp">FExamp<span
+style='mso-bookmark:_Hlt466883946'>l</span>eClip.cpp</a><![if !supportNestedAnchors]><a
+name="_Hlt466883946"></a><![endif]> – Creates a low-level clipping shape that
+clips objects above it.</p>
+
+<div style='border:none;border-bottom:solid windowtext .5pt;padding:0in 0in 1.0pt 0in'>
+
+<h2><span style='font-size:10.0pt;mso-bidi-font-size:18.0pt;font-family:Courier;
+color:black;font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h2>
+
+<h2>The High Level Manager<a name=HighLevelManager></a></h2>
+
+</div>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p>The High Level Manager provides a higher level of abstraction for creating
+Macromedia Flash (SWF) files.<span style="mso-spacerun: yes">  </span>High
+level classes begin with the prefix<span style="mso-spacerun: yes"> 
+</span>“HF”.<span style="mso-spacerun: yes">  </span>There are HF classes for
+creating movies, frames, circles, rectangles, text and bitmaps.<span
+style="mso-spacerun: yes">  </span>High-level classes are much easier to use
+than low-level classes.<span style="mso-spacerun: yes">  </span>For example,
+the <a href="..\SWF_Manager_Docs\API_Docs\class_hfcircle.html">HF<span
+style='mso-bookmark:_Hlt466881004'>C</span>ircle</a><![if !supportNestedAnchors]><a
+name="_Hlt466881004"></a><![endif]> class creates a circle using a center
+point, and radius.<span style="mso-spacerun: yes">  </span>There is no need to
+construct the circle with curved shape records.</p>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<div style='border:none;border-bottom:solid windowtext .5pt;padding:0in 0in 1.0pt 0in'>
+
+<h2>High Level Classes</h2>
+
+</div>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:0in'><a
+href="..\SWF_Manager_Docs\API_Docs\class_hfmovie.html">HFMovie</a> – High-level
+SWF movie.</p>
+
+<p class=MsoNormal style='margin-left:0in'><a
+href="..\SWF_Manager_Docs\API_Docs\class_hfframe.html">HF<span
+style='mso-bookmark:_Hlt466439555'>F</span>rame</a><![if !supportNestedAnchors]><a
+name="_Hlt466439555"></a><![endif]> – Frame in a high-level movie.</p>
+
+<p class=MsoNormal style='margin-left:0in'><a
+href="..\SWF_Manager_Docs\API_Docs\class_hfobject.html">HF<span
+style='mso-bookmark:_Hlt466439982'>O</span>bject</a><![if !supportNestedAnchors]><a
+name="_Hlt466439982"></a><![endif]> – Parent class for all high-level
+characters. </p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-17.3pt'><a
+name="_Hlt466881075"></a><a
+href="..\SWF_Manager_Docs\API_Docs\class_hfsound.html"><span style='mso-bookmark:
+_Hlt466881075'>HFS<span style='mso-bookmark:_Hlt466880772'>o</span>und</span><span
+style='mso-bookmark:_Hlt466881075'></span></a><![if !supportNestedAnchors]><a
+name="_Hlt466880772"></a><![endif]><span style='mso-bookmark:_Hlt466881075'></span>
+– High-level sound.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-17.3pt'><a
+href="..\SWF_Manager_Docs\API_Docs\class_hfbutton.html">HFButton</a> – High-level
+button.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-17.3pt'><a
+href="..\SWF_Manager_Docs\API_Docs\class_hfshape.html">HF<span
+style='mso-bookmark:_Hlt466440024'>S</span>hape</a><![if !supportNestedAnchors]><a
+name="_Hlt466440024"></a><![endif]> – Parent class for all high-level
+shapes.<span style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoNormal style='margin-left:53.3pt;text-indent:-17.3pt'><a
+href="..\SWF_Manager_Docs\API_Docs\class_hfrectangle.html">HFRectan<span
+style='mso-bookmark:_Hlt466880887'>g</span>le</a><![if !supportNestedAnchors]><a
+name="_Hlt466880887"></a><![endif]> – High-level circle.</p>
+
+<p class=MsoNormal style='margin-left:70.6pt;text-indent:-17.3pt'><a
+href="..\SWF_Manager_Docs\API_Docs\class_hfbitmap.html">HFBitmap</a> –
+High-level rectangle filled with bitmap</p>
+
+<p class=MsoNormal style='margin-left:53.3pt;text-indent:-17.3pt'><a
+href="..\SWF_Manager_Docs\API_Docs\class_hfcircle.html">HFCi<span
+style='mso-bookmark:_Hlt466439856'>r</span><span style='mso-bookmark:_Hlt466880885'>c</span>le</a><![if !supportNestedAnchors]><a
+name="_Hlt466880885"></a><a name="_Hlt466439856"></a><![endif]> – High-level
+circle.</p>
+
+<p class=MsoNormal style='margin-left:53.3pt;text-indent:-17.3pt'><a
+href="..\SWF_Manager_Docs\API_Docs\class_hfpolygon.html">HFPolygon</a> –
+High-level polygon.</p>
+
+<p class=MsoNormal style='margin-left:53.3pt;text-indent:-17.3pt'><a
+href="..\SWF_Manager_Docs\API_Docs\class_hfoval.html">HFOval</a> – High-level
+oval (or ellipse).</p>
+
+<p class=MsoNormal style='margin-left:53.3pt;text-indent:-17.3pt'><a
+href="..\SWF_Manager_Docs\API_Docs\class_hffont.html">HFFont</a> – High-level
+static text.</p>
+
+<p class=MsoNormal style='margin-left:53.3pt;text-indent:-17.3pt'><a
+href="..\SWF_Manager_Docs\API_Docs\class_hftext.html">HFT<span
+style='mso-bookmark:_Hlt466880883'>e</span>xt</a><![if !supportNestedAnchors]><a
+name="_Hlt466880883"></a><![endif]> – High-level static text.</p>
+
+<p class=MsoNormal style='margin-left:53.3pt;text-indent:-17.3pt'><a
+href="..\SWF_Manager_Docs\API_Docs\class_hfedittext.html">HFEditT<span
+style='mso-bookmark:_Hlt466440286'>e</span>xt</a><![if !supportNestedAnchors]><a
+name="_Hlt466440286"></a><![endif]> – High-level editable text field.</p>
+
+<p class=MsoNormal style='margin-left:0in'><a
+href="..\SWF_Manager_Docs\API_Docs\class_hfaction.html">HFAction</a> –
+High-level action.</p>
+
+<div style='border:none;border-bottom:solid windowtext .5pt;padding:0in 0in 1.0pt 0in'>
+
+<h2>High Level Manager Resource Management</h2>
+
+</div>
+
+<h4>Memory</h4>
+
+<p class=MsoNormal>The high level manager copies the information from the
+objects passed to it. Sometimes it will modify the objects passed to it, but
+the high level manager will not delete them.. Objects passed to the high level
+manager can be created on the stack.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The memory model for the high level manager is almost the
+opposite of the low level manager.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Consider the following example:</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Courier'>HFMovie
+movie;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Courier'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Courier'><span
+style='mso-tab-count:1'>      </span>HFRectangle rect( 0, 0, 200, 200 );<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Courier'><span
+style='mso-tab-count:1'>      </span>movie.Frame( 0 )-&gt;AddObject( &amp;rect
+);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Courier'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-family:Courier'>movie</span><span
+style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>.WriteMovie(&quot;wierd.swf&quot;);</span><span
+style='font-family:Courier'><o:p></o:p></span></p>
+
+<p><span style='font-family:Courier'><span style='mso-tab-count:1'>    </span><o:p></o:p></span></p>
+
+<p class=MsoNormal>The rectangle is written to the file without error, even
+though the object itself is out of scope. (This example is pedagogical in its
+structure – there is no need for the Rectangle object to have a smaller scope
+than the HFMovie object.)</p>
+
+<h4>Frames</h4>
+
+<p class=MsoNormal>Frames are allocated by the high level manager on an “as
+needed” basis when they are accessed with the Movie::Frame( int ) method call.</p>
+
+<h4>Depth</h4>
+
+<p class=MsoNormal>The Macromedia Flash Player uniquely identifies shapes by a
+tag (associated with its Define tag) and a depth. So two instances of the same
+object need to be on different depths to be unique. The high level manager
+hides this limitation and guarantees correct depths by writing each shape to a
+different depth in the Macromedia Flash (SWF) file. </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>The result is that the depth specified in the SetDepth call
+will correctly set a shape’s sorting order relative to other shapes, but this
+value will not be the depth written to the Macromedia Flash (SWF) file. Shapes
+set to the same depth with SetDepth have an undefined sorting order.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>To summarize: higher depths are on top, and shapes with the
+same depths sort in an undefined order.</p>
+
+<div style='border:none;border-bottom:solid windowtext .5pt;padding:0in 0in 1.0pt 0in'>
+
+<h2>High Level Manager Example</h2>
+
+</div>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Here is an example of using the high-level manager to create
+a simple movie.<span style="mso-spacerun: yes">  </span>This code creates a red
+rectangle and blue rectangle, places them on the display list, and displays the
+frame. </p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Include high-level class
+definitions</span></b><span style='font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>#include
+&quot;HF3SDK.h&quot;<o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>void
+HLCreateRectangleMovie()<o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>{<o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>First, construct a
+high-level movie object.</span></b><span style='font-family:Courier'><o:p></o:p></span></p>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>    </span>HFMovie movie;<o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Create a rectangle with
+the top-left corner at (0,0) and the bottom-right at (2000,2000)</span></b><span
+style='font-family:Courier'><o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>    </span>HFRectangle* rect1 = new HFRectangle( 0, 0,
+2000, 2000 );<o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Create another rectangle
+with the top-left corner at (1000,1000) and bottom-right at (3000,3000)</span></b><span
+style='font-family:Courier'><o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>    </span>HFRectangle* rect2 = new HFRectangle( 1000,
+1000, 3000, 3000 );<o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Set the fill color of the
+first rectangle to red.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-family:Courier'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>    </span>rect1-&gt;SetSolidFillColor( Red_RGBA );<o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Set the fill color of the
+second rectangle to blue.<o:p></o:p></span></b></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>    </span>rect2-&gt;SetSolidFillColor( Blue_RGBA );<o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Set the depth of the first
+rectangle to 1 (the bottom of the stack).<o:p></o:p></span></b></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>    </span>rect1-&gt;SetDepth(1);<o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:windowtext'>Set the depth of the
+second rectangle to 2 (above the first rectangle).<o:p></o:p></span></b></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>    </span>rect2-&gt;SetDepth(2);<o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>    </span><o:p></o:p></span></p>
+
+<p><b>Add rect1 and rect2 to frame1, then place them on frame1</b><span
+style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p style='margin-left:.5in'><span style='font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>movie.Frame( 0 )-&gt;AddObject( rect1 );<o:p></o:p></span></p>
+
+<p style='margin-left:.5in'><span style='font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>movie.Frame( 0 )-&gt;AddObject( rect2 );<o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>    </span><o:p></o:p></span></p>
+
+<p><b>Write the movie to the SWF file.<o:p></o:p></b></p>
+
+<p><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>    </span>movie.WriteMovie(&quot;HLrectangle.swf&quot;);<o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p><b>Clean up the memory.<o:p></o:p></b></p>
+
+<p><b><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>    </span></span></b><span style='font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>delete rect1;<o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><span
+style='mso-tab-count:1'>    </span>delete rect2;<o:p></o:p></span></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>}</span><b><o:p></o:p></b></p>
+
+<p><span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<div style='border:none;border-bottom:solid windowtext .5pt;padding:0in 0in 1.0pt 0in'>
+
+<h2>Other High Level Examples</h2>
+
+</div>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p>The Macromedia Flash File Format (SWF) SDK contains a number of C++ examples
+that demonstrate how to use the High-Level manager.<span style="mso-spacerun:
+yes">  </span>These examples are listed below:</p>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\HFExampleSquare.cpp">HFExampleSquare.cpp</a>
+– Creates a high-level square.</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\HFExampleRectangle.cpp">HFExampleRectangle.cpp</a>
+– Creates a high-level rectangle.</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\HFExampleCircle.cpp">HFExampleCircl<span
+style='mso-bookmark:_Hlt466882497'>e</span>.<span style='mso-bookmark:_Hlt466882510'>c</span>pp</a><![if !supportNestedAnchors]><a
+name="_Hlt466882510"></a><a name="_Hlt466882497"></a><![endif]> – Creates a
+high-level circle.</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\HFExampleOval.cpp">HFExampleOval.cpp</a>
+– Creates a high-level oval (or ellipse).</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\HFExampleButton.cpp">HFExampleButton.cpp</a>
+– Creates a high-level button.</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\HFExampleFont.cpp">HFExampleFont<span
+style='mso-bookmark:_Hlt466882554'>.</span>cpp</a><![if !supportNestedAnchors]><a
+name="_Hlt466882554"></a><![endif]> – Creates a high-level font and text
+object.</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\HFExampleSound.cpp">HFExampleSou<span
+style='mso-bookmark:_Hlt466882566'>n</span>d.cpp</a><![if !supportNestedAnchors]><a
+name="_Hlt466882566"></a><![endif]> – Creates a high-level sound from a .wav
+file.</p>
+
+<p style='margin-left:.5in'><a href="..\..\..\Source\HFExampleSound.cpp">HFExample.cpp</a>
+– The “mother of all examples”, writes a Flash movie with many objects.</p>
+
+<p style='margin-left:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,972 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./header_files/filelist.xml">
+<title>FFFSDK</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>michael</o:Author>
+  <o:LastAuthor>michael</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>80</o:TotalTime>
+  <o:Created>1999-09-28T21:47:00Z</o:Created>
+  <o:LastSaved>1999-09-29T01:42:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>48</o:Words>
+  <o:Characters>277</o:Characters>
+  <o:Company>Middlesoft</o:Company>
+  <o:Lines>2</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>340</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=Stylesheet type="text/css" media=all href=doxygen.css>
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=blue style='tab-interval:.5in'>
+<!-- Insert HTML here --><RIGHT>
+
+<div class=Section1>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+mso-border-shadow:yes'>
+
+<p class=MsoNormal style='margin-right:55.5pt;border:none;mso-border-alt:solid windowtext 1.0pt;
+padding:0in;mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt;mso-border-shadow:yes'><span
+style='background:#E0E0E0'><span style="mso-spacerun: yes">&nbsp;</span><a
+href="hierarchy.html">Class Hierarchy</a> &nbsp; <a href="classes.html">Alphabetical
+List</a> &nbsp; <a href="headers.html">Header Files</a> &nbsp; <a
+href="functions.html">Compound Members</a> &nbsp; 18 Nov 1999<o:p></o:p></span></p>
+
+</div>
+
+<meta name=robots content=noindex>
+
+<p class=MsoNormal style='margin-right:55.5pt'><span style='background:#E0E0E0'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:55.5pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>
+<h1>HFShape  Class Reference</h1>Superclass for all high level shapes. 
+<a href="#_details">More...</a>
+<p>
+<code>#include &lt;<a class="el" href="class_hfshape-include.html">HFShape.h</a>&gt;</code>
+<p>
+<p>Class diagram for HFShape:
+<p><center><img src="class_hfshape.gif" usemap="#HFShape_map" border="0"></center>
+<map name="HFShape_map"><p>
+<area href="class_hfobject.html" ALT="HFObject" shape="rect" coords="190,0,275,24">
+<area href="class_hftext.html" ALT="HFText" shape="rect" coords="0,112,85,136">
+<area href="class_hfrectangle.html" ALT="HFRectangle" shape="rect" coords="95,112,180,136">
+<area href="class_hfpolygon.html" ALT="HFPolygon" shape="rect" coords="190,112,275,136">
+<area href="class_hfoval.html" ALT="HFOval" shape="rect" coords="285,112,370,136">
+<area href="class_hfedittext.html" ALT="HFEditText" shape="rect" coords="380,112,465,136">
+<area href="class_hfbitmap.html" ALT="HFBitmap" shape="rect" coords="95,168,180,192">
+<area href="class_hfcircle.html" ALT="HFCircle" shape="rect" coords="285,168,370,192">
+</MAP></P>
+<a href="class_hfshape-members.html">List of all members.</a><table border=0 cellpadding=0 cellspacing=0>
+<tr><td colspan=4><br><h2>Public Members</h2></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a0">HFShape</a> ( int xmin, int ymin, int xmax, int ymax )</td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>virtual&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a1">~HFShape</a> ()</td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>void&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a2">SetLineWidth</a> ( int _lineWidth )</td></tr>
+<tr><td><img src=null.gif></td><td><img src=null.gif></td><td></td><td><font size=-1><em>Set the width of the shape outline.</em> <a href="#a2">More...</a><em></em></font><br><br></td></tr>
+
+<p>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>int&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a3">GetLineWidth</a> ()</td></tr>
+<tr><td><img src=null.gif></td><td><img src=null.gif></td><td></td><td><font size=-1><em>Get the line width.</em> <a href="#a3">More...</a><em></em></font><br><br></td></tr>
+
+<p>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>void&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a4">SetLineColor</a> ( const <a class="el" href="class_frgba.html">FRGBA</a>&amp; _lineColor )</td></tr>
+<tr><td><img src=null.gif></td><td><img src=null.gif></td><td></td><td><font size=-1><em>Set the line color.</em> <a href="#a4">More...</a><em></em></font><br><br></td></tr>
+
+<p>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="class_frgba.html">FRGBA</a>&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a5">GetLineColor</a> ()</td></tr>
+<tr><td><img src=null.gif></td><td><img src=null.gif></td><td></td><td><font size=-1><em>Get the line color.</em> <a href="#a5">More...</a><em></em></font><br><br></td></tr>
+
+<p>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>void&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a6">SetNoFill</a> ()</td></tr>
+<tr><td><img src=null.gif></td><td><img src=null.gif></td><td></td><td><font size=-1><em>Turns off fill for the object.</em> <a href="#a6">More...</a><em></em></font><br><br></td></tr>
+
+<p>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>void&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a7">SetSolidFill</a> ( const <a class="el" href="class_frgba.html">FRGBA</a>&amp; fillColor )</td></tr>
+<tr><td><img src=null.gif></td><td><img src=null.gif></td><td></td><td><font size=-1><em>Solid fills the shape.</em> <a href="#a7">More...</a><em></em></font><br><br></td></tr>
+
+<p>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="class_frgba.html">FRGBA</a>&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a8">GetSolidFillColor</a> ()</td></tr>
+<tr><td><img src=null.gif></td><td><img src=null.gif></td><td></td><td><font size=-1><em>Get the solid fill color.</em> <a href="#a8">More...</a><em></em></font><br><br></td></tr>
+
+<p>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>void&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a9">SetLinearFill</a> ( const <a class="el" href="class_frgba.html">FRGBA</a>&amp; left, const <a class="el" href="class_frgba.html">FRGBA</a>&amp; right )</td></tr>
+<tr><td><img src=null.gif></td><td><img src=null.gif></td><td></td><td><font size=-1><em>Fills the shape with a linear gradient.</em> <a href="#a9">More...</a><em></em></font><br><br></td></tr>
+
+<p>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>void&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a10">SetLinearFillCenter</a> ( int centerX, int centerY )</td></tr>
+<tr><td><img src=null.gif></td><td><img src=null.gif></td><td></td><td><font size=-1><em>Set the linear fill center.</em> <a href="#a10">More...</a><em></em></font><br><br></td></tr>
+
+<p>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>void&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a11">SetRadialFill</a> ( const <a class="el" href="class_frgba.html">FRGBA</a>&amp; center, const <a class="el" href="class_frgba.html">FRGBA</a>&amp; outside )</td></tr>
+<tr><td><img src=null.gif></td><td><img src=null.gif></td><td></td><td><font size=-1><em>Fills the shape with a radial gradient.</em> <a href="#a11">More...</a><em></em></font><br><br></td></tr>
+
+<p>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>void&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a12">SetRadialFillCenter</a> ( int centerX, int centerY )</td></tr>
+<tr><td><img src=null.gif></td><td><img src=null.gif></td><td></td><td><font size=-1><em>Set the linear fill center.</em> <a href="#a12">More...</a><em></em></font><br><br></td></tr>
+
+<p>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>int&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a13">SetBitmapFillJpeg</a> ( int bitmap_X, int bitmap_Y, const void*JPEG, int JPEG_size )</td></tr>
+<tr><td><img src=null.gif></td><td><img src=null.gif></td><td></td><td><font size=-1><em>Fills the shape with a JPEG image.</em> <a href="#a13">More...</a><em></em></font><br><br></td></tr>
+
+<p>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>int&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a14">SetBitmapFillLossless</a> ( int format, int bitmap_X, int bitmap_Y, int numPaletteEntries, bool alpha, const void* bitmap, const void* palette )</td></tr>
+<tr><td><img src=null.gif></td><td><img src=null.gif></td><td></td><td><font size=-1><em>Fills the shape with an image compressed without any quality loss.</em> <a href="#a14">More...</a><em></em></font><br><br></td></tr>
+
+<p>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>void&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a15">Translate</a> ( int x, int y )</td></tr>
+<tr><td><img src=null.gif></td><td><img src=null.gif></td><td></td><td><font size=-1><em>Moves the Shape.</em> <a href="#a15">More...</a><em></em></font><br><br></td></tr>
+
+<p>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>void&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a16">Rotate</a> ( <a class="el" href="Macromedia.H.html#a19">SFIXED</a> degree )</td></tr>
+<tr><td><img src=null.gif></td><td><img src=null.gif></td><td></td><td><font size=-1><em>Rotates the shape about its own center.</em> <a href="#a16">More...</a><em></em></font><br><br></td></tr>
+
+<p>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>void&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a17">Scale</a> ( <a class="el" href="Macromedia.H.html#a19">SFIXED</a> _scaleX, <a class="el" href="Macromedia.H.html#a19">SFIXED</a> _scaleY )</td></tr>
+<tr><td><img src=null.gif></td><td><img src=null.gif></td><td></td><td><font size=-1><em>Scales the shape about its own center.</em> <a href="#a17">More...</a><em></em></font><br><br></td></tr>
+
+<p>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>virtual void&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#a18">AddToObjectList</a> (std::list&lt;FObj*&gt;* objList, <a class="el" href="class_hfmovie.html">HFMovie</a>* movie) = 0</td></tr>
+<tr><td colspan=4><br><h2>Protected Members</h2></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>enum &nbsp;</td><td valign=top>{ <a class="el" href="class_hfshape.html#b25">NO_FILL</a>, 
+<a class="el" href="class_hfshape.html#b26">SOLID_FILL</a>, 
+<a class="el" href="class_hfshape.html#b27">LINEAR_GRADIENT_FILL</a>, 
+<a class="el" href="class_hfshape.html#b28">RADIAL_GRADIENT_FILL</a>, 
+<a class="el" href="class_hfshape.html#b29">BITMAP_FILL</a>
+ }</td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>enum &nbsp;</td><td valign=top>{ <a class="el" href="class_hfshape.html#b30">JPEG</a>, 
+<a class="el" href="class_hfshape.html#b31">LOSSLESS</a>
+ }</td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>void&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b0">AddLinearFillColor</a> ( <a class="el" href="Macromedia.H.html#a13">U8</a> ratio, const <a class="el" href="class_frgba.html">FRGBA</a>&amp; linearFillColor )</td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>void&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b1">AddRadialFillColor</a> ( <a class="el" href="Macromedia.H.html#a13">U8</a> ratio, const <a class="el" href="class_frgba.html">FRGBA</a>&amp; radialFillColor )</td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>virtual bool&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b2">HasMatrix</a> ()</td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>virtual <a class="el" href="class_fmatrix.html">FMatrix</a>*&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b3">CreateMatrix</a> ()</td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>void&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b4">SetBounds</a> (int xmin, int ymin, int xmax, int ymax)</td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>void&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b5">FillShapeHeader</a> (std::list&lt;FObj*&gt; *objList, <a class="el" href="class_fdtdefineshape3.html">FDTDefineShape3</a>* shapeTag)</td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="class_frect.html">FRect</a>&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b6">bounds</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>int&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b7">lineWidth</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="class_frgba.html">FRGBA</a>&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b8">lineColor</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="Macromedia.H.html#a1">U32</a>&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b9">lineStyleID</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="Macromedia.H.html#a1">U32</a>&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b10">colorFillID</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>int&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b11">translateX</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>int&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b12">translateY</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="Macromedia.H.html#a19">SFIXED</a>&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b13">rotation</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="Macromedia.H.html#a19">SFIXED</a>&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b14">scaleX</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="Macromedia.H.html#a19">SFIXED</a>&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b15">scaleY</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top>int&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b16">fillType</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="class_frgba.html">FRGBA</a>&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b17">solidFillColor</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="class_hfshape__bitmapdata.html">BitmapData</a>&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b18">bitmapFill</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="class_fmatrix.html">FMatrix</a>*&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b19">fillMatrix</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="class_fgradient.html">FGradient</a>*&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b20">fillGradient</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="Macromedia.H.html#a7">U16</a>&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b21">tiledFillBitmapID</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="class_fmatrix.html">FMatrix</a>&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b22">tiledFillBitmapMatrix</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="Macromedia.H.html#a7">U16</a>&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b23">clippedFillBitmapID</a></td></tr>
+<tr><td><img src="null.gif"></td><td><img src="null.gif"></td><td nowrap align=right valign=top><a class="el" href="class_fmatrix.html">FMatrix</a>&nbsp;</td><td valign=top><a class="el" href="class_hfshape.html#b24">clippedFillBitmapMatrix</a></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Detailed Description</h2>
+Superclass for all high level shapes.
+<p>
+The HFShape is an abstract class which is the parent class of rectangle, circle, etc. The important function of shape is to provide an interface for setting line, fill, and position properites.<br>
+
+<p>
+Lines: All shapes can be outlined. (Even bitmaps). The line thickness and color can be set.<br>
+
+<p>
+Fills: There are 5 types of fills: solid color, linear gradient, radial gradient, jpeg bitmap, and lossless bitmap. The fills will work even with oddly shaped Shapes. However, not all shapes can be filled. (Setting the solid fill of a bitmap, for intance, is probably not a good idea.)<br>
+
+<p>
+Positioning: Translate, Rotate, Scale. The positioning calls changes the shape position relative to its original position. For example, Translate( 10, 10 ) followed by Translate( 10, 10 ), would move the object 10 twips down and right from its original position; the effect of a Positioning call is not cumlative. <dl compact><dt>
+<b>See also: </b><dd>
+<a class="el" href="class_hfobject.html">HFObject</a> </dl><hr><h2>Enumeration Value Documentation</h2>
+<a name="b25" doxytag="HFShape::NO_FILL">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+HFShape::NO_FILL<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b26" doxytag="HFShape::SOLID_FILL">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+HFShape::SOLID_FILL<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b27" doxytag="HFShape::LINEAR_GRADIENT_FILL">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+HFShape::LINEAR_GRADIENT_FILL<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b28" doxytag="HFShape::RADIAL_GRADIENT_FILL">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+HFShape::RADIAL_GRADIENT_FILL<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b29" doxytag="HFShape::BITMAP_FILL">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+HFShape::BITMAP_FILL<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b30" doxytag="HFShape::JPEG">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+HFShape::JPEG<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b31" doxytag="HFShape::LOSSLESS">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+HFShape::LOSSLESS<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<hr><h2>Member Function Documentation</h2>
+<a name="a0" doxytag="HFShape::HFShape">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+HFShape::HFShape (int xmin, int ymin, int xmax, int ymax)
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="a1" doxytag="HFShape::~HFShape">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+virtual HFShape::~HFShape ()<code> [virtual]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="a2" doxytag="HFShape::SetLineWidth">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+void HFShape::SetLineWidth (int <em>_lineWidth</em>)<code> [inline]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+Set the width of the shape outline.
+<p>
+If the line width is set to zero, no line is displayed. <dl compact><dt>
+<b>Parameters: </b><dd>
+<em>_lineWidth</em> -  The line width in twips. </dl></div>
+<a name="a3" doxytag="HFShape::GetLineWidth">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+int HFShape::GetLineWidth ()<code> [inline]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+Get the line width.
+<p>
+<dl compact><dt>
+<b>Returns: </b><dd>
+Return the line width in twips. </dl></div>
+<a name="a4" doxytag="HFShape::SetLineColor">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+void HFShape::SetLineColor (const <a class="el" href="class_frgba.html">FRGBA</a> &amp; <em>_lineColor</em>)
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+Set the line color.
+<p>
+<dl compact><dt>
+<b>Parameters: </b><dd>
+<em>_lineColor</em> -  The line color. Alpha is currently supported. </dl></div>
+<a name="a5" doxytag="HFShape::GetLineColor">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="class_frgba.html">FRGBA</a> HFShape::GetLineColor ()<code> [inline]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+Get the line color.
+<p>
+<dl compact><dt>
+<b>Returns: </b><dd>
+Return the line color. </dl></div>
+<a name="a6" doxytag="HFShape::SetNoFill">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+void HFShape::SetNoFill ()<code> [inline]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+Turns off fill for the object.
+<p>
+The shape will not be filled, and will only be an outline. </div>
+<a name="a7" doxytag="HFShape::SetSolidFill">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+void HFShape::SetSolidFill (const <a class="el" href="class_frgba.html">FRGBA</a> &amp; <em>fillColor</em>)
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+Solid fills the shape.
+<p>
+<dl compact><dt>
+<b>Parameters: </b><dd>
+<em>fillColor</em> -  The solid fill color. Alpha is currently supported. </dl></div>
+<a name="a8" doxytag="HFShape::GetSolidFillColor">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="class_frgba.html">FRGBA</a> HFShape::GetSolidFillColor ()<code> [inline]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+Get the solid fill color.
+<p>
+<dl compact><dt>
+<b>Returns: </b><dd>
+Return the solid fill color. </dl></div>
+<a name="a9" doxytag="HFShape::SetLinearFill">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+void HFShape::SetLinearFill (const <a class="el" href="class_frgba.html">FRGBA</a> &amp; <em>left</em>, const <a class="el" href="class_frgba.html">FRGBA</a> &amp; <em>right</em>)
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+Fills the shape with a linear gradient.
+<p>
+The shape will be filled with a linear gradient from the first to the second color. The fill center is defaulted at the center of the shape. <dl compact><dt>
+<b>Parameters: </b><dd>
+<em>left</em> -  The color on the left-most of color-ramp. <dd>
+<em>right</em> -  The color on the right-most of color-ramp. </dl></div>
+<a name="a10" doxytag="HFShape::SetLinearFillCenter">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+void HFShape::SetLinearFillCenter (int <em>centerX</em>, int <em>centerY</em>)
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+Set the linear fill center.
+<p>
+Coordinates are in untransformed object coordinates. <dl compact><dt>
+<b>Parameters: </b><dd>
+<em>centerX</em> -  The x coordiate of the linear fill center. <dd>
+<em>centerY</em> -  The y coordiate of the linear fill center. </dl></div>
+<a name="a11" doxytag="HFShape::SetRadialFill">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+void HFShape::SetRadialFill (const <a class="el" href="class_frgba.html">FRGBA</a> &amp; <em>center</em>, const <a class="el" href="class_frgba.html">FRGBA</a> &amp; <em>outside</em>)
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+Fills the shape with a radial gradient.
+<p>
+The shape will be filled with a radial gradient from the first to the second color. The fill center is defaulted at the center of the shape. <dl compact><dt>
+<b>Parameters: </b><dd>
+<em>center</em> -  The color on the center of concentric color-ramp circles. <dd>
+<em>outside</em> -  The color on the outer-most of concentric color-ramp circles. </dl></div>
+<a name="a12" doxytag="HFShape::SetRadialFillCenter">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+void HFShape::SetRadialFillCenter (int <em>centerX</em>, int <em>centerY</em>)
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+Set the linear fill center.
+<p>
+Coordinates are in untransformed object coordinates. <dl compact><dt>
+<b>Parameters: </b><dd>
+<em>centerX</em> -  The x coordiate of the radial fill center. <dd>
+<em>centerY</em> -  The y coordiate of the radial fill center. </dl></div>
+<a name="a13" doxytag="HFShape::SetBitmapFillJpeg">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+int HFShape::SetBitmapFillJpeg (int <em>bitmap_X</em>, int <em>bitmap_Y</em>, const void * <em>JPEG</em>, int <em>JPEG_size</em>)
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+Fills the shape with a JPEG image.
+<p>
+The JPEG data passed in will be unmodified by this call. <dl compact><dt>
+<b>Parameters: </b><dd>
+<em>bitmap_X</em> -  Width of the bitmap in pixel. <dd>
+<em>bitmap_Y</em> -  Height of the bitmap in pixel. <dd>
+<em>JPEG</em> -  Pointer a JPEG image data. <dd>
+<em>JPEG_size</em> -  Size of the JPEG data in bytes. </dl><dl compact><dt>
+<b>Returns: </b><dd>
+Returns the ID of this JPEG bitmap fill. </dl></div>
+<a name="a14" doxytag="HFShape::SetBitmapFillLossless">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+int HFShape::SetBitmapFillLossless (int <em>format</em>, int <em>bitmap_X</em>, int <em>bitmap_Y</em>, int <em>numPaletteEntries</em>, bool <em>alpha</em>, const void * <em>bitmap</em>, const void * <em>palette</em>)
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+Fills the shape with an image compressed without any quality loss.
+<p>
+The image data passed in will be unmodified by this call. <dl compact><dt>
+<b>Parameters: </b><dd>
+<em>format</em> -  Format type. See <a class="el" href="class_fdtdefinebitslosslessbase.html">FDTDefineBitsLosslessBase</a> for a list of formats. <dd>
+<em>bitmap_X</em> -  Width of the bitmap in pixel. <dd>
+<em>bitmap_Y</em> -  Height of the bitmap in pixel. <dd>
+<em>numPaletteEntries</em> -  Number of palette entries. 0 for many formats. <dd>
+<em>alpha</em> -  True if alpha data is included. The value of this parameter must be consistent with the format. <dd>
+<em>bitmap</em> -  Address of bitmap in memory. <dd>
+<em>palette</em> -  Address of palette, if applicable. </dl><dl compact><dt>
+<b>Returns: </b><dd>
+Return the ID of this Lossless bitmap fill. </dl></div>
+<a name="a15" doxytag="HFShape::Translate">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+void HFShape::Translate (int <em>x</em>, int <em>y</em>)<code> [inline]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+Moves the Shape.
+<p>
+Translate, like all the positioning calls, changes the objects position relative to the position it was created at. In other words, Translate( 10, 10 ) followed by Translate( 10, 10 ), would move the object 10 twips down and right from its original position; the effect of a Translate call is not cumlative. <dl compact><dt>
+<b>Parameters: </b><dd>
+<em>x</em> -  horizontal motion in twips <dd>
+<em>y</em> -  vertical (positive down) motion in twips </dl></div>
+<a name="a16" doxytag="HFShape::Rotate">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+void HFShape::Rotate (<a class="el" href="Macromedia.H.html#a19">SFIXED</a> <em>degree</em>)<code> [inline]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+Rotates the shape about its own center.
+<p>
+<dl compact><dt>
+<b>Parameters: </b><dd>
+<em>degree</em> -  Rotation in degrees, using fixed point notation. </dl></div>
+<a name="a17" doxytag="HFShape::Scale">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+void HFShape::Scale (<a class="el" href="Macromedia.H.html#a19">SFIXED</a> <em>_scaleX</em>, <a class="el" href="Macromedia.H.html#a19">SFIXED</a> <em>_scaleY</em>)<code> [inline]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+Scales the shape about its own center.
+<p>
+<dl compact><dt>
+<b>Parameters: </b><dd>
+<em>_scaleX</em> -  horizontal scaling in fixed point notation. /*! <dd>
+<em>_scaleX</em> -  vertical scaling in fixed point notation. </dl></div>
+<a name="a18" doxytag="HFShape::AddToObjectList">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+virtual void HFShape::AddToObjectList (std::list&lt;FObj *&gt;* <em>objList</em>, <a class="el" href="class_hfmovie.html">HFMovie</a> * <em>movie</em>)<code> [pure virtual]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+
+<p>
+Reimplemented from <a class="el" href="class_hfobject.html#a4">HFObject</a>.
+<p>
+Reimplemented in <a class="el" href="class_hfedittext.html#a6">HFEditText</a>, <a class="el" href="class_hfoval.html#a2">HFOval</a>, <a class="el" href="class_hfpolygon.html#a6">HFPolygon</a>, <a class="el" href="class_hfrectangle.html#a2">HFRectangle</a>, and <a class="el" href="class_hftext.html#a1">HFText</a>.</div>
+<a name="b0" doxytag="HFShape::AddLinearFillColor">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+void HFShape::AddLinearFillColor (<a class="el" href="Macromedia.H.html#a13">U8</a> ratio, const <a class="el" href="class_frgba.html">FRGBA</a> &amp; <em>linearFillColor</em>)<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b1" doxytag="HFShape::AddRadialFillColor">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+void HFShape::AddRadialFillColor (<a class="el" href="Macromedia.H.html#a13">U8</a> ratio, const <a class="el" href="class_frgba.html">FRGBA</a> &amp; <em>radialFillColor</em>)<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b2" doxytag="HFShape::HasMatrix">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+virtual bool HFShape::HasMatrix ()<code> [protected, virtual]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+
+<p>
+Reimplemented from <a class="el" href="class_hfobject.html#b0">HFObject</a>.</div>
+<a name="b3" doxytag="HFShape::CreateMatrix">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+virtual <a class="el" href="class_fmatrix.html">FMatrix</a>* HFShape::CreateMatrix ()<code> [protected, virtual]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+
+<p>
+Reimplemented from <a class="el" href="class_hfobject.html#b1">HFObject</a>.</div>
+<a name="b4" doxytag="HFShape::SetBounds">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+void HFShape::SetBounds (int xmin, int ymin, int xmax, int ymax)<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b5" doxytag="HFShape::FillShapeHeader">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+void HFShape::FillShapeHeader (std::list&lt;FObj *&gt;* <em>objList</em>, <a class="el" href="class_fdtdefineshape3.html">FDTDefineShape3</a> * <em>shapeTag</em>)<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<hr><h2>Member Data Documentation</h2>
+<a name="b6" doxytag="HFShape::bounds">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="class_frect.html">FRect</a> HFShape::bounds<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b7" doxytag="HFShape::lineWidth">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+int HFShape::lineWidth<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b8" doxytag="HFShape::lineColor">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="class_frgba.html">FRGBA</a> HFShape::lineColor<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b9" doxytag="HFShape::lineStyleID">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="Macromedia.H.html#a1">U32</a> HFShape::lineStyleID<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b10" doxytag="HFShape::colorFillID">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="Macromedia.H.html#a1">U32</a> HFShape::colorFillID<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b11" doxytag="HFShape::translateX">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+int HFShape::translateX<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b12" doxytag="HFShape::translateY">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+int HFShape::translateY<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b13" doxytag="HFShape::rotation">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="Macromedia.H.html#a19">SFIXED</a> HFShape::rotation<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b14" doxytag="HFShape::scaleX">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="Macromedia.H.html#a19">SFIXED</a> HFShape::scaleX<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b15" doxytag="HFShape::scaleY">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="Macromedia.H.html#a19">SFIXED</a> HFShape::scaleY<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b16" doxytag="HFShape::fillType">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+int HFShape::fillType<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b17" doxytag="HFShape::solidFillColor">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="class_frgba.html">FRGBA</a> HFShape::solidFillColor<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b18" doxytag="HFShape::bitmapFill">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="class_hfshape__bitmapdata.html">BitmapData</a> HFShape::bitmapFill<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b19" doxytag="HFShape::fillMatrix">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="class_fmatrix.html">FMatrix</a>* HFShape::fillMatrix<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b20" doxytag="HFShape::fillGradient">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="class_fgradient.html">FGradient</a>* HFShape::fillGradient<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b21" doxytag="HFShape::tiledFillBitmapID">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="Macromedia.H.html#a7">U16</a> HFShape::tiledFillBitmapID<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b22" doxytag="HFShape::tiledFillBitmapMatrix">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="class_fmatrix.html">FMatrix</a> HFShape::tiledFillBitmapMatrix<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b23" doxytag="HFShape::clippedFillBitmapID">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="Macromedia.H.html#a7">U16</a> HFShape::clippedFillBitmapID<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<a name="b24" doxytag="HFShape::clippedFillBitmapMatrix">
+<p><table width=100%% cellpadding=2 cellspacing=0 border=0><tr><td class="md"><b>
+<a class="el" href="class_fmatrix.html">FMatrix</a> HFShape::clippedFillBitmapMatrix<code> [protected]</code>
+</b></td></tr></table>
+</a>
+<div class="in">
+
+<p>
+
+<p>
+</div>
+<hr>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="HFShape.h.html">HFShape.h</a></ul>
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./footer_files/filelist.xml">
+<title>Sunday, September 26, 1999</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>michael</o:Author>
+  <o:LastAuthor>michael</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>18</o:TotalTime>
+  <o:Created>1999-09-27T06:04:00Z</o:Created>
+  <o:LastSaved>1999-09-28T21:56:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>9</o:Words>
+  <o:Characters>56</o:Characters>
+  <o:Company>Middlesoft</o:Company>
+  <o:Lines>1</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>68</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	background:#333399;
+	border:none;
+	mso-border-alt:solid windowtext .5pt;
+	padding:0in;
+	mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:white;
+	mso-bidi-language:HE;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0in;
+	margin-right:1.0in;
+	margin-bottom:6.0pt;
+	margin-left:1.0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-language:HE;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<div style='border:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#333399'>
+
+<p class=MsoFooter align=center style='margin-right:82.5pt;text-align:center;
+tab-stops:.5in'><span style='background:#333399'>Sunday, September 26, 1999<span
+style='mso-tab-count:2'>                  </span>Flash File Format SDK<span
+style='mso-tab-count:1'>  </span><span style='mso-tab-count:1'>               </span>Middlesoft,
+Inc.</span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,373 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./header_files/filelist.xml">
+<title>FFFSDK</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>michael</o:Author>
+  <o:LastAuthor>michael</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>80</o:TotalTime>
+  <o:Created>1999-09-28T21:47:00Z</o:Created>
+  <o:LastSaved>1999-09-29T01:42:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>48</o:Words>
+  <o:Characters>277</o:Characters>
+  <o:Company>Middlesoft</o:Company>
+  <o:Lines>2</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>340</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=Stylesheet type="text/css" media=all href=doxygen.css>
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=blue style='tab-interval:.5in'>
+<!-- Insert HTML here --><RIGHT>
+
+<div class=Section1>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+mso-border-shadow:yes'>
+
+<p class=MsoNormal style='margin-right:55.5pt;border:none;mso-border-alt:solid windowtext 1.0pt;
+padding:0in;mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt;mso-border-shadow:yes'><span
+style='background:#E0E0E0'><span style="mso-spacerun: yes">&nbsp;</span><a
+href="hierarchy.html">Class Hierarchy</a> &nbsp; <a href="classes.html">Alphabetical
+List</a> &nbsp; <a href="headers.html">Header Files</a> &nbsp; <a
+href="functions.html">Compound Members</a> &nbsp; 18 Nov 1999<o:p></o:p></span></p>
+
+</div>
+
+<meta name=robots content=noindex>
+
+<p class=MsoNormal style='margin-right:55.5pt'><span style='background:#E0E0E0'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:55.5pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>
+<h1>FDTFonts.h</h1>This is the verbatim text of the FDTFonts.h include file.<hr><div class="fragment"><pre>// Copyright © 1999 Middlesoft, Inc. All rights reserved.
+// First Created By Lee Thomason.
+// First Created On 09/08/1999.
+// Last Modified On 11/09/1999.
+
+
+
+#ifndef _FDT_FONTS_H_
+#define _FDT_FONTS_H_
+
+#include "<a class="el" href="FDT.h.html">FDT.h</a>"
+#include "<a class="el" href="FPrimitive.h.html">FPrimitive.h</a>"
+
+class <a class="el" href="class_fshape.html">FShape</a>;
+
+//	A kerning record
+
+class <a class="el" href="class_fkerningrec.html">FKerningRec</a> {
+
+public:
+
+	<a class="el" href="class_fkerningrec.html#a0">FKerningRec</a> (U16 _code1, U16 _code2, S16 _kerningAdjust);
+	void CodesWide(U16 _flag);
+	void WriteToSWFStream (<a class="el" href="class_fswfstream.html">FSWFStream</a> *b);
+
+
+private:
+
+	U16 wideCodesFlag;
+	U16 code1;
+	U16 code2;
+	S16 kerningAdjust;
+};
+
+
+// A flash object that defines a font's appearance
+
+class <a class="el" href="class_fdtdefinefont.html">FDTDefineFont</a>: public <a class="el" href="class_fdt.html">FDT</a>{
+
+public:
+	<a class="el" href="class_fdtdefinefont.html#a0">FDTDefineFont</a>(void);
+	<a class="el" href="class_fdtdefinefont.html#a1">~FDTDefineFont</a>();
+
+	U16 ID(void);
+	void AddShapeGlyph(<a class="el" href="class_fshape.html">FShape</a>* _shape);
+	int	 NumberOfGlyphs()				{ return shapeGlyphs.size(); }
+
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+
+private:
+	
+	U32 characterID;
+	std::list&lt;<a class="el" href="class_fshape.html">FShape</a>*&gt; shapeGlyphs;
+	U32 nFillBits;
+	U32 nLineBits;
+};
+
+
+// A flash object that defines a font's appearance (flash 3.0)
+
+class <a class="el" href="class_fdtdefinefont2.html">FDTDefineFont2</a> : public <a class="el" href="class_fdt.html">FDT</a>{
+
+public:
+	<a class="el" href="class_fdtdefinefont2.html#a0">FDTDefineFont2</a>(	char* _fontName, 
+					U16 _encodeType, 
+					U16 _italicFlag,
+					U16 _boldFlag );
+
+	<a class="el" href="class_fdtdefinefont2.html#a0">FDTDefineFont2</a>( char* _fontName, 
+					U16 _encodeType, 
+					U16 _italicFlag,
+					U16 _boldFlag, 
+					S16 _ascenderHeight, 
+					S16 _descenderHeight, 
+					S16 _leadingHeight );
+	<a class="el" href="class_fdtdefinefont2.html#a2">~FDTDefineFont2</a>();
+
+	void AddShapeGlyph(<a class="el" href="class_fshape.html">FShape</a>* _shape, U16 _shapeCode,S16 _shapeAdvance = 0,
+					   <a class="el" href="class_frect.html">FRect</a>* _shapeBounds = 0);
+	void AddKerningRec(<a class="el" href="class_fkerningrec.html">FKerningRec</a>* _kerningRecord);
+	U16 nIndexBits();
+	U16 ID(void);
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+private:
+	U16 fontID;
+	int hasLayoutFlag;
+	U16 encodeType;
+	int italicFlag;
+	int boldFlag;
+
+	<a class="el" href="class_fstring.html">FString</a>* fontName;
+	struct Glyph{
+		<a class="el" href="class_fshape.html">FShape</a>* shape;
+		U16		code;
+		S16		advance;
+		<a class="el" href="class_frect.html">FRect</a>*	bounds;
+	};
+	S16		ascenderHeight;
+	S16		descenderHeight;
+	S16		leadingHeight;
+	
+	std::list&lt;Glyph&gt; glyphs;
+		
+	std::list&lt;<a class="el" href="class_fkerningrec.html">FKerningRec</a>*&gt; kerningTable;
+	U32 nFillBits;
+	U32 nLineBits;
+};
+
+
+// A flash object that defines the mapping from a flash font object to a TrueType or ATM font so that a player can optionally use them
+
+class <a class="el" href="class_fdtdefinefontinfo.html">FDTDefineFontInfo</a> : public <a class="el" href="class_fdt.html">FDT</a> {
+
+public:
+	
+	<a class="el" href="class_fdtdefinefontinfo.html#a0">FDTDefineFontInfo</a>(	const char* _fontName, 
+						U16 _fontID,
+						U16 _encodeType, 
+						U16 _italicFlag,
+						U16 _boldFlag);
+	void AddCode(U16 _someCode);
+	U16 ID(void);
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+private:
+	U32 characterID;
+	<a class="el" href="class_fstring.html">FString</a>* fontName;
+	U16 encodeType;
+	U16 italicFlag;
+	U16 boldFlag;
+	std::list&lt;U16&gt; codeTable;
+	U16 fontID;
+};
+
+
+
+//	Found in DefineText.  Used to describe the glyph index and X advance value to use for a 
+//	particular character in the currently selected font for the text record.
+
+// class FGlyphEntry {
+// 
+// public:
+// 
+// 	FGlyphEntry (U16 index, S16 advance);
+// 	S16 AdvanceValue();
+// 	void IncludeNBitInfo(U16 _nIndexBits, U16 _nAdvanceBits);
+// 	void WriteToSWFStream(FSWFStream *_SWFStream);
+// 
+// 
+// private:
+// 
+// 	U16 glyphIndex;
+// 	S16 glyphAdvance;
+// 	U16 nIndexBits;
+// 	U16 nAdvanceBits;
+// 
+// };
+
+#endif</pre></div><html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./footer_files/filelist.xml">
+<title>Sunday, September 26, 1999</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>michael</o:Author>
+  <o:LastAuthor>michael</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>18</o:TotalTime>
+  <o:Created>1999-09-27T06:04:00Z</o:Created>
+  <o:LastSaved>1999-09-28T21:56:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>9</o:Words>
+  <o:Characters>56</o:Characters>
+  <o:Company>Middlesoft</o:Company>
+  <o:Lines>1</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>68</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	background:#333399;
+	border:none;
+	mso-border-alt:solid windowtext .5pt;
+	padding:0in;
+	mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:white;
+	mso-bidi-language:HE;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0in;
+	margin-right:1.0in;
+	margin-bottom:6.0pt;
+	margin-left:1.0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-language:HE;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<div style='border:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#333399'>
+
+<p class=MsoFooter align=center style='margin-right:82.5pt;text-align:center;
+tab-stops:.5in'><span style='background:#333399'>Sunday, September 26, 1999<span
+style='mso-tab-count:2'>                  </span>Flash File Format SDK<span
+style='mso-tab-count:1'>  </span><span style='mso-tab-count:1'>               </span>Middlesoft,
+Inc.</span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

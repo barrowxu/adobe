@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ZLib">
+      <UniqueIdentifier>{baf2e8a0-70be-4684-accd-34f7164d9e68}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="zlib-1.1.3\adler32.c">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib-1.1.3\compress.c">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib-1.1.3\crc32.c">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib-1.1.3\deflate.c">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib-1.1.3\gzio.c">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib-1.1.3\infblock.c">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib-1.1.3\infcodes.c">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib-1.1.3\inffast.c">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib-1.1.3\inflate.c">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib-1.1.3\inftrees.c">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib-1.1.3\infutil.c">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib-1.1.3\trees.c">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib-1.1.3\uncompr.c">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib-1.1.3\zutil.c">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="FAction.cpp" />
+    <ClCompile Include="FCT.cpp" />
+    <ClCompile Include="FDT.cpp" />
+    <ClCompile Include="FDTBitmaps.cpp" />
+    <ClCompile Include="FDTButtons.cpp" />
+    <ClCompile Include="FDTFonts.cpp" />
+    <ClCompile Include="FDTShapes.cpp" />
+    <ClCompile Include="FDTSounds.cpp" />
+    <ClCompile Include="FDTSprite.cpp" />
+    <ClCompile Include="FDTText.cpp" />
+    <ClCompile Include="FExampleBitsLossless.cpp" />
+    <ClCompile Include="FExampleButton.cpp" />
+    <ClCompile Include="FExampleCircle.cpp" />
+    <ClCompile Include="FExampleClip.cpp" />
+    <ClCompile Include="FExampleEditText.cpp" />
+    <ClCompile Include="FExampleFont.cpp" />
+    <ClCompile Include="FExampleJPeg.cpp" />
+    <ClCompile Include="FExampleMorph.cpp" />
+    <ClCompile Include="FExampleOval.cpp" />
+    <ClCompile Include="FExampleOverlap.cpp" />
+    <ClCompile Include="FExampleRectangle.cpp" />
+    <ClCompile Include="FExampleSound.cpp" />
+    <ClCompile Include="FExampleSprite.cpp" />
+    <ClCompile Include="FExampleTwoColorTriangle.cpp" />
+    <ClCompile Include="FExampleTwoShape.cpp" />
+    <ClCompile Include="FObj.cpp" />
+    <ClCompile Include="FPrimitive.cpp" />
+    <ClCompile Include="FSound.cpp" />
+    <ClCompile Include="FSWFStream.cpp" />
+    <ClCompile Include="HFAction.cpp" />
+    <ClCompile Include="HFBitmap.cpp" />
+    <ClCompile Include="HFButton.cpp" />
+    <ClCompile Include="HFExample.cpp" />
+    <ClCompile Include="HFExampleButton.cpp" />
+    <ClCompile Include="HFExampleCircle.cpp" />
+    <ClCompile Include="HFExampleFont.cpp" />
+    <ClCompile Include="HFExampleOval.cpp" />
+    <ClCompile Include="HFExampleRectangle.cpp" />
+    <ClCompile Include="HFExampleSound.cpp" />
+    <ClCompile Include="HFExampleSquare.cpp" />
+    <ClCompile Include="HFFont.cpp" />
+    <ClCompile Include="HFFrame.cpp" />
+    <ClCompile Include="HFMovie.cpp" />
+    <ClCompile Include="HFObject.cpp" />
+    <ClCompile Include="HFOval.cpp" />
+    <ClCompile Include="HFPolygon.cpp" />
+    <ClCompile Include="HFRectangle.cpp" />
+    <ClCompile Include="HFShape.cpp" />
+    <ClCompile Include="HFSound.cpp" />
+    <ClCompile Include="HFText.cpp" />
+    <ClCompile Include="swfproduce.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="zlib-1.1.3\deflate.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib-1.1.3\infblock.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib-1.1.3\infcodes.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib-1.1.3\inffast.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib-1.1.3\inffixed.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib-1.1.3\inftrees.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib-1.1.3\infutil.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib-1.1.3\trees.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib-1.1.3\zconf.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib-1.1.3\zlib.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib-1.1.3\zutil.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="F3SDK.H" />
+    <ClInclude Include="FAction.h" />
+    <ClInclude Include="FCT.h" />
+    <ClInclude Include="FDT.h" />
+    <ClInclude Include="FDTBitmaps.h" />
+    <ClInclude Include="FDTButtons.h" />
+    <ClInclude Include="FDTFonts.h" />
+    <ClInclude Include="FDTShapes.h" />
+    <ClInclude Include="FDTSounds.h" />
+    <ClInclude Include="FDTSprite.h" />
+    <ClInclude Include="FDTText.h" />
+    <ClInclude Include="FExample.h" />
+    <ClInclude Include="FObj.h" />
+    <ClInclude Include="FPrimitive.h" />
+    <ClInclude Include="FSWFStream.h" />
+    <ClInclude Include="HF3SDK.h" />
+    <ClInclude Include="HFAction.h" />
+    <ClInclude Include="HFBitmap.h" />
+    <ClInclude Include="HFButton.h" />
+    <ClInclude Include="HFColors.h" />
+    <ClInclude Include="HFExample.h" />
+    <ClInclude Include="HFFont.h" />
+    <ClInclude Include="HFFrame.h" />
+    <ClInclude Include="HFMovie.h" />
+    <ClInclude Include="HFObject.h" />
+    <ClInclude Include="HFOval.h" />
+    <ClInclude Include="HFPolygon.h" />
+    <ClInclude Include="HFRectangle.h" />
+    <ClInclude Include="HFShape.h" />
+    <ClInclude Include="HFSound.h" />
+    <ClInclude Include="HFText.h" />
+    <ClInclude Include="Macromedia.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="audio.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bm128.jpg" />
+  </ItemGroup>
+</Project>

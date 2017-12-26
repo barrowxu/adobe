@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ZLib">
+      <UniqueIdentifier>{dddb3c7a-ce56-4236-8f65-61ac24cb8fec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JPeg">
+      <UniqueIdentifier>{0b55f1f3-2b7f-4b67-8251-73a478db8bb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win32">
+      <UniqueIdentifier>{835c88e5-8d8c-452f-8804-50a95da8502d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="zlib\adler32.cpp">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\infblock.cpp">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\infcodes.cpp">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inffast.cpp">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inflate.cpp">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inftrees.cpp">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\infutil.cpp">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\uncompr.cpp">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\zutil.cpp">
+      <Filter>ZLib</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jcomapi.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jdapimin.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jdapistd.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jdcoefct.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jdcolor.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jddctmgr.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jdhuff.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jdinput.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jdmainct.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jdmarker.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jdmaster.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jdpostct.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jdsample.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jfdctint.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jidctint.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jmemmgr.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jmemnobs.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEG\jutils.cpp">
+      <Filter>JPeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\Debug.cpp">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\Display.cpp">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\Palette.cpp">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\PlayerWnd.cpp">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\sound.cpp">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\Util.cpp">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbuf.cpp" />
+    <ClCompile Include="curve.cpp" />
+    <ClCompile Include="edittext.cpp" />
+    <ClCompile Include="fixed.cpp" />
+    <ClCompile Include="geom.cpp" />
+    <ClCompile Include="global.cpp" />
+    <ClCompile Include="JPEG.CPP" />
+    <ClCompile Include="MEMCOP.CPP" />
+    <ClCompile Include="MorphInter.cpp" />
+    <ClCompile Include="mp3decoder.cpp" />
+    <ClCompile Include="RASTER.CPP" />
+    <ClCompile Include="SBITMAP.CPP" />
+    <ClCompile Include="sdisplay.cpp" />
+    <ClCompile Include="sndcodec.cpp" />
+    <ClCompile Include="sndmix.cpp" />
+    <ClCompile Include="SOBJECT.CPP" />
+    <ClCompile Include="SPLAY.CPP" />
+    <ClCompile Include="splayer.cpp" />
+    <ClCompile Include="SSTROKER.CPP" />
+    <ClCompile Include="unixfonts.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="zlib\deflate.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\infblock.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\infcodes.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inffast.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inftrees.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\infutil.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zconf.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zlib.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zutil.h">
+      <Filter>ZLib</Filter>
+    </ClInclude>
+    <ClInclude Include="JPEG\cderror.h">
+      <Filter>JPeg</Filter>
+    </ClInclude>
+    <ClInclude Include="JPEG\cdjpeg.h">
+      <Filter>JPeg</Filter>
+    </ClInclude>
+    <ClInclude Include="JPEG\jchuff.h">
+      <Filter>JPeg</Filter>
+    </ClInclude>
+    <ClInclude Include="JPEG\jconfig.h">
+      <Filter>JPeg</Filter>
+    </ClInclude>
+    <ClInclude Include="JPEG\jdct.h">
+      <Filter>JPeg</Filter>
+    </ClInclude>
+    <ClInclude Include="JPEG\jdhuff.h">
+      <Filter>JPeg</Filter>
+    </ClInclude>
+    <ClInclude Include="JPEG\jmemsys.h">
+      <Filter>JPeg</Filter>
+    </ClInclude>
+    <ClInclude Include="JPEG\jmorecfg.h">
+      <Filter>JPeg</Filter>
+    </ClInclude>
+    <ClInclude Include="JPEG\jpegint.h">
+      <Filter>JPeg</Filter>
+    </ClInclude>
+    <ClInclude Include="JPEG\jpeglib.h">
+      <Filter>JPeg</Filter>
+    </ClInclude>
+    <ClInclude Include="JPEG\jversion.h">
+      <Filter>JPeg</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32\Debug.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32\Display.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32\Fixed.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32\Palette.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32\PlayerWnd.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32\resource.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32\Sound.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32\Util.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Bitbuf.h" />
+    <ClInclude Include="bitstream.h" />
+    <ClInclude Include="CURVE.H" />
+    <ClInclude Include="edittext.h" />
+    <ClInclude Include="fixed.h" />
+    <ClInclude Include="genericfonts.h" />
+    <ClInclude Include="GEOM.H" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="JPEG.H" />
+    <ClInclude Include="mcontext.h" />
+    <ClInclude Include="MEMCOP.H" />
+    <ClInclude Include="MorphInter.h" />
+    <ClInclude Include="mp3decifc.h" />
+    <ClInclude Include="mp3decoder.h" />
+    <ClInclude Include="mp3sscdef.h" />
+    <ClInclude Include="mp3streaminfo.h" />
+    <ClInclude Include="mpegbitstream.h" />
+    <ClInclude Include="mpegheader.h" />
+    <ClInclude Include="RASTER.H" />
+    <ClInclude Include="SBITMAP.H" />
+    <ClInclude Include="sdisplay.h" />
+    <ClInclude Include="SHAPE.H" />
+    <ClInclude Include="sndcodec.h" />
+    <ClInclude Include="sndmix.h" />
+    <ClInclude Include="Sobject.h" />
+    <ClInclude Include="Splay.h" />
+    <ClInclude Include="splayer.h" />
+    <ClInclude Include="SSTROKER.H" />
+    <ClInclude Include="STAGS.H" />
+    <ClInclude Include="version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Win32\SimpleWin.rc">
+      <Filter>Win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="FlashIcon.tga" />
+    <Image Include="Win32\fsplayer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Win32\button.cur">
+      <Filter>Win32</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Win32\hand.cur">
+      <Filter>Win32</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FlashIcon.pcx" />
+  </ItemGroup>
+</Project>

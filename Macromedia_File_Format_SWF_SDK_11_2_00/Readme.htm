@@ -1,0 +1,531 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Readme_files/filelist.xml">
+<link rel=Edit-Time-Data href="./Readme_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Macromedia Flash File Format SDK</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>DY</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Troy Evans</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>18</o:TotalTime>
+  <o:LastPrinted>1999-11-12T22:31:00Z</o:LastPrinted>
+  <o:Created>2000-11-02T07:47:00Z</o:Created>
+  <o:LastSaved>2000-11-02T07:47:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>768</o:Words>
+  <o:Characters>4380</o:Characters>
+  <o:Company>Macromedia</o:Company>
+  <o:Lines>36</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>5378</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:16792199 0 0 0 65791 0;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:14.0pt;
+	mso-bidi-font-weight:normal;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:normal;}
+h4
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.2in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	tab-stops:.5in .75in 1.0in;
+	font-size:10.0pt;
+	font-family:"Century Gothic";
+	color:blue;
+	font-weight:normal;}
+h5
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:14.0pt;
+	mso-bidi-font-weight:normal;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:10.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:.8in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-footer:url("./Readme_files/header.htm") f1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:325517601;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:1291205764;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:1606422489;
+	mso-list-type:simple;
+	mso-list-template-ids:67698689;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:1641307566;
+	mso-list-type:simple;
+	mso-list-template-ids:67698703;}
+@list l3:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:1916085629;
+	mso-list-type:simple;
+	mso-list-template-ids:67698703;}
+@list l4:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050" fill="f" stroke="f">
+  <v:fill on="f"/>
+  <v:stroke on="f"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1>Macromedia Flash File Format SDK – Read me</h1>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:line id="_x0000_s1026" style='position:absolute;
+ z-index:1' from="0,4.1pt" to="434.35pt,4.1pt" o:allowincell="f"/><![endif]--><![if !vml]><span
+style='mso-ignore:vglayout;position:relative;z-index:0;left:-1px;top:4px;
+width:582px;height:7px'><img width=582 height=3
+src="./Readme_files/image001.gif" v:shapes="_x0000_s1026"></span><![endif]><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<br style='mso-ignore:vglayout' clear=ALL>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>The Macromedia Flash
+File Format (SWF) SDK provides a set of tools for developers to write
+Macromedia Flash (SWF) version 5 files. The Macromedia Flash File Format (SWF)
+SDK is comprised of a low level interface and a high level interface, both of
+which write </span>Macromedia Flash (SWF) <span style='mso-font-kerning:14.0pt'>files,
+but are intended to be used in different ways.<o:p></o:p></span></p>
+
+<h2><span style='mso-font-kerning:14.0pt'>Installation and Executing</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-font-kerning:14.0pt'><o:p></o:p></span></h2>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>The project is
+provided ready to compile on a Windows systems. A Visual C++ project file is
+provided.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l3 level1 lfo1;
+tab-stops:list .25in'><![if !supportLists]><span style='mso-font-kerning:14.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='mso-font-kerning:14.0pt'>Copy the Source
+directory to your hard disk. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l3 level1 lfo1;
+tab-stops:list .25in'><![if !supportLists]><span style='mso-font-kerning:14.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='mso-font-kerning:14.0pt'>Open the
+Workspace file, swfproduce.dsw with Visual C++. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l3 level1 lfo1;
+tab-stops:list .25in'><![if !supportLists]><span style='mso-font-kerning:14.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='mso-font-kerning:14.0pt'>Build All <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l3 level1 lfo1;
+tab-stops:list .25in'><![if !supportLists]><span style='mso-font-kerning:14.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='mso-font-kerning:14.0pt'>Now you should be
+able to run swfproduce.exe directly from the environment. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>Note that if you run
+from the command line, the bm128.jpg and audio.wav files need to be in the
+current directory. This should not be a problem if you run from the Visual C++
+IDE.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>Execution will briefly
+bring up a console app which should run and quickly complete. The app will
+write a series of sample </span>Macromedia Flash (SWF) <span style='mso-font-kerning:
+14.0pt'>files to the local directory. You can then view the sample .</span>
+Macromedia Flash (SWF) <span style='mso-font-kerning:14.0pt'>files and the
+example .cpp files that created them, which have the same base name. For
+instant </span>Macromedia Flash (SWF) <span style='mso-font-kerning:14.0pt'>gratification,
+try looking HFExample.swf.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>There will be 2 sets
+of examples written to your disk:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+mso-font-kerning:14.0pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='mso-font-kerning:14.0pt'>HFExample*,
+examples created with the high level manager. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+mso-font-kerning:14.0pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='mso-font-kerning:14.0pt'>FExample*,
+examples created with the low level manager. <o:p></o:p></span></p>
+
+<h2><span style='mso-font-kerning:14.0pt'>Documentation<o:p></o:p></span></h2>
+
+<p class=MsoNormal>The Macromedia Flash File Format (SWF) SDK Documentation is
+provided in both HTML and Microsoft Word formats. Documentation is provided
+for:</p>
+
+<p class=MsoNormal style='margin-left:20.4pt;text-indent:-.25in;mso-list:l2 level1 lfo5;
+tab-stops:list 20.4pt'><![if !supportLists]><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>The Macromedia Flash (SWF) File Format, explaining how
+the file format works.</p>
+
+<p class=MsoNormal style='margin-left:20.4pt;text-indent:-.25in;mso-list:l2 level1 lfo5;
+tab-stops:list 20.4pt'><![if !supportLists]><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>The Macromedia Flash (SWF) Manager, which gives
+programmers an API with which to write Macromedia Flash (SWF) files.</p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>Additional notes about the documentation can be found in the
+Documentation subdirectory.<o:p></o:p></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>The first 2
+subdirectories below Macromedia_Flash_File_Format_(SWF)_SDK are <b
+style='mso-bidi-font-weight:normal'>HTML</b> and <b style='mso-bidi-font-weight:
+normal'>Microsoft Word</b>. The entire documentation is echoed in both formats.
+(Except the API_Docs which are only available in HTML format, but the HTML
+files are in the Microsoft Word tree for completeness.)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>The </span><b>Macromedia
+Flash File Format (SWF)</b> <b style='mso-bidi-font-weight:normal'><span
+style='mso-font-kerning:14.0pt'>_Documentation</span></b><span
+style='mso-font-kerning:14.0pt'> directory contains an explanation of the
+Macromedia Flash File Format (SWF). The file “intro.doc/html” provides a basic
+introduction and links to the individual </span>Macromedia Flash (SWF)<span
+style='mso-font-kerning:14.0pt'> topics.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>The </span><b>Macromedia
+Flash (SWF)</b> <b style='mso-bidi-font-weight:normal'><span style='mso-font-kerning:
+14.0pt'>_Manager_Docs </span></b><span style='mso-font-kerning:14.0pt'>directory
+contains the “SDK.doc/html” file which describes the basics of using the high
+and low level manager to create </span>Macromedia Flash (SWF) <span
+style='mso-font-kerning:14.0pt'>files. The subdirectory <b style='mso-bidi-font-weight:
+normal'>API_Docs</b> is a reference (in html) to the high and low level API.
+The *_files subdirectories contain images for the html docs, and should be
+ignored.<o:p></o:p></span></p>
+
+<b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";mso-font-kerning:14.0pt;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+clear=all style='page-break-before:always'>
+</span></i></b>
+
+<h2><span style='mso-font-kerning:14.0pt'>Using the </span>Macromedia Flash
+File Format (SWF) <span style='mso-font-kerning:14.0pt'>SDK in other programs</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-font-kerning:14.0pt'><o:p></o:p></span></h2>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l4 level1 lfo3;
+tab-stops:list .25in'><![if !supportLists]><span style='mso-font-kerning:14.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='mso-font-kerning:14.0pt'>Add all the
+Macromedia File Format (SWF) SDK files to your project, including the
+subdirectories PCM and ZLib-1.1.3. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l4 level1 lfo3;
+tab-stops:list .25in'><![if !supportLists]><span style='mso-font-kerning:14.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='mso-font-kerning:14.0pt'>Remove all
+example files HFExample*.* and FExample*.*<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l4 level1 lfo3;
+tab-stops:list .25in'><![if !supportLists]><span style='mso-font-kerning:14.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='mso-font-kerning:14.0pt'>Remove
+swfproduce.cpp (contains main() ) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l4 level1 lfo3;
+tab-stops:list .25in'><![if !supportLists]><span style='mso-font-kerning:14.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='mso-font-kerning:14.0pt'>Include the HF3SDK
+header in your files that use the high level SDK, and the F3SDK header for
+files that use the low level </span>Macromedia Flash File Format (SWF) <span
+style='mso-font-kerning:14.0pt'>SDK. <o:p></o:p></span></p>
+
+<h2><span style='mso-font-kerning:14.0pt'>The Low Level Interface</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-font-kerning:14.0pt'><o:p></o:p></span></h2>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>The low level
+interface can write </span>Macromedia Flash (SWF) <span style='mso-font-kerning:
+14.0pt'>files of any type. Every </span>Macromedia Flash (SWF) 5 <span
+style='mso-font-kerning:14.0pt'>type (covered in the </span>Macromedia Flash
+File Format (SWF) <span style='mso-font-kerning:14.0pt'>Documentation) is
+represented by a class in the low level manager. Classes that begin with ‘F’
+are low level classes. Examples of the low level interface are in the FExample*
+files.<span style="mso-spacerun: yes">  </span>You would use the low level
+interface if you understand </span>Macromedia Flash (SWF) <span
+style='mso-font-kerning:14.0pt'>and wish to write </span>Macromedia Flash (SWF)<span
+style='mso-font-kerning:14.0pt'> tags directly, or if you are trying to write
+unusual </span>Macromedia Flash (SWF) <span style='mso-font-kerning:14.0pt'>files.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>Documentation for the
+low level classes is provided in hyper linked html, located in the
+“API_Documentation” subdirectory. It is in Java doc format. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>The low level manager
+contains many examples, for which both the SWF file and the .cpp file have the
+FExample* prefix.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>To examine some sample
+code, the best place to start is FExampleBitsLossless.cpp. The lossless bitmap
+example has the most detailed documentation. </span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:
+Arial;mso-bidi-font-family:"Times New Roman";mso-font-kerning:14.0pt'><o:p></o:p></span></b></p>
+
+<h2><span style='mso-font-kerning:14.0pt'>The High Level Interface</span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-font-kerning:14.0pt'><o:p></o:p></span></h2>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>The high level
+interface is used to write </span>Macromedia Flash (SWF)<span style='mso-font-kerning:
+14.0pt'> in a more natural way. The developer can add Rectangle, Circle,
+Bitmap, EditText, and other primitive objects to Frames in a Movie. The Movie
+can then be serialized to disk. It's an easy, fast way to write </span>Macromedia
+Flash (SWF)<span style='mso-font-kerning:14.0pt'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>High level classes
+begin with ‘HF’. Examples of the high level interface are in the HFExample*
+files.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>Documentation for the
+high level classes is provided in hyper linked html, located in the
+“API_Documentation” subdirectory. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>To review some sample
+high level code, the best place to start is HFCircle.cpp, since this is the
+example easiest to understand. HFExample.cpp is also worthwhile to examine;
+while much larger, it demonstrates all of the features included in the high
+level manager. <o:p></o:p></span></p>
+
+<h2><span style='mso-font-kerning:14.0pt'>Thanks!<o:p></o:p></span></h2>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'>We welcome your
+feedback and comments on the SDK. You can send them to Flash_Format@macromedia.com.
+We hope you find the Macromedia Flash File Format (SWF) SDK useful and
+productive. We welcome feedback and look forward to hearing from you. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-font-kerning:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h5><i style='mso-bidi-font-style:normal'><span style='font-family:Arial;
+mso-bidi-font-family:"Times New Roman"'>The Macromedia Flash Team<o:p></o:p></span></i></h5>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>

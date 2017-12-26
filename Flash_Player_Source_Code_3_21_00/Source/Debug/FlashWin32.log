@@ -1,0 +1,166 @@
+﻿Build started 11/16/2015 3:10:44 PM.
+     1>Project "C:\Users\Jonathan_Moore\Documents\Workspace\Bitbucket\Flash_Player_Source_Code_SDK\Flash_Player_Source_Code_3_21_00\Source\FlashWin32.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _DEBUG /D WIN32 /D _WINDOWS /D USE_JPEG /D FRAMESPERSEC /D SOUND /D EDITTEXT /D FLASHMP3 /D _VC80_UPGRADE=0x0600 /Gm /EHsc /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo".\Debug\\" /Fd".\Debug\vc140.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt  /Zm150   /Zm150 bitbuf.cpp curve.cpp edittext.cpp fixed.cpp geom.cpp global.cpp JPEG.CPP JPEG\jcomapi.cpp JPEG\jdapimin.cpp JPEG\jdapistd.cpp JPEG\jdcoefct.cpp JPEG\jdcolor.cpp JPEG\jddctmgr.cpp JPEG\jdhuff.cpp JPEG\jdinput.cpp JPEG\jdmainct.cpp JPEG\jdmarker.cpp JPEG\jdmaster.cpp JPEG\jdpostct.cpp JPEG\jdsample.cpp JPEG\jfdctint.cpp JPEG\jidctint.cpp JPEG\jmemmgr.cpp JPEG\jmemnobs.cpp JPEG\jutils.cpp MEMCOP.CPP MorphInter.cpp mp3decoder.cpp RASTER.CPP SBITMAP.CPP sdisplay.cpp sndcodec.cpp sndmix.cpp SOBJECT.CPP SPLAY.CPP splayer.cpp SSTROKER.CPP unixfonts.cpp Win32\Debug.cpp Win32\Display.cpp Win32\Palette.cpp Win32\PlayerWnd.cpp Win32\sound.cpp Win32\Util.cpp zlib\adler32.cpp zlib\infblock.cpp zlib\infcodes.cpp zlib\inffast.cpp zlib\inflate.cpp zlib\inftrees.cpp zlib\infutil.cpp zlib\uncompr.cpp zlib\zutil.cpp
+         zutil.cpp
+         uncompr.cpp
+         infutil.cpp
+         inftrees.cpp
+         inflate.cpp
+         inffast.cpp
+         infcodes.cpp
+         infblock.cpp
+         adler32.cpp
+         Util.cpp
+         sound.cpp
+         PlayerWnd.cpp
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\win32\playerwnd.cpp(318): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\win32\playerwnd.cpp(669): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\win32\playerwnd.cpp(1032): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+         Palette.cpp
+         Display.cpp
+         Debug.cpp
+         unixfonts.cpp
+         SSTROKER.CPP
+         splayer.cpp
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\splayer.cpp(374): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\splayer.cpp(1439): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\splayer.cpp(2411): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\splayer.cpp(2412): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\splayer.cpp(3868): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\splayer.cpp(3869): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\splayer.cpp(4819): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\splayer.cpp(4826): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\splayer.cpp(4861): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\splayer.cpp(4880): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+         SPLAY.CPP
+         SOBJECT.CPP
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\sobject.cpp(46): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\sobject.cpp(787): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(568): note: see declaration of 'stricmp'
+         Generating Code...
+         Compiling...
+         sndmix.cpp
+         sndcodec.cpp
+         sdisplay.cpp
+         SBITMAP.CPP
+         RASTER.CPP
+         mp3decoder.cpp
+         MorphInter.cpp
+         MEMCOP.CPP
+         jutils.cpp
+         jmemnobs.cpp
+         jmemmgr.cpp
+         jidctint.cpp
+         jfdctint.cpp
+         jdsample.cpp
+         jdpostct.cpp
+         jdmaster.cpp
+         jdmarker.cpp
+         jdmainct.cpp
+         jdinput.cpp
+         jdhuff.cpp
+         Generating Code...
+         Compiling...
+         jddctmgr.cpp
+         jdcolor.cpp
+         jdcoefct.cpp
+         jdapistd.cpp
+         jdapimin.cpp
+         jcomapi.cpp
+         JPEG.CPP
+         global.cpp
+         geom.cpp
+         fixed.cpp
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\fixed.cpp(259): warning C4838: conversion from 'unsigned long' to 'const S32' requires a narrowing conversion
+         edittext.cpp
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\edittext.cpp(280): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\edittext.cpp(284): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\edittext.cpp(289): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+     1>c:\users\jonathan_moore\documents\workspace\bitbucket\flash_player_source_code_sdk\flash_player_source_code_3_21_00\source\edittext.cpp(301): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+         curve.cpp
+         bitbuf.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _VC80_UPGRADE=0x0600 /l"0x0409" /IWin32 /nologo /fo".\Debug\SimpleWin.res" Win32\SimpleWin.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\FlashWin32.exe" /INCREMENTAL /NOLOGO odbc32.lib odbccp32.lib wsock32.lib winmm.lib imm32.lib mp3decoder.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:libcmt /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:".\Debug\FlashWin32.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\FlashWin32.lib" /MACHINE:X86 /SAFESEH:NO .\Debug\SimpleWin.res
+         .\Debug\bitbuf.obj
+         .\Debug\curve.obj
+         .\Debug\edittext.obj
+         .\Debug\fixed.obj
+         .\Debug\geom.obj
+         .\Debug\global.obj
+         .\Debug\JPEG.obj
+         .\Debug\jcomapi.obj
+         .\Debug\jdapimin.obj
+         .\Debug\jdapistd.obj
+         .\Debug\jdcoefct.obj
+         .\Debug\jdcolor.obj
+         .\Debug\jddctmgr.obj
+         .\Debug\jdhuff.obj
+         .\Debug\jdinput.obj
+         .\Debug\jdmainct.obj
+         .\Debug\jdmarker.obj
+         .\Debug\jdmaster.obj
+         .\Debug\jdpostct.obj
+         .\Debug\jdsample.obj
+         .\Debug\jfdctint.obj
+         .\Debug\jidctint.obj
+         .\Debug\jmemmgr.obj
+         .\Debug\jmemnobs.obj
+         .\Debug\jutils.obj
+         .\Debug\MEMCOP.obj
+         .\Debug\MorphInter.obj
+         .\Debug\mp3decoder.obj
+         .\Debug\RASTER.obj
+         .\Debug\SBITMAP.obj
+         .\Debug\sdisplay.obj
+         .\Debug\sndcodec.obj
+         .\Debug\sndmix.obj
+         .\Debug\SOBJECT.obj
+         .\Debug\SPLAY.obj
+         .\Debug\splayer.obj
+         .\Debug\SSTROKER.obj
+         .\Debug\unixfonts.obj
+         .\Debug\Debug.obj
+         .\Debug\Display.obj
+         .\Debug\Palette.obj
+         .\Debug\PlayerWnd.obj
+         .\Debug\sound.obj
+         .\Debug\Util.obj
+         .\Debug\adler32.obj
+         .\Debug\infblock.obj
+         .\Debug\infcodes.obj
+         .\Debug\inffast.obj
+         .\Debug\inflate.obj
+         .\Debug\inftrees.obj
+         .\Debug\infutil.obj
+         .\Debug\uncompr.obj
+         .\Debug\zutil.obj
+         FlashWin32.vcxproj -> C:\Users\Jonathan_Moore\Documents\Workspace\Bitbucket\Flash_Player_Source_Code_SDK\Flash_Player_Source_Code_3_21_00\Source\.\Debug\FlashWin32.exe
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\bscmake.exe /nologo /o".\Debug\FlashWin32.bsc" .\Debug\bitbuf.sbr .\Debug\curve.sbr .\Debug\edittext.sbr .\Debug\fixed.sbr .\Debug\geom.sbr .\Debug\global.sbr .\Debug\JPEG.sbr .\Debug\jcomapi.sbr .\Debug\jdapimin.sbr .\Debug\jdapistd.sbr .\Debug\jdcoefct.sbr .\Debug\jdcolor.sbr .\Debug\jddctmgr.sbr .\Debug\jdhuff.sbr .\Debug\jdinput.sbr .\Debug\jdmainct.sbr .\Debug\jdmarker.sbr .\Debug\jdmaster.sbr .\Debug\jdpostct.sbr .\Debug\jdsample.sbr .\Debug\jfdctint.sbr .\Debug\jidctint.sbr .\Debug\jmemmgr.sbr .\Debug\jmemnobs.sbr .\Debug\jutils.sbr .\Debug\MEMCOP.sbr .\Debug\MorphInter.sbr .\Debug\mp3decoder.sbr .\Debug\RASTER.sbr .\Debug\SBITMAP.sbr .\Debug\sdisplay.sbr .\Debug\sndcodec.sbr .\Debug\sndmix.sbr .\Debug\SOBJECT.sbr .\Debug\SPLAY.sbr .\Debug\splayer.sbr .\Debug\SSTROKER.sbr .\Debug\unixfonts.sbr .\Debug\Debug.sbr .\Debug\Display.sbr .\Debug\Palette.sbr .\Debug\PlayerWnd.sbr .\Debug\sound.sbr .\Debug\Util.sbr .\Debug\adler32.sbr .\Debug\infblock.sbr .\Debug\infcodes.sbr .\Debug\inffast.sbr .\Debug\inflate.sbr .\Debug\inftrees.sbr .\Debug\infutil.sbr .\Debug\uncompr.sbr .\Debug\zutil.sbr
+     1>Done Building Project "C:\Users\Jonathan_Moore\Documents\Workspace\Bitbucket\Flash_Player_Source_Code_SDK\Flash_Player_Source_Code_3_21_00\Source\FlashWin32.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:09.61

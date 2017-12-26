@@ -1,0 +1,1064 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./header_files/filelist.xml">
+<title>FFFSDK</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>michael</o:Author>
+  <o:LastAuthor>michael</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>80</o:TotalTime>
+  <o:Created>1999-09-28T21:47:00Z</o:Created>
+  <o:LastSaved>1999-09-29T01:42:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>48</o:Words>
+  <o:Characters>277</o:Characters>
+  <o:Company>Middlesoft</o:Company>
+  <o:Lines>2</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>340</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=Stylesheet type="text/css" media=all href=doxygen.css>
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=blue style='tab-interval:.5in'>
+<!-- Insert HTML here --><RIGHT>
+
+<div class=Section1>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+mso-border-shadow:yes'>
+
+<p class=MsoNormal style='margin-right:55.5pt;border:none;mso-border-alt:solid windowtext 1.0pt;
+padding:0in;mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt;mso-border-shadow:yes'><span
+style='background:#E0E0E0'><span style="mso-spacerun: yes">&nbsp;</span><a
+href="hierarchy.html">Class Hierarchy</a> &nbsp; <a href="classes.html">Alphabetical
+List</a> &nbsp; <a href="headers.html">Header Files</a> &nbsp; <a
+href="functions.html">Compound Members</a> &nbsp; 18 Nov 1999<o:p></o:p></span></p>
+
+</div>
+
+<meta name=robots content=noindex>
+
+<p class=MsoNormal style='margin-right:55.5pt'><span style='background:#E0E0E0'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:55.5pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>
+<h1>FAction.h</h1>This is the verbatim text of the FAction.h include file.<hr><div class="fragment"><pre>// Copyright © 1999 Middlesoft, Inc. All rights reserved.
+// First Created By Lee Thomason.
+// First Created On 09/08/1999.
+// Last Modified On 11/09/1999.
+
+
+
+#ifndef _F_ACTION_H_ 
+#define _F_ACTION_H_ 
+
+#include "Macromedia.h"
+#include "<a class="el" href="FSWFStream.h.html">FSWFStream.h</a>"
+
+class <a class="el" href="class_fstring.html">FString</a>;
+
+
+
+
+class <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream) = 0;
+};
+
+
+
+
+
+class <a class="el" href="class_factionadd.html">FActionAdd</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionadd.html#a0">FActionAdd</a>()	{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionAdd);  }
+};
+
+
+
+
+
+class <a class="el" href="class_factionand.html">FActionAnd</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionand.html#a0">FActionAnd</a>()   {}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionAnd);  }
+};
+
+
+
+
+
+class <a class="el" href="class_factionasciitochar.html">FActionAsciiToChar</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionasciitochar.html#a0">FActionAsciiToChar</a>()			{}
+	
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionAsciiToChar); }
+};
+
+
+
+
+
+class <a class="el" href="class_factioncall.html">FActionCall</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factioncall.html#a0">FActionCall</a>()		{}
+
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionCall);
+																// Write the length since the high bit is set in the action tag
+																_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a5">WriteWord</a>(0);
+															}
+};
+
+
+
+
+class <a class="el" href="class_factionchartoascii.html">FActionCharToAscii</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionchartoascii.html#a0">FActionCharToAscii</a>()	{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionCharToAscii); }
+};
+
+
+
+
+class <a class="el" href="class_factionclonesprite.html">FActionCloneSprite</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionclonesprite.html#a0">FActionCloneSprite</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionCloneSprite);  }
+};
+
+
+
+
+class <a class="el" href="class_factiondivide.html">FActionDivide</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factiondivide.html#a0">FActionDivide</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionDivide);	}
+};
+
+
+
+
+class <a class="el" href="class_factionenddrag.html">FActionEndDrag</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionenddrag.html#a0">FActionEndDrag</a>()	{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionEndDrag);	}
+};
+
+
+
+
+class <a class="el" href="class_factionequals.html">FActionEquals</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionequals.html#a0">FActionEquals</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionEquals);	}
+};
+
+
+
+
+class <a class="el" href="class_factiongetproperty.html">FActionGetProperty</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>{
+
+public:
+	<a class="el" href="class_factiongetproperty.html#a0">FActionGetProperty</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionGetProperty);	}
+};
+
+
+
+
+
+class <a class="el" href="class_factiongettime.html">FActionGetTime</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factiongettime.html#a0">FActionGetTime</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionGetTime);	}
+};
+
+
+
+class <a class="el" href="class_factiongeturl.html">FActionGetURL</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	
+
+
+	<a class="el" href="class_factiongeturl.html#a0">FActionGetURL</a>(<a class="el" href="class_fstring.html">FString</a> *_url, <a class="el" href="class_fstring.html">FString</a> *_window);
+	
+	<a class="el" href="class_factiongeturl.html#a1">~FActionGetURL</a>();
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+private:	
+	<a class="el" href="class_fstring.html">FString</a> *url;
+	<a class="el" href="class_fstring.html">FString</a> *window;
+};
+
+
+
+
+class <a class="el" href="class_factiongeturl2.html">FActionGetURL2</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:	
+
+
+
+	<a class="el" href="class_factiongeturl2.html#a0">FActionGetURL2</a>(U8 _method);
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+private:
+	U8 method;
+};
+
+
+
+
+class <a class="el" href="class_factiongetvariable.html">FActionGetVariable</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factiongetvariable.html#a0">FActionGetVariable</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionGetVariable);	}
+};
+
+
+
+
+class <a class="el" href="class_factiongotoframe.html">FActionGotoFrame</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+
+
+
+	<a class="el" href="class_factiongotoframe.html#a0">FActionGotoFrame</a>(U16 frameIndex);
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+private:
+	U16 frameIndex;
+};
+
+
+
+
+class <a class="el" href="class_factiongotoframe2.html">FActionGotoFrame2</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+
+
+
+
+	<a class="el" href="class_factiongotoframe2.html#a0">FActionGotoFrame2</a>(U8 _play);
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+private:
+	U8 play;
+};
+
+
+
+
+class <a class="el" href="class_factiongotolabel.html">FActionGotoLabel</a>  : public <a class="el" href="class_factionrecord.html">FActionRecord</a> 
+{
+public:
+	
+
+
+	<a class="el" href="class_factiongotolabel.html#a0">FActionGotoLabel</a>(<a class="el" href="class_fstring.html">FString</a>* _label);
+	
+	<a class="el" href="class_factiongotolabel.html#a1">~FActionGotoLabel</a>();
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+private:	
+	<a class="el" href="class_fstring.html">FString</a> *label;
+};
+
+
+
+
+class <a class="el" href="class_factionif.html">FActionIf</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+
+
+
+	<a class="el" href="class_factionif.html#a0">FActionIf</a>(S16 _branchOffset);
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+private:
+	S16 branchOffset;
+};
+
+
+
+
+class <a class="el" href="class_factionjump.html">FActionJump</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{ 
+public:
+	
+
+
+	<a class="el" href="class_factionjump.html#a0">FActionJump</a>(S16 _branchOffset);
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+private:
+	S16 branchOffset;
+};
+
+
+
+
+class <a class="el" href="class_factionless.html">FActionLess</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionless.html#a0">FActionLess</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionLess);	}
+};
+
+
+
+
+class <a class="el" href="class_factionmbasciitochar.html">FActionMBAsciiToChar</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionmbasciitochar.html#a0">FActionMBAsciiToChar</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionMBAsciiToChar);	}
+};
+
+
+
+
+class <a class="el" href="class_factionmbchartoascii.html">FActionMBCharToAscii</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionmbchartoascii.html#a0">FActionMBCharToAscii</a>()		{}
+	
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionMBCharToAscii);	}
+};
+
+
+
+
+
+class <a class="el" href="class_factionmbstringextract.html">FActionMBStringExtract</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionmbstringextract.html#a0">FActionMBStringExtract</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionMBStringExtract);	}
+};
+
+
+
+
+class <a class="el" href="class_factionmbstringlength.html">FActionMBStringLength</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionmbstringlength.html#a0">FActionMBStringLength</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionMBStringLength );	}
+};
+
+
+
+
+class <a class="el" href="class_factionmultiply.html">FActionMultiply</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionmultiply.html#a0">FActionMultiply</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionMultiply);	}
+};
+
+
+
+
+class <a class="el" href="class_factionnextframe.html">FActionNextFrame</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionnextframe.html#a0">FActionNextFrame</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionNextFrame);	}
+};
+
+
+
+
+class <a class="el" href="class_factionnot.html">FActionNot</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionnot.html#a0">FActionNot</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionNot);	}
+};
+
+
+
+
+class <a class="el" href="class_factionor.html">FActionOr</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionor.html#a0">FActionOr</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionOr);	}
+};
+
+
+
+
+class <a class="el" href="class_factionplay.html">FActionPlay</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionplay.html#a0">FActionPlay</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionPlay);	}
+};
+
+
+
+
+class <a class="el" href="class_factionpop.html">FActionPop</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionpop.html#a0">FActionPop</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionPop);	}
+};
+
+
+
+
+class <a class="el" href="class_factionprevframe.html">FActionPrevFrame</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionprevframe.html#a0">FActionPrevFrame</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionPrevFrame);	}
+};
+
+
+
+
+
+class <a class="el" href="class_factionpush.html">FActionPush</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	
+
+
+	<a class="el" href="class_factionpush.html#a0">FActionPush</a>(<a class="el" href="class_fstring.html">FString</a>* _string);
+	
+
+
+	<a class="el" href="class_factionpush.html#a0">FActionPush</a>(FLOAT _number);
+	
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+private:
+	<a class="el" href="class_fstring.html">FString</a>* string;
+	FLOAT number;
+	U8 type;
+};
+
+
+
+
+class <a class="el" href="class_factionrandomnumber.html">FActionRandomNumber</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionrandomnumber.html#a0">FActionRandomNumber</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionRandomNumber );	}
+};
+
+
+
+
+class <a class="el" href="class_factionremovesprite.html">FActionRemoveSprite</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionremovesprite.html#a0">FActionRemoveSprite</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionRemoveSprite);	}
+};
+
+
+
+
+class <a class="el" href="class_factionsetproperty.html">FActionSetProperty</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionsetproperty.html#a0">FActionSetProperty</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionSetProperty);	}
+};
+
+
+
+
+class <a class="el" href="class_factionsettarget.html">FActionSetTarget</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+
+
+
+	<a class="el" href="class_factionsettarget.html#a0">FActionSetTarget</a>(<a class="el" href="class_fstring.html">FString</a>* _targetName);
+	
+	<a class="el" href="class_factionsettarget.html#a1">~FActionSetTarget</a>();
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+private:
+	<a class="el" href="class_fstring.html">FString</a> *targetName;
+};
+
+
+
+
+
+class <a class="el" href="class_factionsettarget2.html">FActionSetTarget2</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionsettarget2.html#a0">FActionSetTarget2</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionSetTarget2);	}
+};
+
+
+
+
+class <a class="el" href="class_factionsetvariable.html">FActionSetVariable</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionsetvariable.html#a0">FActionSetVariable</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionSetVariable);	}
+};
+
+
+
+
+class <a class="el" href="class_factionstartdrag.html">FActionStartDrag</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionstartdrag.html#a0">FActionStartDrag</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionStartDrag);	}
+};
+
+
+
+
+class <a class="el" href="class_factionstop.html">FActionStop</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionstop.html#a0">FActionStop</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionStop);	}
+};
+
+
+
+
+class <a class="el" href="class_factionstopsounds.html">FActionStopSounds</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionstopsounds.html#a0">FActionStopSounds</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionStopSounds);	}
+};
+
+
+
+
+class <a class="el" href="class_factionstringadd.html">FActionStringAdd</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionstringadd.html#a0">FActionStringAdd</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionStringAdd);	}
+};
+
+
+
+
+class <a class="el" href="class_factionstringequals.html">FActionStringEquals</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionstringequals.html#a0">FActionStringEquals</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionStringEquals);	}
+};
+
+
+
+
+class <a class="el" href="class_factionstringextract.html">FActionStringExtract</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionstringextract.html#a0">FActionStringExtract</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionStringExtract);	}
+};
+
+
+
+
+class <a class="el" href="class_factionstringlength.html">FActionStringLength</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionstringlength.html#a0">FActionStringLength</a>()		{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionStringLength);	}
+};
+
+
+
+
+
+class <a class="el" href="class_factionstringless.html">FActionStringLess</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factionstringless.html#a0">FActionStringLess</a>()	{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionStringLess);	}
+};
+
+
+
+
+
+class <a class="el" href="class_factionsubtract.html">FActionSubtract</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a> 
+{
+public:
+	<a class="el" href="class_factionsubtract.html#a0">FActionSubtract</a>()	{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionSubtract);	}
+};
+
+
+
+
+
+class <a class="el" href="class_factiontogglequality.html">FActionToggleQuality</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factiontogglequality.html#a0">FActionToggleQuality</a>()	{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionToggleQuality);	}
+};
+
+
+
+
+class <a class="el" href="class_factiontointeger.html">FActionToInteger</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factiontointeger.html#a0">FActionToInteger</a>()	{}
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionToInteger);	}
+};
+
+
+
+
+class <a class="el" href="class_factiontrace.html">FActionTrace</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:
+	<a class="el" href="class_factiontrace.html#a0">FActionTrace</a>();
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream)	{	_SWFStream-&gt;<a class="el" href="class_fswfstream.html#a6">WriteByte</a>(sactionTrace);	}
+};
+
+
+
+class <a class="el" href="class_factionwaitforframe.html">FActionWaitForFrame</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:	
+	
+
+
+	<a class="el" href="class_factionwaitforframe.html#a0">FActionWaitForFrame</a>(U16 _frameIndex, U16 skipCount);
+	
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+private:
+	U16 frameIndex;
+	U16 skipCount;
+};
+
+
+
+class <a class="el" href="class_factionwaitforframe2.html">FActionWaitForFrame2</a> : public <a class="el" href="class_factionrecord.html">FActionRecord</a>
+{
+public:	
+	
+
+
+	<a class="el" href="class_factionwaitforframe2.html#a0">FActionWaitForFrame2</a>(U8 _skipCount);
+	
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+private:
+	U8 skipCount;
+};
+
+
+
+
+
+
+class FActionCondition 
+{
+	public:
+		
+		FActionCondition();   
+		
+		~FActionCondition();
+
+		void Clear();
+		
+
+
+		void AddActionRecord(<a class="el" href="class_factionrecord.html">FActionRecord</a>* _ActionRecord);
+
+
+
+		void AddKeyCode(U32 keyCode);
+
+
+
+		void AddCondition(U16 _condition);
+		
+
+
+		void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+
+
+		void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream, int lastFlag);
+	
+	
+	private:
+		std::list&lt;<a class="el" href="class_factionrecord.html">FActionRecord</a>*&gt; actionRecordList;
+		U16 conditionFlags;
+};
+
+/*
+class FActionConditionList
+{
+public:
+	FActionConditionList();
+	~FActionConditionList();
+
+	void AddActionCondition(FActionCondition* _ActionCondition);
+	U32  Size();
+	void WriteToSWFStream(FSWFStream* _SWFStream);
+
+private:
+	std::list&lt;FActionCondition*&gt; conditionList;
+};
+*/
+#endif</pre></div><html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./footer_files/filelist.xml">
+<title>Sunday, September 26, 1999</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>michael</o:Author>
+  <o:LastAuthor>michael</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>18</o:TotalTime>
+  <o:Created>1999-09-27T06:04:00Z</o:Created>
+  <o:LastSaved>1999-09-28T21:56:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>9</o:Words>
+  <o:Characters>56</o:Characters>
+  <o:Company>Middlesoft</o:Company>
+  <o:Lines>1</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>68</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	background:#333399;
+	border:none;
+	mso-border-alt:solid windowtext .5pt;
+	padding:0in;
+	mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:white;
+	mso-bidi-language:HE;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0in;
+	margin-right:1.0in;
+	margin-bottom:6.0pt;
+	margin-left:1.0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-language:HE;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<div style='border:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#333399'>
+
+<p class=MsoFooter align=center style='margin-right:82.5pt;text-align:center;
+tab-stops:.5in'><span style='background:#333399'>Sunday, September 26, 1999<span
+style='mso-tab-count:2'>                  </span>Flash File Format SDK<span
+style='mso-tab-count:1'>  </span><span style='mso-tab-count:1'>               </span>Middlesoft,
+Inc.</span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

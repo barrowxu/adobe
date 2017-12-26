@@ -1,0 +1,1089 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./header_files/filelist.xml">
+<title>FFFSDK</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>michael</o:Author>
+  <o:LastAuthor>michael</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>80</o:TotalTime>
+  <o:Created>1999-09-28T21:47:00Z</o:Created>
+  <o:LastSaved>1999-09-29T01:42:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>48</o:Words>
+  <o:Characters>277</o:Characters>
+  <o:Company>Middlesoft</o:Company>
+  <o:Lines>2</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>340</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=Stylesheet type="text/css" media=all href=doxygen.css>
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=blue style='tab-interval:.5in'>
+<!-- Insert HTML here --><RIGHT>
+
+<div class=Section1>
+
+<div style='border:solid windowtext 1.0pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+mso-border-shadow:yes'>
+
+<p class=MsoNormal style='margin-right:55.5pt;border:none;mso-border-alt:solid windowtext 1.0pt;
+padding:0in;mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt;mso-border-shadow:yes'><span
+style='background:#E0E0E0'><span style="mso-spacerun: yes">&nbsp;</span><a
+href="hierarchy.html">Class Hierarchy</a> &nbsp; <a href="classes.html">Alphabetical
+List</a> &nbsp; <a href="headers.html">Header Files</a> &nbsp; <a
+href="functions.html">Compound Members</a> &nbsp; 18 Nov 1999<o:p></o:p></span></p>
+
+</div>
+
+<meta name=robots content=noindex>
+
+<p class=MsoNormal style='margin-right:55.5pt'><span style='background:#E0E0E0'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:55.5pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>
+<h1>FDTShapes.h</h1>This is the verbatim text of the FDTShapes.h include file.<hr><div class="fragment"><pre>// Copyright © 1999 Middlesoft, Inc. All rights reserved.
+// First Created By Lee Thomason.
+// First Created On 09/08/1999.
+// Last Modified On 11/09/1999.
+
+
+
+#ifndef _FDT_SHAPES_H_
+#define _FDT_SHAPES_H_
+
+#include "Macromedia.h"
+#include "<a class="el" href="FDT.h.html">FDT.h</a>"
+#include "<a class="el" href="FSWFStream.h.html">FSWFStream.h</a>"
+#include "<a class="el" href="FPrimitive.h.html">FPrimitive.h</a>"
+
+class <a class="el" href="class_fmorphfillstyle.html">FMorphFillStyle</a>;
+class <a class="el" href="class_fmorphlinestyle.html">FMorphLineStyle</a>;
+class <a class="el" href="class_fshaperec.html">FShapeRec</a>;
+class <a class="el" href="class_ffillstyle.html">FFillStyle</a>;
+class <a class="el" href="class_flinestyle.html">FLineStyle</a>;
+class <a class="el" href="class_ffillstylearray.html">FFillStyleArray</a>;
+class <a class="el" href="class_flinestylearray.html">FLineStyleArray</a>;
+class <a class="el" href="class_fshapewstyle.html">FShapeWStyle</a>;
+class <a class="el" href="class_fgradient.html">FGradient</a>;
+
+
+
+
+
+class <a class="el" href="class_fshape.html">FShape</a>
+{
+public:
+
+	<a class="el" href="class_fshape.html#a0">FShape</a>();
+	<a class="el" href="class_fshape.html#a1">~FShape</a>();
+
+
+
+	<a class="el" href="class_fshape.html#a2">SetFillBits</a>(U32 _nFillBits);
+
+
+	<a class="el" href="class_fshape.html#a3">SetLineBits</a>(U32 _nLineBits);
+
+
+
+	<a class="el" href="class_fshape.html#a4">AddShapeRec</a>(<a class="el" href="class_fshaperec.html">FShapeRec</a>* shapeRec);
+
+
+
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);  //not Complete, see comments
+
+private:
+	
+	U32 nFillBits;
+	U32 nLineBits;
+	std::list&lt;<a class="el" href="class_fshaperec.html">FShapeRec</a>*&gt; shapeRecs;
+};
+
+
+
+
+
+
+class <a class="el" href="class_facxform.html">FACXForm</a>
+{
+public:
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream) = 0;
+};
+
+
+
+
+
+
+class <a class="el" href="class_falinestyle.html">FALineStyle</a>
+{
+public:
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream) = 0;
+
+};
+
+
+//
+
+
+
+class <a class="el" href="class_fagradrecord.html">FAGradRecord</a>
+{
+public:
+
+
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream) = 0;
+
+
+};
+
+
+// 
+
+
+
+class <a class="el" href="class_fcxform.html">FCXForm</a>:public <a class="el" href="class_facxform.html">FACXForm</a>
+{
+public:
+
+
+	<a class="el" href="class_fcxform.html#a0">FCXForm</a>(
+		U32 _hasAdd, U32 _hasMult, S32 _redMultTerm, S32 _greenMultTerm, 
+		S32 _blueMultiTerm, S32 _redAddTerm, S32 _greenAddTerm, S32 _blueAddTerm);
+
+
+
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+private:
+	
+	//flags
+	U32 hasAdd;
+	U32 hasMult;
+	
+	// bits in each term field
+	U32 nBits;
+	
+	S32 redMultTerm;
+	S32 greenMultTerm;
+	S32 blueMultTerm;
+	S32 redAddTerm;
+	S32 greenAddTerm;
+	S32 blueAddTerm;
+	
+	// finds minimum number of bits needed to represent the largest term
+	U32 MinBits(void);
+};
+
+
+// Specifies a color transformation for some object with transparency information
+
+
+
+
+class <a class="el" href="class_fcxformwalpha.html">FCXFormWAlpha</a>:public <a class="el" href="class_facxform.html">FACXForm</a>{
+
+public:
+	
+	<a class="el" href="class_fcxformwalpha.html#a0">FCXFormWAlpha</a>(U32 _hasAdd, U32 _hasMult, S32 _redMultTerm, S32 _greenMultTerm, S32 _blueMultTerm, S32 _alphaMultTerm,
+				   S32 _redAddTerm, S32 _greenAddTerm, S32 _blueAddTerm, S32 _alphaAddTerm);
+
+
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+private:
+	
+	//flags
+	U32 hasAdd;
+	U32 hasMult;
+
+	//bits in each term field
+	U32 nBits;
+
+	S32 redMultTerm;
+	S32 greenMultTerm;
+	S32 blueMultTerm;
+	S32 alphaMultTerm;
+	
+	S32 redAddTerm;
+	S32 greenAddTerm;
+	S32 blueAddTerm;
+	S32 alphaAddTerm;
+	
+	//returns minimum number of bits needed to represent largest term value
+	U32 MinBits(void);
+
+};
+
+
+// 
+
+
+
+
+class <a class="el" href="class_fdtdefinemorphshape.html">FDTDefineMorphShape</a> : public <a class="el" href="class_fdt.html">FDT</a> {
+
+public:
+
+
+	<a class="el" href="class_fdtdefinemorphshape.html#a0">FDTDefineMorphShape</a> (<a class="el" href="class_frect.html">FRect</a>* _rect1, <a class="el" href="class_frect.html">FRect</a>* _rect2);
+	<a class="el" href="class_fdtdefinemorphshape.html#a1">~FDTDefineMorphShape</a>();
+
+
+	U32 AddFillStyle(<a class="el" href="class_fmorphfillstyle.html">FMorphFillStyle</a>* fillStyle);
+	
+	// here changed.
+
+
+	U32 AddLineStyle(U32 startLineWidth, <a class="el" href="class_fcolor.html">FColor</a>* startLineColor,
+					 U32 finalLineWidth, <a class="el" href="class_fcolor.html">FColor</a>* finalLineColor);
+
+
+	void FinishStyleArrays(void);
+
+
+
+	void AddShapeRec_1(<a class="el" href="class_fshaperec.html">FShapeRec</a>* _shapeRec); 
+
+
+	void AddEdgeRec_2(<a class="el" href="class_fshaperec.html">FShapeRec</a>* _shapeRec);
+
+
+	U16 ID(void);
+
+
+
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+private:
+	U16  characterID;
+	<a class="el" href="class_frect.html">FRect</a>* shapeBounds_1;		// 1 subscript denotes original shape
+	<a class="el" href="class_frect.html">FRect</a>* shapeBounds_2 ;		// and 2 subscript denotes shape being morphed to
+	<a class="el" href="class_fshape.html">FShape</a> shape1;
+	<a class="el" href="class_fshape.html">FShape</a> shape2;
+	U32 offset;
+	<a class="el" href="class_ffillstylearray.html">FFillStyleArray</a>* morphFillStyleArray;
+	<a class="el" href="class_flinestylearray.html">FLineStyleArray</a>* morphLineStyleArray;
+	U32 nFillBits;
+	U32 nLineBits;
+	U8 styleArraysFinished;
+};
+
+
+
+
+
+class <a class="el" href="class_fdtdefineshape.html">FDTDefineShape</a> : public <a class="el" href="class_fdt.html">FDT</a> {
+
+public:
+
+
+
+	<a class="el" href="class_fdtdefineshape.html#a0">FDTDefineShape</a>(<a class="el" href="class_frect.html">FRect</a>* _rect);
+	<a class="el" href="class_fdtdefineshape.html#a1">~FDTDefineShape</a>();
+
+
+
+	void AddShapeRec(<a class="el" href="class_fshaperec.html">FShapeRec</a>* _shapeRec);
+
+
+	void FinishStyleArrays(void);
+
+
+	U32 AddFillStyle(<a class="el" href="class_ffillstyle.html">FFillStyle</a>* fillStyle);
+	
+	// changed here.
+
+
+	U32 AddSolidFillStyle(<a class="el" href="class_fcolor.html">FColor</a>* fillColor);
+
+	// here changed.
+
+	
+	U32 AddLineStyle(U32 lineWidth, <a class="el" href="class_fcolor.html">FColor</a>* lineColor);
+		
+
+
+	U16 ID(void);
+
+
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+private:
+
+	U16 characterID;
+	<a class="el" href="class_frect.html">FRect</a>* shapeBounds;
+	<a class="el" href="class_fshapewstyle.html">FShapeWStyle</a> *shapeWithStyle;
+	<a class="el" href="class_ffillstylearray.html">FFillStyleArray</a> *fillStyleArray;
+	<a class="el" href="class_flinestylearray.html">FLineStyleArray</a> *lineStyleArray;
+	//U32 nFillBits;
+	//U32 nLineBits;
+	U8 styleArraysFinished;
+
+};
+
+
+
+
+class <a class="el" href="class_fdtdefineshape2.html">FDTDefineShape2</a> : public <a class="el" href="class_fdt.html">FDT</a> {
+
+public:
+	
+
+
+	<a class="el" href="class_fdtdefineshape2.html#a0">FDTDefineShape2</a>(<a class="el" href="class_frect.html">FRect</a>* _rect);
+	<a class="el" href="class_fdtdefineshape2.html#a1">~FDTDefineShape2</a>();
+
+
+	void AddShapeRec(<a class="el" href="class_fshaperec.html">FShapeRec</a>* _shapeRec);
+
+
+	void FinishStyleArrays(void);
+
+
+
+	U32 AddFillStyle(<a class="el" href="class_ffillstyle.html">FFillStyle</a>* fillStyle);
+
+	// here changed.
+
+
+	U32 AddSolidFillStyle(<a class="el" href="class_fcolor.html">FColor</a>* fillColor);
+
+	// here changed.
+
+		
+	U32 AddLineStyle(U32 lineWidth, <a class="el" href="class_fcolor.html">FColor</a>* lineColor);
+
+
+	U16 ID(void);
+
+
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+private:
+
+	U16 characterID;
+	<a class="el" href="class_frect.html">FRect</a>* shapeBounds;
+	<a class="el" href="class_fshapewstyle.html">FShapeWStyle</a> *shapeWithStyle;
+	<a class="el" href="class_ffillstylearray.html">FFillStyleArray</a> *fillStyleArray;
+	<a class="el" href="class_flinestylearray.html">FLineStyleArray</a> *lineStyleArray;
+	U32 nFillBits;
+	U32 nLineBits;
+	U8 styleArraysFinished;
+
+};
+
+
+
+
+
+
+class <a class="el" href="class_fdtdefineshape3.html">FDTDefineShape3</a> : public <a class="el" href="class_fdt.html">FDT</a> {
+
+public:
+	
+	
+
+
+	<a class="el" href="class_fdtdefineshape3.html#a0">FDTDefineShape3</a>(<a class="el" href="class_frect.html">FRect</a>* _rect);
+	<a class="el" href="class_fdtdefineshape3.html#a1">~FDTDefineShape3</a>();
+
+
+	void AddShapeRec(<a class="el" href="class_fshaperec.html">FShapeRec</a>* _shapeRec);
+
+	void FinishStyleArrays(void);
+
+
+
+	U32 AddFillStyle(<a class="el" href="class_ffillstyle.html">FFillStyle</a>* fillStyle);
+
+
+
+	U32 AddSolidFillStyle(<a class="el" href="class_fcolor.html">FColor</a>* fillColor);
+
+
+		
+	U32 AddLineStyle(U32 lineWidth, <a class="el" href="class_fcolor.html">FColor</a>* lineColor);
+	
+
+	U16 ID(void);
+
+
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream);
+
+private:
+
+	U16 characterID;
+	<a class="el" href="class_frect.html">FRect</a>* shapeBounds;
+	<a class="el" href="class_fshapewstyle.html">FShapeWStyle</a> *shapeWithStyle;
+	<a class="el" href="class_ffillstylearray.html">FFillStyleArray</a> *fillStyleArray;
+	<a class="el" href="class_flinestylearray.html">FLineStyleArray</a> *lineStyleArray;
+	U32 nFillBits;
+	U32 nLineBits;
+	U8 styleArraysFinished;
+
+};
+
+
+
+
+class <a class="el" href="class_fafillstyle.html">FAFillStyle</a>
+{
+public:
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a>* _SWFStream) = 0;
+};
+
+
+//The fill style used by regular non-morph shapes
+
+
+
+class <a class="el" href="class_ffillstyle.html">FFillStyle</a> : public <a class="el" href="class_fafillstyle.html">FAFillStyle</a>
+{};
+
+
+
+
+class <a class="el" href="class_ffillstylearray.html">FFillStyleArray</a>{
+
+public:
+
+	<a class="el" href="class_ffillstylearray.html#a0">FFillStyleArray</a>(void){}
+	~FFillStyleArray(void){}
+
+
+
+	   
+	U32 Add(<a class="el" href="class_fafillstyle.html">FAFillStyle</a> *fillStyle);
+
+	U32 Size();
+
+
+
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+
+private:
+	
+	//the list which contains all of the fill styles
+	std::list&lt;<a class="el" href="class_fafillstyle.html">FAFillStyle</a>*&gt; fillStyleArray;
+
+};
+
+
+
+
+//
+//
+
+class <a class="el" href="class_ffillstylebitmap.html">FFillStyleBitmap</a>:public <a class="el" href="class_ffillstyle.html">FFillStyle</a>{
+
+public:
+
+	<a class="el" href="class_ffillstylebitmap.html#a0">FFillStyleBitmap</a>(int tiled, U16 ID, <a class="el" href="class_fmatrix.html">FMatrix</a>* matrix);
+	<a class="el" href="class_ffillstylebitmap.html#a1">~FFillStyleBitmap</a>(void);
+
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+private: 
+	int tiledFlag;
+	U16 bitmapID;
+	<a class="el" href="class_fmatrix.html">FMatrix</a>* bitmapMatrix;
+};
+
+
+
+
+
+class <a class="el" href="class_ffillstylegradient.html">FFillStyleGradient</a>:public <a class="el" href="class_ffillstyle.html">FFillStyle</a>{
+
+public:
+
+
+
+	<a class="el" href="class_ffillstylegradient.html#a0">FFillStyleGradient</a>(int linear, <a class="el" href="class_fmatrix.html">FMatrix</a>* matrix, <a class="el" href="class_fgradient.html">FGradient</a>* gradient);
+	<a class="el" href="class_ffillstylegradient.html#a1">~FFillStyleGradient</a>(void);
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+
+private: 
+
+	int linearFlag;
+	<a class="el" href="class_fmatrix.html">FMatrix</a>* gradFillMatrix;
+	<a class="el" href="class_fgradient.html">FGradient</a>* gradFill;
+};
+
+
+//The solid fill style used by regular non-morph shapes
+
+
+
+class <a class="el" href="class_ffillstylesolid.html">FFillStyleSolid</a>:public <a class="el" href="class_ffillstyle.html">FFillStyle</a>
+{
+public:
+
+
+	<a class="el" href="class_ffillstylesolid.html#a0">FFillStyleSolid</a>( <a class="el" href="class_fcolor.html">FColor</a>* _color );
+
+	<a class="el" href="class_ffillstylesolid.html#a1">~FFillStyleSolid</a>();
+
+
+
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+private: 
+	<a class="el" href="class_fcolor.html">FColor</a>* color;
+};
+
+
+
+
+class <a class="el" href="class_fgradient.html">FGradient</a>{
+
+public:
+
+	<a class="el" href="class_fgradient.html#a0">FGradient</a>(void);
+	<a class="el" href="class_fgradient.html#a1">~FGradient</a>(void);
+
+
+	void Add(<a class="el" href="class_fagradrecord.html">FAGradRecord</a> *g);
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+
+private:
+	
+	//the list which contains all of the grad records
+	std::list&lt;<a class="el" href="class_fagradrecord.html">FAGradRecord</a>*&gt; gradRecords;
+};
+
+
+
+//	used by non-morph shapes
+
+
+
+class <a class="el" href="class_fgradrecord.html">FGradRecord</a>:public <a class="el" href="class_fagradrecord.html">FAGradRecord</a>
+{
+public:
+
+
+	<a class="el" href="class_fgradrecord.html#a0">FGradRecord</a>(U32 _ratio, <a class="el" href="class_fcolor.html">FColor</a>* color);
+
+	<a class="el" href="class_fgradrecord.html#a1">~FGradRecord</a>();
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+private:
+
+	U32 ratio;                  
+	<a class="el" href="class_fcolor.html">FColor</a>* color;
+};
+
+
+//
+
+
+
+class <a class="el" href="class_flinestyle.html">FLineStyle</a>:public <a class="el" href="class_falinestyle.html">FALineStyle</a>{
+
+public:
+	
+
+
+	<a class="el" href="class_flinestyle.html#a0">FLineStyle</a>(U32 _width, <a class="el" href="class_fcolor.html">FColor</a>* _color);
+	<a class="el" href="class_flinestyle.html#a1">~FLineStyle</a>();
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+private:
+
+	U32 width;                  
+	<a class="el" href="class_fcolor.html">FColor</a>* color;
+};
+
+
+//
+
+
+class <a class="el" href="class_flinestylearray.html">FLineStyleArray</a>{
+
+public:
+
+
+	<a class="el" href="class_flinestylearray.html#a0">FLineStyleArray</a>(void);
+	<a class="el" href="class_flinestylearray.html#a1">~FLineStyleArray</a>(void);
+
+
+	U32 Add(<a class="el" href="class_falinestyle.html">FALineStyle</a> *lineStyle);
+
+
+	U32 Size(void);
+
+
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+private:                 
+	
+	//the list which contains all of the line styles
+	std::list&lt;<a class="el" href="class_falinestyle.html">FALineStyle</a>*&gt; lineStyleArray;
+};
+
+
+
+
+class <a class="el" href="class_fmorphfillstyle.html">FMorphFillStyle</a>:public <a class="el" href="class_fafillstyle.html">FAFillStyle</a>{};
+
+
+
+//
+//
+
+
+
+class <a class="el" href="class_fmorphfillstylebitmap.html">FMorphFillStyleBitmap</a>:public <a class="el" href="class_fmorphfillstyle.html">FMorphFillStyle</a>{
+
+public:
+
+	//	The tiledFlag indicates if the Bitmap fill style is tiled (tiledFlag==1) or 
+//	clipped (tiledFlag==0).
+
+
+
+	<a class="el" href="class_fmorphfillstylebitmap.html#a0">FMorphFillStyleBitmap</a>(int tiled, U16 ID, <a class="el" href="class_fmatrix.html">FMatrix</a>* matrix1, <a class="el" href="class_fmatrix.html">FMatrix</a>* matrix2);
+	<a class="el" href="class_fmorphfillstylebitmap.html#a1">~FMorphFillStyleBitmap</a>(void);
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+
+private: 
+
+	int tiledFlag;
+	U16 bitmapID;
+	<a class="el" href="class_fmatrix.html">FMatrix</a> *bitmapMatrix1;
+	<a class="el" href="class_fmatrix.html">FMatrix</a> *bitmapMatrix2; 
+
+
+};
+
+
+
+
+
+
+class <a class="el" href="class_fmorphfillstylegradient.html">FMorphFillStyleGradient</a>:public <a class="el" href="class_fmorphfillstyle.html">FMorphFillStyle</a>{
+
+public:
+
+
+
+	<a class="el" href="class_fmorphfillstylegradient.html#a0">FMorphFillStyleGradient</a>(int linear, <a class="el" href="class_fmatrix.html">FMatrix</a>* matrix1, <a class="el" href="class_fmatrix.html">FMatrix</a>* matrix2, <a class="el" href="class_fgradient.html">FGradient</a>* gradient);
+	<a class="el" href="class_fmorphfillstylegradient.html#a1">~FMorphFillStyleGradient</a>(void);
+
+		void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+private: 
+
+	int linearFlag;
+	<a class="el" href="class_fmatrix.html">FMatrix</a>* gradFillMatrix1;
+	<a class="el" href="class_fmatrix.html">FMatrix</a>* gradFillMatrix2;
+	<a class="el" href="class_fgradient.html">FGradient</a>* gradFill;
+};
+
+
+
+class <a class="el" href="class_fmorphfillstylesolid.html">FMorphFillStyleSolid</a>:public <a class="el" href="class_fmorphfillstyle.html">FMorphFillStyle</a>{
+
+public:	
+
+	<a class="el" href="class_fmorphfillstylesolid.html#a0">FMorphFillStyleSolid</a>( <a class="el" href="class_fcolor.html">FColor</a>* _color1, <a class="el" href="class_fcolor.html">FColor</a>* _color2 );
+	<a class="el" href="class_fmorphfillstylesolid.html#a1">~FMorphFillStyleSolid</a>();
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+private: 
+
+	<a class="el" href="class_fcolor.html">FColor</a>* color1;
+	<a class="el" href="class_fcolor.html">FColor</a>* color2;
+};
+
+
+
+class <a class="el" href="class_fmorphgradrecord.html">FMorphGradRecord</a>:public <a class="el" href="class_fagradrecord.html">FAGradRecord</a>{
+
+public:
+	
+
+
+	<a class="el" href="class_fmorphgradrecord.html#a0">FMorphGradRecord</a>(U32 _ratio1, <a class="el" href="class_fcolor.html">FColor</a>* _color1, U32 _ratio2, <a class="el" href="class_fcolor.html">FColor</a>* _color2);
+	<a class="el" href="class_fmorphgradrecord.html#a1">~FMorphGradRecord</a>();
+	
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+private:
+	
+	U32 ratio1;
+	U32 ratio2;
+	
+	<a class="el" href="class_fcolor.html">FColor</a>* color1;
+	<a class="el" href="class_fcolor.html">FColor</a>* color2;
+};
+
+
+
+
+class <a class="el" href="class_fmorphlinestyle.html">FMorphLineStyle</a>:public <a class="el" href="class_falinestyle.html">FALineStyle</a>{
+
+public:
+	
+
+
+	<a class="el" href="class_fmorphlinestyle.html#a0">FMorphLineStyle</a>(U32 _width1, U32 _width2, <a class="el" href="class_fcolor.html">FColor</a>* _color1, <a class="el" href="class_fcolor.html">FColor</a>* _color2);
+	<a class="el" href="class_fmorphlinestyle.html#a1">~FMorphLineStyle</a>();
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+
+private:
+
+	<a class="el" href="class_fcolor.html">FColor</a>* color1;
+	<a class="el" href="class_fcolor.html">FColor</a>* color2;
+	U32 width1;
+	U32 width2;
+};
+
+
+
+
+
+
+class <a class="el" href="class_fshaperec.html">FShapeRec</a>{
+
+public:
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream) = 0;
+	virtual void IncludeNFillBitInfo(U32 _nFillBits) = 0;
+	virtual void IncludeNLineBitInfo(U32 _nLineBits) = 0;
+
+
+};
+
+
+//	shape record that defines changes in line style, fill style, position, or a new set of styles
+
+class <a class="el" href="class_fshaperecchange.html">FShapeRecChange</a>:public <a class="el" href="class_fshaperec.html">FShapeRec</a>{
+
+public:
+	
+	<a class="el" href="class_fshaperecchange.html#a0">FShapeRecChange</a>(U32 _stateNewStyles, 
+					U32 _stateLineStyle, 
+					U32 _stateFillStyle1, 
+				    U32 _stateFillStyle0, 
+					U32 _stateMoveTo,
+					S32 _moveDeltaX, 
+					S32 _moveDeltaY, 
+					U32 _fill0Style, 
+					U32 _fill1Style, 
+					U32 _lineStyle, 
+					<a class="el" href="class_ffillstylearray.html">FFillStyleArray</a> *_fillStyles, 
+					<a class="el" href="class_flinestylearray.html">FLineStyleArray</a> *_lineStyles);
+
+	<a class="el" href="class_fshaperecchange.html#a1">~FShapeRecChange</a>(void);
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+	virtual void IncludeNFillBitInfo(U32 _nFillBits);
+	virtual void IncludeNLineBitInfo(U32 _nLineBits);
+
+private:
+
+	U32 stateNewStyles;
+	U32 stateLineStyle;
+	U32 stateFillStyle0;
+	U32 stateFillStyle1;
+	U32 stateMoveTo;
+	U32 nMoveBits;
+	U32 nFillBits;      // these two values are stored in the Shape field
+	U32 nLineBits;		// they are passed to each ShapeRec
+	S32 moveDeltaX;			
+	S32 moveDeltaY;
+	U32 fill0Style;
+	U32 fill1Style;
+	U32 lineStyle;
+	<a class="el" href="class_ffillstylearray.html">FFillStyleArray</a> *fillStyles;
+	<a class="el" href="class_flinestylearray.html">FLineStyleArray</a> *lineStyles;
+	U32 MinBits(void);
+
+
+};
+
+
+
+
+class <a class="el" href="class_fshaperecedgestraight.html">FShapeRecEdgeStraight</a> : public <a class="el" href="class_fshaperec.html">FShapeRec</a>
+{
+public:	
+
+
+	<a class="el" href="class_fshaperecedgestraight.html#a0">FShapeRecEdgeStraight</a>( S32 dx, S32 dy );
+	<a class="el" href="class_fshaperecedgestraight.html#a1">~FShapeRecEdgeStraight</a>();
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+	virtual void IncludeNFillBitInfo(U32 _nFillBits);
+
+	virtual void IncludeNLineBitInfo(U32 _nLineBits);
+
+private:
+	U32 edgeFlag;
+	U32 nBits;
+	U32 generalLineFlag;
+	S32 generalDeltaX;
+	S32 generalDeltaY;
+	U32 verticalLineFlag;
+	S32 horizontalDeltaX;
+	S32 verticalDeltaY;
+	U32 MinBits(void);
+};
+
+
+
+class <a class="el" href="class_fshaperecedgecurved.html">FShapeRecEdgeCurved</a> : public <a class="el" href="class_fshaperec.html">FShapeRec</a>
+{
+public:	
+
+
+	<a class="el" href="class_fshaperecedgecurved.html#a0">FShapeRecEdgeCurved</a>(S32 controlDX, S32 controlDY, S32 anchorDX, S32 anchorDY);
+	<a class="el" href="class_fshaperecedgecurved.html#a1">~FShapeRecEdgeCurved</a>(void);
+
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+	virtual void IncludeNFillBitInfo(U32 _nFillBits);
+
+	virtual void IncludeNLineBitInfo(U32 _nLineBits);
+
+private:
+	U32 edgeFlag;
+	U32 nBits;
+	S32 controlDeltaX;
+	S32 controlDeltaY;
+	S32 anchorDeltaX;
+	S32 anchorDeltaY;
+	U32 MinBits(void);
+};
+
+//The shape record which signifies the end of a shape record array.
+
+class <a class="el" href="class_fshaperecend.html">FShapeRecEnd</a>:public <a class="el" href="class_fshaperec.html">FShapeRec</a>{
+
+public:
+	
+	<a class="el" href="class_fshaperecend.html#a0">FShapeRecEnd</a>(void);
+
+	virtual void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+
+	virtual void IncludeNFillBitInfo(U32 _nFillBits);
+
+	virtual void IncludeNLineBitInfo(U32 _nLineBits);
+
+};
+
+class <a class="el" href="class_fshapewstyle.html">FShapeWStyle</a>{
+
+public:
+
+	<a class="el" href="class_fshapewstyle.html#a0">FShapeWStyle</a>(<a class="el" href="class_ffillstylearray.html">FFillStyleArray</a> *_fillStyles, <a class="el" href="class_flinestylearray.html">FLineStyleArray</a> *_lineStyles);
+	<a class="el" href="class_fshapewstyle.html#a1">~FShapeWStyle</a>(void);
+	void AddShapeRec(<a class="el" href="class_fshaperec.html">FShapeRec</a>* shapeRec);
+	void WriteToSWFStream(<a class="el" href="class_fswfstream.html">FSWFStream</a> *_SWFStream);
+	U32 NumFillBits();
+	U32 NumLineBits();
+
+private:
+
+	<a class="el" href="class_ffillstylearray.html">FFillStyleArray</a> *fillStyles;
+	<a class="el" href="class_flinestylearray.html">FLineStyleArray</a> *lineStyles;
+	U32 nFillBits;
+	U32 nLineBits;
+	std::list&lt;<a class="el" href="class_fshaperec.html">FShapeRec</a>*&gt; shapeRecs;       //see comments, will need to be changed
+
+
+};
+
+
+#endif
+
+</pre></div><html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./footer_files/filelist.xml">
+<title>Sunday, September 26, 1999</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>michael</o:Author>
+  <o:LastAuthor>michael</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>18</o:TotalTime>
+  <o:Created>1999-09-27T06:04:00Z</o:Created>
+  <o:LastSaved>1999-09-28T21:56:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>9</o:Words>
+  <o:Characters>56</o:Characters>
+  <o:Company>Middlesoft</o:Company>
+  <o:Lines>1</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>68</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	background:#333399;
+	border:none;
+	mso-border-alt:solid windowtext .5pt;
+	padding:0in;
+	mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:white;
+	mso-bidi-language:HE;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0in;
+	margin-right:1.0in;
+	margin-bottom:6.0pt;
+	margin-left:1.0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-language:HE;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<div style='border:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt;
+background:#333399'>
+
+<p class=MsoFooter align=center style='margin-right:82.5pt;text-align:center;
+tab-stops:.5in'><span style='background:#333399'>Sunday, September 26, 1999<span
+style='mso-tab-count:2'>                  </span>Flash File Format SDK<span
+style='mso-tab-count:1'>  </span><span style='mso-tab-count:1'>               </span>Middlesoft,
+Inc.</span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

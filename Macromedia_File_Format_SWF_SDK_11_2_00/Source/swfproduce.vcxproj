@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{DF6913C7-97AC-4E15-BFF5-FB07CB907028}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\swfproduce.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Debug\swfproduce.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\swfproduce.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Debug\swfproduce.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\swfproduce.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Release\swfproduce.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\swfproduce.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Release\swfproduce.exe</OutputFile>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="FAction.cpp" />
+    <ClCompile Include="FCT.cpp" />
+    <ClCompile Include="FDT.cpp" />
+    <ClCompile Include="FDTBitmaps.cpp" />
+    <ClCompile Include="FDTButtons.cpp" />
+    <ClCompile Include="FDTFonts.cpp" />
+    <ClCompile Include="FDTShapes.cpp" />
+    <ClCompile Include="FDTSounds.cpp" />
+    <ClCompile Include="FDTSprite.cpp" />
+    <ClCompile Include="FDTText.cpp" />
+    <ClCompile Include="FExampleBitsLossless.cpp" />
+    <ClCompile Include="FExampleButton.cpp" />
+    <ClCompile Include="FExampleCircle.cpp" />
+    <ClCompile Include="FExampleClip.cpp" />
+    <ClCompile Include="FExampleEditText.cpp" />
+    <ClCompile Include="FExampleFont.cpp" />
+    <ClCompile Include="FExampleJPeg.cpp" />
+    <ClCompile Include="FExampleMorph.cpp" />
+    <ClCompile Include="FExampleOval.cpp" />
+    <ClCompile Include="FExampleOverlap.cpp" />
+    <ClCompile Include="FExampleRectangle.cpp" />
+    <ClCompile Include="FExampleSound.cpp" />
+    <ClCompile Include="FExampleSprite.cpp" />
+    <ClCompile Include="FExampleTwoColorTriangle.cpp" />
+    <ClCompile Include="FExampleTwoShape.cpp" />
+    <ClCompile Include="FObj.cpp" />
+    <ClCompile Include="FPrimitive.cpp" />
+    <ClCompile Include="FSound.cpp" />
+    <ClCompile Include="FSWFStream.cpp" />
+    <ClCompile Include="HFAction.cpp" />
+    <ClCompile Include="HFBitmap.cpp" />
+    <ClCompile Include="HFButton.cpp" />
+    <ClCompile Include="HFExample.cpp" />
+    <ClCompile Include="HFExampleButton.cpp" />
+    <ClCompile Include="HFExampleCircle.cpp" />
+    <ClCompile Include="HFExampleFont.cpp" />
+    <ClCompile Include="HFExampleOval.cpp" />
+    <ClCompile Include="HFExampleRectangle.cpp" />
+    <ClCompile Include="HFExampleSound.cpp" />
+    <ClCompile Include="HFExampleSquare.cpp" />
+    <ClCompile Include="HFFont.cpp" />
+    <ClCompile Include="HFFrame.cpp" />
+    <ClCompile Include="HFMovie.cpp" />
+    <ClCompile Include="HFObject.cpp" />
+    <ClCompile Include="HFOval.cpp" />
+    <ClCompile Include="HFPolygon.cpp" />
+    <ClCompile Include="HFRectangle.cpp" />
+    <ClCompile Include="HFShape.cpp" />
+    <ClCompile Include="HFSound.cpp" />
+    <ClCompile Include="HFText.cpp" />
+    <ClCompile Include="swfproduce.cpp" />
+    <ClCompile Include="zlib-1.1.3\adler32.c" />
+    <ClCompile Include="zlib-1.1.3\compress.c" />
+    <ClCompile Include="zlib-1.1.3\crc32.c" />
+    <ClCompile Include="zlib-1.1.3\deflate.c" />
+    <ClCompile Include="zlib-1.1.3\gzio.c" />
+    <ClCompile Include="zlib-1.1.3\infblock.c" />
+    <ClCompile Include="zlib-1.1.3\infcodes.c" />
+    <ClCompile Include="zlib-1.1.3\inffast.c" />
+    <ClCompile Include="zlib-1.1.3\inflate.c" />
+    <ClCompile Include="zlib-1.1.3\inftrees.c" />
+    <ClCompile Include="zlib-1.1.3\infutil.c" />
+    <ClCompile Include="zlib-1.1.3\trees.c" />
+    <ClCompile Include="zlib-1.1.3\uncompr.c" />
+    <ClCompile Include="zlib-1.1.3\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F3SDK.H" />
+    <ClInclude Include="FAction.h" />
+    <ClInclude Include="FCT.h" />
+    <ClInclude Include="FDT.h" />
+    <ClInclude Include="FDTBitmaps.h" />
+    <ClInclude Include="FDTButtons.h" />
+    <ClInclude Include="FDTFonts.h" />
+    <ClInclude Include="FDTShapes.h" />
+    <ClInclude Include="FDTSounds.h" />
+    <ClInclude Include="FDTSprite.h" />
+    <ClInclude Include="FDTText.h" />
+    <ClInclude Include="FExample.h" />
+    <ClInclude Include="FObj.h" />
+    <ClInclude Include="FPrimitive.h" />
+    <ClInclude Include="FSWFStream.h" />
+    <ClInclude Include="HF3SDK.h" />
+    <ClInclude Include="HFAction.h" />
+    <ClInclude Include="HFBitmap.h" />
+    <ClInclude Include="HFButton.h" />
+    <ClInclude Include="HFColors.h" />
+    <ClInclude Include="HFExample.h" />
+    <ClInclude Include="HFFont.h" />
+    <ClInclude Include="HFFrame.h" />
+    <ClInclude Include="HFMovie.h" />
+    <ClInclude Include="HFObject.h" />
+    <ClInclude Include="HFOval.h" />
+    <ClInclude Include="HFPolygon.h" />
+    <ClInclude Include="HFRectangle.h" />
+    <ClInclude Include="HFShape.h" />
+    <ClInclude Include="HFSound.h" />
+    <ClInclude Include="HFText.h" />
+    <ClInclude Include="Macromedia.H" />
+    <ClInclude Include="zlib-1.1.3\deflate.h" />
+    <ClInclude Include="zlib-1.1.3\infblock.h" />
+    <ClInclude Include="zlib-1.1.3\infcodes.h" />
+    <ClInclude Include="zlib-1.1.3\inffast.h" />
+    <ClInclude Include="zlib-1.1.3\inffixed.h" />
+    <ClInclude Include="zlib-1.1.3\inftrees.h" />
+    <ClInclude Include="zlib-1.1.3\infutil.h" />
+    <ClInclude Include="zlib-1.1.3\trees.h" />
+    <ClInclude Include="zlib-1.1.3\zconf.h" />
+    <ClInclude Include="zlib-1.1.3\zlib.h" />
+    <ClInclude Include="zlib-1.1.3\zutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="audio.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bm128.jpg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

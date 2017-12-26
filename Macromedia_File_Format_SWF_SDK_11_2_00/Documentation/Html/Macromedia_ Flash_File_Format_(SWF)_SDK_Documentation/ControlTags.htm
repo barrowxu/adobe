@@ -1,0 +1,3289 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name="Microsoft Theme 2.00" content="corporat 010">
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./ControlTags_files/filelist.xml">
+<title>ControlTags</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Troy Evans</o:Author>
+  <o:Template>Fffsdk</o:Template>
+  <o:LastAuthor>Troy Evans</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:LastPrinted>2000-09-29T04:02:00Z</o:LastPrinted>
+  <o:Created>2000-11-02T07:54:00Z</o:Created>
+  <o:LastSaved>2000-11-02T07:54:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>1051</o:Words>
+  <o:Characters>5995</o:Characters>
+  <o:Company>Middlesoft</o:Company>
+  <o:Lines>49</o:Lines>
+  <o:Paragraphs>11</o:Paragraphs>
+  <o:CharactersWithSpaces>7362</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DrawingGridHorizontalSpacing>9.35 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>9.35 pt</w:DrawingGridVerticalSpacing>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:16792199 0 0 0 65791 0;}
+@font-face
+	{font-family:Garamond;
+	panose-1:2 2 4 4 3 3 1 1 8 3;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+h1
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:"Arial Black";
+	mso-bidi-font-family:Arial;
+	color:windowtext;
+	mso-font-kerning:16.0pt;
+	mso-bidi-language:HE;
+	font-weight:normal;
+	mso-bidi-font-weight:bold;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan no-line-numbers;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	tab-stops:.5in list .75in 1.0in;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .5pt;
+	padding:0in;
+	mso-padding-alt:0in 0in 1.0pt 0in;
+	font-size:12.0pt;
+	mso-bidi-font-size:18.0pt;
+	font-family:"Century Gothic";
+	color:windowtext;
+	mso-bidi-language:HE;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	mso-bidi-font-style:italic;}
+h3
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.2in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	tab-stops:.5in list .75in 1.0in;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	color:windowtext;
+	mso-bidi-language:HE;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+h4
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.2in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	tab-stops:.5in list .75in 1.0in;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	mso-bidi-language:HE;
+	font-weight:bold;}
+h5
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	tab-stops:4.5in;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+h6
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.1in;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:6;
+	tab-stops:list .25in;
+	font-size:8.0pt;
+	font-family:"Century Gothic";
+	color:#000066;
+	mso-bidi-language:HE;
+	font-weight:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:7;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:9;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	text-transform:uppercase;
+	mso-bidi-language:HE;
+	font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:10.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-variant:small-caps;
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:20.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:30.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:40.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:50.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:70.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{mso-style-update:auto;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:80.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+span.MsoFootnoteReference
+	{vertical-align:super;}
+span.MsoPageNumber
+	{mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	color:windowtext;
+	text-decoration:none;
+	text-underline:none;}
+p.MsoList, li.MsoList, div.MsoList
+	{mso-style-parent:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:.25in;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	tab-stops:.5in;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	letter-spacing:-.25pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{mso-style-update:auto;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.45in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	mso-pagination:widow-orphan;
+	mso-list:l83 level1 lfo63;
+	tab-stops:list .45in;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:2.5in;
+	margin-left:0in;
+	text-align:center;
+	line-height:30.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	border:none;
+	mso-border-bottom-alt:solid gray .75pt;
+	padding:0in;
+	mso-padding-alt:0in 0in 14.0pt 0in;
+	font-size:24.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial Black";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:gray;
+	letter-spacing:-1.75pt;
+	mso-font-kerning:14.0pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	letter-spacing:-.25pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-parent:Title;
+	mso-style-next:"Body Text";
+	margin-top:97.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:10.0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	border:none;
+	mso-border-bottom-alt:solid gray .75pt;
+	padding:0in;
+	mso-padding-alt:0in 0in 14.0pt 0in;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:gray;
+	text-transform:uppercase;
+	letter-spacing:1.5pt;
+	mso-font-kerning:14.0pt;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.75in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.2in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:HE;
+	mso-bidi-font-weight:bold;}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.BodyTextKeep, li.BodyTextKeep, div.BodyTextKeep
+	{mso-style-name:"Body Text Keep";
+	mso-style-parent:"Body Text";
+	mso-style-next:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	letter-spacing:-.25pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.ChapterSubtitle, li.ChapterSubtitle, div.ChapterSubtitle
+	{mso-style-name:"Chapter Subtitle";
+	mso-style-next:"Body Text";
+	margin-top:0in;
+	margin-right:1.25in;
+	margin-bottom:.25in;
+	margin-left:0in;
+	mso-line-height-alt:12.0pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	letter-spacing:-1.0pt;
+	mso-font-kerning:14.0pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.runinhead1
+	{mso-style-name:runinhead1;
+	mso-ansi-font-size:11.0pt;
+	mso-bidi-font-size:11.0pt;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	font-weight:bold;}
+p.CompanyName, li.CompanyName, div.CompanyName
+	{mso-style-name:"Company Name";
+	mso-style-next:Normal;
+	margin-top:21.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:16.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan;
+	font-size:19.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	text-transform:uppercase;
+	mso-font-kerning:18.0pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.ReturnAddress, li.ReturnAddress, div.ReturnAddress
+	{mso-style-name:"Return Address";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	letter-spacing:-.15pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.SectionLabel, li.SectionLabel, div.SectionLabel
+	{mso-style-name:"Section Label";
+	mso-style-next:Normal;
+	margin-top:102.0pt;
+	margin-right:0in;
+	margin-bottom:.25in;
+	margin-left:0in;
+	line-height:24.0pt;
+	mso-pagination:widow-orphan;
+	font-size:24.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial Black";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:gray;
+	letter-spacing:-1.75pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.SubtitleCover, li.SubtitleCover, div.SubtitleCover
+	{mso-style-name:"Subtitle Cover";
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:264.0pt;
+	margin-left:0in;
+	line-height:24.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	border:none;
+	mso-border-top-alt:solid windowtext .75pt;
+	padding:0in;
+	mso-padding-alt:1.0pt 0in 0in 0in;
+	font-size:22.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	letter-spacing:-.75pt;
+	mso-font-kerning:14.0pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.TitleCover, li.TitleCover, div.TitleCover
+	{mso-style-name:"Title Cover";
+	mso-style-next:"Subtitle Cover";
+	margin-top:0in;
+	margin-right:30.0pt;
+	margin-bottom:0in;
+	margin-left:30.0pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:72.0pt;
+	mso-line-height-rule:exactly;
+	mso-pagination:widow-orphan;
+	border:none;
+	mso-border-alt:solid white .75pt;
+	padding:0in;
+	mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+	font-size:72.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Garamond;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;
+	mso-font-kerning:14.0pt;
+	mso-bidi-language:AR-SA;
+	mso-bidi-font-weight:normal;}
+p.runinhead, li.runinhead, div.runinhead
+	{mso-style-name:runinhead;
+	margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;}
+span.fbt1
+	{mso-style-name:fbt1;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	font-weight:bold;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-footer:url("./ControlTags_files/header.htm") f1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:-119;
+	mso-list-type:simple;
+	mso-list-template-ids:1046351244;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:23095497;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1637090092 -428411056 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-tab-stop:60.0pt;
+	mso-level-number-position:left;
+	margin-left:60.0pt;
+	text-indent:-24.0pt;}
+@list l2
+	{mso-list-id:93939067;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1357629692;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:106894019;
+	mso-list-type:hybrid;
+	mso-list-template-ids:255114914;}
+@list l3:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:115873785;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1550123724;}
+@list l4:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5
+	{mso-list-id:124349952;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2007643662;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:140734573;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1972183826;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:146558528;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2058368240;}
+@list l7:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8
+	{mso-list-id:152527079;
+	mso-list-type:simple;
+	mso-list-template-ids:-1583734338;}
+@list l8:level1
+	{mso-level-number-format:none;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:.25in;
+	mso-level-legacy-space:0in;
+	margin-left:0in;
+	text-indent:0in;}
+@list l9
+	{mso-list-id:154610495;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1966477602;}
+@list l9:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10
+	{mso-list-id:227882951;
+	mso-list-type:hybrid;
+	mso-list-template-ids:121516270;}
+@list l10:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11
+	{mso-list-id:229971557;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1355483290;}
+@list l11:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12
+	{mso-list-id:271208212;
+	mso-list-type:hybrid;
+	mso-list-template-ids:320627146;}
+@list l12:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13
+	{mso-list-id:282154900;
+	mso-list-type:hybrid;
+	mso-list-template-ids:182480642;}
+@list l13:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l14
+	{mso-list-id:328681656;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-55382538;}
+@list l14:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l15
+	{mso-list-id:334846684;
+	mso-list-type:hybrid;
+	mso-list-template-ids:157204450;}
+@list l15:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l16
+	{mso-list-id:335575021;
+	mso-list-type:hybrid;
+	mso-list-template-ids:695606658;}
+@list l16:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l17
+	{mso-list-id:340011073;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-385077310;}
+@list l17:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l18
+	{mso-list-id:396629081;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1088668870;}
+@list l18:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19
+	{mso-list-id:401023927;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1461940862;}
+@list l19:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Times New Roman";}
+@list l19:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l20
+	{mso-list-id:427195466;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-376290496;}
+@list l20:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l21
+	{mso-list-id:517472856;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1128594754;}
+@list l21:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l22
+	{mso-list-id:770900885;
+	mso-list-type:hybrid;
+	mso-list-template-ids:939420834;}
+@list l22:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l23
+	{mso-list-id:820921706;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2074540320;}
+@list l23:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l23:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l24
+	{mso-list-id:838039555;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1057608072;}
+@list l24:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l25
+	{mso-list-id:838886380;
+	mso-list-type:hybrid;
+	mso-list-template-ids:727888892;}
+@list l25:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l26
+	{mso-list-id:846479713;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-600007080;}
+@list l26:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l27
+	{mso-list-id:882398880;
+	mso-list-type:hybrid;
+	mso-list-template-ids:517215172;}
+@list l27:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l28
+	{mso-list-id:909996955;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2131512756;}
+@list l28:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l28:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.2in;
+	mso-level-number-position:left;
+	margin-left:1.2in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l28:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.7in;
+	mso-level-number-position:left;
+	margin-left:1.7in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l29
+	{mso-list-id:912086877;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1590380990;}
+@list l29:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l30
+	{mso-list-id:958147983;
+	mso-list-type:hybrid;
+	mso-list-template-ids:614655748;}
+@list l30:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l31
+	{mso-list-id:962923191;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1491618332;}
+@list l31:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l31:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l32
+	{mso-list-id:972634009;
+	mso-list-type:hybrid;
+	mso-list-template-ids:881379114;}
+@list l32:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l33
+	{mso-list-id:974991171;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1357629692;}
+@list l33:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l33:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l33:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l34
+	{mso-list-id:1045299694;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1673837188;}
+@list l34:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l35
+	{mso-list-id:1051340326;
+	mso-list-type:hybrid;
+	mso-list-template-ids:673467950;}
+@list l35:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l35:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l36
+	{mso-list-id:1128669951;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1309607728;}
+@list l36:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l37
+	{mso-list-id:1136798394;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1135692170;}
+@list l37:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l38
+	{mso-list-id:1157038923;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-222666390;}
+@list l38:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l39
+	{mso-list-id:1164468759;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1041571562;}
+@list l39:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l40
+	{mso-list-id:1193954554;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1491618332;}
+@list l40:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l40:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l41
+	{mso-list-id:1205407063;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-807769032;}
+@list l41:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l42
+	{mso-list-id:1214581227;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1537402148;}
+@list l42:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l42:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l42:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l43
+	{mso-list-id:1225719937;
+	mso-list-type:hybrid;
+	mso-list-template-ids:673467950;}
+@list l43:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l43:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l44
+	{mso-list-id:1241408443;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2035940634;}
+@list l44:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l45
+	{mso-list-id:1286933707;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-382073504;}
+@list l45:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.4in;
+	mso-level-number-position:left;
+	margin-left:1.4in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l46
+	{mso-list-id:1291741020;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-568556158;}
+@list l46:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l47
+	{mso-list-id:1308440527;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1771524400;}
+@list l47:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l48
+	{mso-list-id:1318343796;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1576030054;}
+@list l48:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l49
+	{mso-list-id:1321469358;
+	mso-list-type:hybrid;
+	mso-list-template-ids:334125500;}
+@list l49:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l50
+	{mso-list-id:1339432088;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1152561416;}
+@list l50:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l51
+	{mso-list-id:1346403857;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1608158032;}
+@list l51:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l52
+	{mso-list-id:1347947570;
+	mso-list-type:hybrid;
+	mso-list-template-ids:923541682;}
+@list l52:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l53
+	{mso-list-id:1392195011;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1491618332;}
+@list l53:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l53:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l54
+	{mso-list-id:1408385628;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-408674014;}
+@list l54:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l55
+	{mso-list-id:1410039042;
+	mso-list-type:hybrid;
+	mso-list-template-ids:598391162;}
+@list l55:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l56
+	{mso-list-id:1412894528;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-138400898 2032691826 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l56:level1
+	{mso-level-tab-stop:42.0pt;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-24.0pt;}
+@list l57
+	{mso-list-id:1431318749;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1511652070;}
+@list l57:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l57:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l58
+	{mso-list-id:1465653939;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-498169560;}
+@list l58:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l59
+	{mso-list-id:1479228542;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1113572590;}
+@list l59:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l60
+	{mso-list-id:1526602453;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1192894986;}
+@list l60:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l61
+	{mso-list-id:1560945313;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1202209720;}
+@list l61:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l62
+	{mso-list-id:1609392208;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1491618332;}
+@list l62:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l62:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l63
+	{mso-list-id:1612786276;
+	mso-list-type:hybrid;
+	mso-list-template-ids:161222030;}
+@list l63:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l63:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l63:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l63:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l63:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l63:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l63:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l63:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l63:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l64
+	{mso-list-id:1631208455;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-156448788;}
+@list l64:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l65
+	{mso-list-id:1638801109;
+	mso-list-type:hybrid;
+	mso-list-template-ids:833665846;}
+@list l65:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l65:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l65:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l66
+	{mso-list-id:1698576080;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-349402650;}
+@list l66:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l67
+	{mso-list-id:1708991793;
+	mso-list-type:hybrid;
+	mso-list-template-ids:347527148;}
+@list l67:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l67:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l67:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l67:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l68
+	{mso-list-id:1717391363;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1882222262;}
+@list l68:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l69
+	{mso-list-id:1727946152;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2060000274;}
+@list l69:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l70
+	{mso-list-id:1736052403;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1544030118;}
+@list l70:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l71
+	{mso-list-id:1740051823;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-543753372;}
+@list l71:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l72
+	{mso-list-id:1759710509;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1085438998;}
+@list l72:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l73
+	{mso-list-id:1829982088;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1453544110;}
+@list l73:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l74
+	{mso-list-id:1844583770;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1759034028;}
+@list l74:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l75
+	{mso-list-id:1849562643;
+	mso-list-template-ids:-1234291728;}
+@list l75:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A8;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l75:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l75:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l75:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l75:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l75:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l75:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l75:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l75:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A8;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l76
+	{mso-list-id:1858077109;
+	mso-list-type:hybrid;
+	mso-list-template-ids:851233918;}
+@list l76:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l77
+	{mso-list-id:1874924221;
+	mso-list-type:hybrid;
+	mso-list-template-ids:72108886;}
+@list l77:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l78
+	{mso-list-id:1912694073;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-208251662;}
+@list l78:level1
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-.25in;
+	font-family:"Times New Roman";}
+@list l78:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.25in;
+	font-family:"Times New Roman";}
+@list l78:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l78:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l78:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l78:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l78:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l78:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l78:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l79
+	{mso-list-id:1929801498;
+	mso-list-type:simple;
+	mso-list-template-ids:201916431;}
+@list l79:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l80
+	{mso-list-id:1941595273;
+	mso-list-type:hybrid;
+	mso-list-template-ids:563708 2080793554 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l80:level1
+	{mso-level-tab-stop:60.0pt;
+	mso-level-number-position:left;
+	margin-left:60.0pt;
+	text-indent:-24.0pt;}
+@list l81
+	{mso-list-id:1961372838;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1085035252;}
+@list l81:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l82
+	{mso-list-id:1969583246;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-30868604;}
+@list l82:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Times New Roman";}
+@list l82:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l82:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l82:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l82:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l82:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l82:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l82:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l82:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l83
+	{mso-list-id:2011642750;
+	mso-list-template-ids:66615452;}
+@list l83:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.45in;
+	mso-level-number-position:left;
+	margin-left:.45in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l83:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l83:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:.95in;
+	mso-level-number-position:left;
+	margin-left:.95in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l83:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.2in;
+	mso-level-number-position:left;
+	margin-left:1.2in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l83:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.45in;
+	mso-level-number-position:left;
+	margin-left:1.45in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l83:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.7in;
+	mso-level-number-position:left;
+	margin-left:1.7in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l83:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.95in;
+	mso-level-number-position:left;
+	margin-left:1.95in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l83:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.2in;
+	mso-level-number-position:left;
+	margin-left:2.2in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l83:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A8;
+	mso-level-tab-stop:2.45in;
+	mso-level-number-position:left;
+	margin-left:2.45in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l84
+	{mso-list-id:2012708321;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-406672054;}
+@list l84:level1
+	{mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.25in;}
+@list l85
+	{mso-list-id:2089425490;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-339069310;}
+@list l85:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l86
+	{mso-list-id:2097243557;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1795332142;}
+@list l86:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l87
+	{mso-list-id:2104839820;
+	mso-list-type:simple;
+	mso-list-template-ids:201916417;}
+@list l87:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l88
+	{mso-list-id:2122650984;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-188596614;}
+@list l88:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l89
+	{mso-list-id:2135442023;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1705380966;}
+@list l89:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l90
+	{mso-list-id:2146854740;
+	mso-list-type:hybrid;
+	mso-list-template-ids:427174648 -380617102 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l90:level1
+	{mso-level-start-at:2;
+	mso-level-tab-stop:42.0pt;
+	mso-level-number-position:left;
+	margin-left:42.0pt;
+	text-indent:-24.0pt;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050">
+  <v:stroke endarrow="block"/>
+  <v:shadow offset="6pt,-6pt"/>
+  <o:colormru v:ext="edit" colors="#ddd,#f8f8f8,#ccecff"/>
+  <o:colormenu v:ext="edit" fillcolor="black" strokecolor="navy" shadowcolor="none"
+   extrusioncolor="silver"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+  <o:regrouptable v:ext="edit">
+   <o:entry new="1" old="0"/>
+   <o:entry new="2" old="0"/>
+   <o:entry new="3" old="0"/>
+   <o:entry new="4" old="3"/>
+   <o:entry new="5" old="0"/>
+   <o:entry new="6" old="0"/>
+   <o:entry new="7" old="0"/>
+  </o:regrouptable>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1>Control Tags</h1>
+
+<div style='border:none;border-bottom:solid windowtext .5pt;padding:0in 0in 1.0pt 0in'>
+
+<h2>Control Tags Contents</h2>
+
+</div>
+
+<p class=MsoToc1>Control Tags Contents</p>
+
+<p class=MsoToc2 style='tab-stops:right dotted 431.5pt'><!--[if supportFields]><span
+style='font-variant:normal;text-transform:uppercase'><span style='mso-element:
+field-begin'></span><span style="mso-spacerun: yes"> </span>TOC \o
+&quot;1-4&quot; <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-variant:normal;text-transform:uppercase'>Control Tags<span
+style='mso-tab-count:1 dotted'>......................................................................................................................................................... </span></span><!--[if supportFields]><span
+style='font-variant:normal;text-transform:uppercase'><span style='mso-element:
+field-begin'></span> PAGEREF _Toc496326789 \h <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-variant:normal;text-transform:uppercase'>1<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400390036003300320036003700380039000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='font-variant:normal;
+text-transform:uppercase'><span style='mso-element:field-end'></span></span><![endif]--><span
+style='font-size:12.0pt;font-variant:normal;color:windowtext;mso-bidi-language:
+AR-SA;mso-bidi-font-weight:normal'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right dotted 431.5pt'><span style='mso-bidi-font-size:
+14.0pt'>Control Tags</span><span style='mso-tab-count:1 dotted'>........................................................................................................................................................... </span><!--[if supportFields]><span
+style='mso-element:field-begin'></span> PAGEREF _Toc496326790 \h <span
+style='mso-element:field-separator'></span><![endif]-->1<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400390036003300320036003700390030000000</w:data>
+</xml><![endif]--><!--[if supportFields]><span style='mso-element:field-end'></span><![endif]--><span
+style='font-size:12.0pt;color:windowtext;mso-bidi-language:AR-SA;mso-bidi-font-weight:
+normal;font-style:normal'><o:p></o:p></span></p>
+
+<p class=MsoToc4 style='tab-stops:right dotted 431.5pt'>SetBackgroundColor<span
+style='mso-tab-count:1 dotted'>.............................................................................................................................................. </span><!--[if supportFields]><span
+style='mso-element:field-begin'></span> PAGEREF _Toc496326791 \h <span
+style='mso-element:field-separator'></span><![endif]-->2<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400390036003300320036003700390031000000</w:data>
+</xml><![endif]--><!--[if supportFields]><span style='mso-element:field-end'></span><![endif]--><span
+style='font-size:12.0pt;color:windowtext;mso-bidi-language:AR-SA;mso-bidi-font-weight:
+normal'><o:p></o:p></span></p>
+
+<p class=MsoToc4 style='tab-stops:right dotted 431.5pt'>FrameLabel<span
+style='mso-tab-count:1 dotted'>............................................................................................................................................................. </span><!--[if supportFields]><span
+style='mso-element:field-begin'></span> PAGEREF _Toc496326792 \h <span
+style='mso-element:field-separator'></span><![endif]-->2<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400390036003300320036003700390032000000</w:data>
+</xml><![endif]--><!--[if supportFields]><span style='mso-element:field-end'></span><![endif]--><span
+style='font-size:12.0pt;color:windowtext;mso-bidi-language:AR-SA;mso-bidi-font-weight:
+normal'><o:p></o:p></span></p>
+
+<p class=MsoToc4 style='tab-stops:right dotted 431.5pt'>Protect<span
+style='mso-tab-count:1 dotted'>.................................................................................................................................................................... </span><!--[if supportFields]><span
+style='mso-element:field-begin'></span> PAGEREF _Toc496326793 \h <span
+style='mso-element:field-separator'></span><![endif]-->2<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400390036003300320036003700390033000000</w:data>
+</xml><![endif]--><!--[if supportFields]><span style='mso-element:field-end'></span><![endif]--><span
+style='font-size:12.0pt;color:windowtext;mso-bidi-language:AR-SA;mso-bidi-font-weight:
+normal'><o:p></o:p></span></p>
+
+<p class=MsoToc4 style='tab-stops:right dotted 431.5pt'>End<span
+style='mso-tab-count:1 dotted'>......................................................................................................................................................................... </span><!--[if supportFields]><span
+style='mso-element:field-begin'></span> PAGEREF _Toc496326794 \h <span
+style='mso-element:field-separator'></span><![endif]-->2<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400390036003300320036003700390034000000</w:data>
+</xml><![endif]--><!--[if supportFields]><span style='mso-element:field-end'></span><![endif]--><span
+style='font-size:12.0pt;color:windowtext;mso-bidi-language:AR-SA;mso-bidi-font-weight:
+normal'><o:p></o:p></span></p>
+
+<p class=MsoToc4 style='tab-stops:right dotted 431.5pt'>ExportAssets<span
+style='mso-tab-count:1 dotted'>......................................................................................................................................................... </span><!--[if supportFields]><span
+style='mso-element:field-begin'></span> PAGEREF _Toc496326795 \h <span
+style='mso-element:field-separator'></span><![endif]-->2<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400390036003300320036003700390035000000</w:data>
+</xml><![endif]--><!--[if supportFields]><span style='mso-element:field-end'></span><![endif]--><span
+style='font-size:12.0pt;color:windowtext;mso-bidi-language:AR-SA;mso-bidi-font-weight:
+normal'><o:p></o:p></span></p>
+
+<p class=MsoToc4 style='tab-stops:right dotted 431.5pt'>ImportAssets<span
+style='mso-tab-count:1 dotted'>......................................................................................................................................................... </span><!--[if supportFields]><span
+style='mso-element:field-begin'></span> PAGEREF _Toc496326796 \h <span
+style='mso-element:field-separator'></span><![endif]-->3<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400390036003300320036003700390036000000</w:data>
+</xml><![endif]--><!--[if supportFields]><span style='mso-element:field-end'></span><![endif]--><span
+style='font-size:12.0pt;color:windowtext;mso-bidi-language:AR-SA;mso-bidi-font-weight:
+normal'><o:p></o:p></span></p>
+
+<p class=MsoToc4 style='tab-stops:right dotted 431.5pt'>EnableDebugger<span
+style='mso-tab-count:1 dotted'>...................................................................................................................................................... </span><!--[if supportFields]><span
+style='mso-element:field-begin'></span> PAGEREF _Toc496326797 \h <span
+style='mso-element:field-separator'></span><![endif]-->3<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400390036003300320036003700390037000000</w:data>
+</xml><![endif]--><!--[if supportFields]><span style='mso-element:field-end'></span><![endif]--><span
+style='font-size:12.0pt;color:windowtext;mso-bidi-language:AR-SA;mso-bidi-font-weight:
+normal'><o:p></o:p></span></p>
+
+<p class=MsoToc4 style='tab-stops:right dotted 431.5pt'>DefineBitsPtr<span
+style='mso-tab-count:1 dotted'>......................................................................................................................................................... </span><!--[if supportFields]><span
+style='mso-element:field-begin'></span> PAGEREF _Toc496326798 \h <span
+style='mso-element:field-separator'></span><![endif]-->4<!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F0054006F0063003400390036003300320036003700390038000000</w:data>
+</xml><![endif]--><!--[if supportFields]><span style='mso-element:field-end'></span><![endif]--><span
+style='font-size:12.0pt;color:windowtext;mso-bidi-language:AR-SA;mso-bidi-font-weight:
+normal'><o:p></o:p></span></p>
+
+<p class=MsoNormal><!--[if supportFields]><span style='mso-element:field-end'></span><![endif]--><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:18.0pt;font-family:"Century Gothic";mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:HE;mso-bidi-font-style:italic'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<div style='border:none;border-bottom:solid windowtext .5pt;padding:0in 0in 1.0pt 0in'>
+
+<h2><a name="_Toc496326789">Control Tags</a></h2>
+
+</div>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p>There are three categories of ControlTags:</p>
+
+<p><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l79 level1 lfo106;
+tab-stops:list .75in'><![if !supportLists]><b>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><![endif]><b>Display List<o:p></o:p></b></p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l79 level1 lfo106;
+tab-stops:list .75in'><![if !supportLists]><b>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><![endif]><b>Action<o:p></o:p></b></p>
+
+<p style='margin-left:.75in;text-indent:-.25in;mso-list:l79 level1 lfo106;
+tab-stops:list .75in'><![if !supportLists]><b>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><![endif]><b>Control<o:p></o:p></b></p>
+
+<p><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p>Display List and Action tags are covered in other sections (see <a
+href="DisplayList.doc">The Display List</a> and <a href="Actions.doc">Actions</a>).</p>
+
+<p><b><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<h3><a name="_Toc496326790"></a><a name=h4ControltagsControl></a><a
+name=h4Actiontags></a><a name=h3DisplayList></a><a name=h3Control></a><span
+style='mso-bookmark:_Toc496326790'>Control Tags</span><a name=ControlTags></a></h3>
+
+<p>Control tags manage some overall aspects of files and frames.</p>
+
+<p style='margin-left:.5in'><span style="mso-spacerun: yes"> </span></p>
+
+<p style='margin-left:.5in'><span class=runinhead1><span style='mso-ansi-font-size:
+10.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+font-weight:normal'><a href="#h4SetBackgroundColor"><b><span style='mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman"'>SetBackgroundColor</span></b></a></span></span><span
+class=runinhead1><span style='mso-ansi-font-size:10.0pt;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-weight:
+normal'> — </span></span>Sets the background color displayed in the frame. </p>
+
+<p style='margin-left:.5in'><span class=runinhead1><span style='mso-ansi-font-size:
+10.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+font-weight:normal'><a href="#h4FrameLabel"><b><span style='mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman"'>FrameLabel</span></b></a></span></span><span
+class=runinhead1><span style='mso-ansi-font-size:10.0pt;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-weight:
+normal'> — </span></span>Labels a frame for your easy reference. </p>
+
+<p style='margin-left:.5in'><span class=runinhead1><span style='mso-ansi-font-size:
+10.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+font-weight:normal'><a href="#h4Protect"><b><span style='mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman"'>Protect</span></b></a></span></span><span
+class=runinhead1><span style='mso-ansi-font-size:10.0pt;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-weight:
+normal'> — </span></span>Marks the file so that it cannot be opened in the
+authoring system. </p>
+
+<p style='margin-left:.5in'><span class=runinhead1><span style='mso-ansi-font-size:
+10.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+font-weight:normal'><a href="Sounds.doc#StartSound"><b><span style='mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman"'>StartSound</span></b></a></span></span><span
+class=runinhead1><span style='mso-ansi-font-size:10.0pt;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-weight:
+normal'> </span></span><span class=runinhead1><span style='mso-ansi-font-size:
+10.0pt;font-family:Arial;mso-bidi-font-weight:normal'>— </span></span>Starts
+and stops a sound. </p>
+
+<p style='margin-left:.5in'><span class=runinhead1><span style='mso-ansi-font-size:
+10.0pt;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+font-weight:normal'><a href="#h4End"><b><span style='mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman"'>End</span></b></a></span></span><span
+class=runinhead1><span style='mso-ansi-font-size:10.0pt;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-weight:
+normal'> </span></span><span class=runinhead1><span style='mso-ansi-font-size:
+10.0pt;font-family:Arial;mso-bidi-font-weight:normal'>— </span></span>Marks the
+end of the SWF file. <span class=runinhead1><span style='mso-ansi-font-size:
+10.0pt;font-family:Arial;mso-bidi-font-weight:normal'><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='text-indent:.3in;mso-layout-grid-align:none;
+text-autospace:none'><b style='mso-bidi-font-weight:normal'><a
+href="#_ExportAssets">ExportAssets</a></b> <span class=runinhead1><span
+style='mso-ansi-font-size:10.0pt;font-family:Arial;mso-bidi-font-weight:normal'>—
+</span></span>Exports assets from the SWF file.<span class=runinhead1><span
+style='mso-ansi-font-size:10.0pt;font-family:Arial;mso-bidi-font-weight:normal'><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='text-indent:.3in;mso-layout-grid-align:none;
+text-autospace:none'><b style='mso-bidi-font-weight:normal'><a
+href="#_ImportAssets">ImportAssets</a></b> <span class=runinhead1><span
+style='mso-ansi-font-size:10.0pt;font-family:Arial;mso-bidi-font-weight:normal'>—
+</span></span>Imports assets into this SWF file.<span class=runinhead1><span
+style='mso-ansi-font-size:10.0pt;font-family:Arial;mso-bidi-font-weight:normal'><o:p></o:p></span></span></p>
+
+<p style='margin-left:.5in'><b style='mso-bidi-font-weight:normal'><a
+href="#_EnableDebugger">EnableDebugger</a></b> <span class=runinhead1><span
+style='mso-ansi-font-size:10.0pt;font-family:Arial;mso-bidi-font-weight:normal'>—
+</span></span>Enables<b style='mso-bidi-font-weight:normal'> </b>the debugger
+for this movie<span class=runinhead1><span style='mso-ansi-font-size:10.0pt;
+font-family:Arial;mso-bidi-font-weight:normal'><o:p></o:p></span></span></p>
+
+<p style='margin-left:.5in'><b style='mso-bidi-font-weight:normal'><a
+href="#_DefineBitsPtr">DefineBitsPtr</a></b> <span class=runinhead1><span
+style='mso-ansi-font-size:10.0pt;font-family:Arial;mso-bidi-font-weight:normal'>—
+</span></span>Used only in the editor; creates a bitmap that references another
+bitmap that has already been allocated.<span class=runinhead1><span
+style='mso-ansi-font-size:10.0pt;font-family:Arial;font-weight:normal'><o:p></o:p></span></span></p>
+
+<p style='margin-left:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h4><a name="_Toc496326791"></a><a name=h4SetBackgroundColor></a><span
+style='mso-bookmark:_Toc496326791'>SetBackgroundColor</span></h4>
+
+<p>The SetBackgroundColor tag sets the background color of the display.
+(Macromedia Flash (SWF) 1) </p>
+
+<p>(See class <a
+href="..\SWF_Manager_Docs\API_Docs\class_fctsetbackgroundcolor.html">FCTSetBackground<span
+style='mso-bookmark:_Hlt466373665'>C</span>olor</a><![if !supportNestedAnchors]><a
+name="_Hlt466373665"></a><![endif]> in the Macromedia Flash File Format (SWF)
+SDK)</p>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:19.65pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid navy .75pt;
+ mso-padding-alt:0in 4.2pt 0in 4.2pt'>
+ <tr>
+  <td width=561 colspan=3 valign=top style='width:420.95pt;border:solid navy .75pt;
+  background:navy;mso-shading:white;mso-pattern:solid navy;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='font-family:Tahoma;mso-bidi-font-family:
+  "Times New Roman";color:white'>SetBackgroundColor<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Field</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Type</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Comment</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Header</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>RECORDHEADER</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Tag ID = 9</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>BackgroundColor</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'><a
+  href="BasicTypes.doc#h3ColorValues">R<span style='mso-bookmark:_Hlt465746279'>G</span>B</a><![if !supportNestedAnchors]><a
+  name="_Hlt465746279"></a><![endif]></span><span style='font-size:12.0pt;
+  color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Color of the movie
+  background</span><span style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h4><a name="_Toc496326792"></a><a name=h4FrameLabel></a><span
+style='mso-bookmark:_Toc496326792'>FrameLabel</span></h4>
+
+<p>The FrameLabel tag gives the specified <b>Name </b>to the current
+frame.<span style="mso-spacerun: yes">  </span>This name is used by <a
+href="Actions.doc#ActionGoToLabel">ActionGot<span style='mso-bookmark:_Hlt465746135'>o</span>Label</a><![if !supportNestedAnchors]><a
+name="_Hlt465746135"></a><![endif]> to identify the frame.</p>
+
+<p>(See class <a href="..\SWF_Manager_Docs\API_Docs\class_fctframelabel.html">FCTFrame<span
+style='mso-bookmark:_Hlt466373753'>L</span>abel</a><![if !supportNestedAnchors]><a
+name="_Hlt466373753"></a><![endif]> in the Macromedia Flash File Format (SWF)
+SDK)</p>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:19.65pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid navy .75pt;
+ mso-padding-alt:0in 4.2pt 0in 4.2pt'>
+ <tr>
+  <td width=561 colspan=3 valign=top style='width:420.95pt;border:solid navy .75pt;
+  background:navy;mso-shading:white;mso-pattern:solid navy;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='font-family:Tahoma;mso-bidi-font-family:
+  "Times New Roman";color:white'>FrameLabel<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Field</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Type</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Comment</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Header</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>RECORDHEADER</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Tag ID = 43</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Name</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Null-terminated <a
+  href="BasicTypes.doc#STRING">STRI<span style='mso-bookmark:_Hlt465746715'>N</span>G</a><![if !supportNestedAnchors]><a
+  name="_Hlt465746715"></a><![endif]>. (0 is NULL)</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Label for frame.</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h4><a name="_Toc496326793"></a><a name=h4Protect></a><span style='mso-bookmark:
+_Toc496326793'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h4>
+
+<b><span style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:HE'><br clear=all
+style='page-break-before:always'>
+</span></b>
+
+<h4><span style='mso-bookmark:_Toc496326793'>Protect</span></h4>
+
+<p>The Protect tag marks a file as not importable for editing in the authoring
+tool. If the Protect tag contains no data (tag length = 0), the .SWF file
+cannot be imported. If this tag is present in the file, the authoring tool
+should prevent loading of the file for editing. (Macromedia Flash File Format
+(SWF) 2) </p>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p>If the Protect tag does contain data (tag length is not 0), the Macromedia Flash
+.SWF file can be imported if the correct password is specified.<span
+style="mso-spacerun: yes">  </span>The data in the tag is a null-terminated
+string<span style="mso-spacerun: yes">  </span>which specifies a MD5 encrypted
+password.<span style="mso-spacerun: yes">  </span>Specifying a password is only
+supported by the Macromedia Flash 5 .SWF file format.</p>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p>The MD5 password encryption algorithm used was written by Poul-Henning Kamp
+and is freely distributable.<span style="mso-spacerun: yes">  </span>It resides
+in the FreeBSD tree at src/lib/libcrypt/crypt-md5.c.<span style="mso-spacerun:
+yes">  </span>The MD5 password</p>
+
+<p>encryption algorithm is also used by the EnableDebugger tag.</p>
+
+<p>(See class <a href="..\SWF_Manager_Docs\API_Docs\class_fctprotect.html">FC<span
+style='mso-bookmark:_Hlt466373788'>T</span>Protect</a><![if !supportNestedAnchors]><a
+name="_Hlt466373788"></a><![endif]> in the Macromedia Flash File Format (SWF)
+SDK)</p>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<table border=1 cellspacing=0 cellpadding=0 width=561 style='width:420.95pt;
+ margin-left:19.65pt;border-collapse:collapse;border:none;mso-border-alt:solid navy .75pt;
+ mso-padding-alt:0in 4.2pt 0in 4.2pt'>
+ <tr>
+  <td width=561 colspan=3 valign=top style='width:420.95pt;border:solid navy .75pt;
+  background:navy;mso-shading:white;mso-pattern:solid navy;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='font-family:Tahoma;mso-bidi-font-family:
+  "Times New Roman";color:white'>Protect<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Field</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Type</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Comment</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Header</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>RECORDHEADER</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Tag ID = 24</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h4><a name="_Toc496326794"></a><a name=h4StartSound></a><a name=h4End></a><a
+name=h3Actions></a><span style='mso-bookmark:_Toc496326794'>End</span></h4>
+
+<p>The End tag marks the end of a file. This should always be the last tag in a
+file. (Macromedia Flash (SWF) 1) </p>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<table border=1 cellspacing=0 cellpadding=0 width=561 style='width:420.95pt;
+ margin-left:19.65pt;border-collapse:collapse;border:none;mso-border-alt:solid navy .75pt;
+ mso-padding-alt:0in 4.2pt 0in 4.2pt'>
+ <tr>
+  <td width=561 colspan=3 valign=top style='width:420.95pt;border:solid navy .75pt;
+  background:navy;mso-shading:white;mso-pattern:solid navy;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='font-family:Tahoma;mso-bidi-font-family:
+  "Times New Roman";color:white'>End<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Field</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Type</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Comment</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Header</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>RECORDHEADER</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Tag ID = 0</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h4><a name="_Toc496326795"></a><a name="_DefineBehavior"></a><a
+name="_ExportAssets"></a><span style='mso-bookmark:_Toc496326795'>ExportAssets</span></h4>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+ExportAssets tag exports assets from the Macromedia Flash<span
+style="mso-spacerun: yes">  </span>(SWF) file so that other Macromedia Flash
+(SWF) can ImportAssets as linked assets.<span style="mso-spacerun: yes"> 
+</span>(Macromedia Flash (SWF) 5) </p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>ExportAssets
+makes repetitive portions of a Macromedia Flash movie or a series of Macromedia
+Flash movies available for import.<span style="mso-spacerun: yes">  </span>For
+example, ten Macromedia Flash movies that are all part of the same website can
+share an embedded custom font if one movie embeds the font and sets the font to
+&quot;export&quot;.<span style="mso-spacerun: yes">  </span>Exporting gives the
+font a special identifier string.<span style="mso-spacerun: yes">  </span>As
+well as sharing embedded fonts, a Macromedia Flash (SWF) can share other symbol
+types (linked assets) like movie clips, buttons and sounds.</p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Also
+see <a href="#_ImportAssets">ImportAssets</a>.</p>
+
+<table border=1 cellspacing=0 cellpadding=0 width=561 style='width:420.95pt;
+ margin-left:19.65pt;border-collapse:collapse;border:none;mso-border-alt:solid navy .75pt;
+ mso-padding-alt:0in 4.2pt 0in 4.2pt'>
+ <tr>
+  <td width=561 colspan=3 valign=top style='width:420.95pt;border:solid navy .75pt;
+  background:navy;mso-shading:white;mso-pattern:solid navy;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='font-family:Tahoma;mso-bidi-font-family:
+  "Times New Roman";color:white'>ExportAssets<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Field</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Type</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Comment</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Header</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>RECORDHEADER</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Tag ID = 56</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>count<span style="mso-spacerun: yes">   </span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>U16<span style="mso-spacerun: yes">      </span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>number of assets to export</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>tag1<span style="mso-spacerun: yes">    </span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>U16<span style="mso-spacerun: yes">      </span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>tag of character to export 1</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>asset1<span style="mso-spacerun: yes">  </span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Null-terminated <a
+  href="BasicTypes.doc#STRING">STRING</a>. (0 is NULL)</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>identifier string of asset 1</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>...</p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>tagN<span style="mso-spacerun: yes">    </span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>U16<span style="mso-spacerun: yes">      </span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>character tag to assign asset N</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>assetN<span style="mso-spacerun: yes">  </span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Null-terminated <a
+  href="BasicTypes.doc#STRING">STRING</a>. (0 is NULL)</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>identifier string of asset N</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<b><span style='font-size:12.0pt;font-family:Arial;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman";mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:HE'><br clear=all
+style='page-break-before:always'>
+</span></b>
+
+<h4><a name="_Toc496326796"></a><a name="_ImportAssets"></a>Imp<span
+style='mso-bookmark:_Toc496326796'>ortAssets</span></h4>
+
+<p>The ImportAssets tag imports assets from another Macromedia Flash (SWF) file
+as a linked asset. (Macromedia Flash (SWF) 5) </p>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>&quot;Client&quot;
+Macromedia Flash (SWF)s can import assets like fonts that are stored in
+&quot;server&quot; Macromedia Flash (SWF)s (that are ideally cached on an end
+user's local system).<span style="mso-spacerun: yes">  </span>The importing
+Macromedia Flash (SWF) references the exporting Macromedia Flash (SWF) with a
+URL.<span style="mso-spacerun: yes">  </span>The URL needs to include the asset
+identifier string.<span style="mso-spacerun: yes">  </span>Imported assets are
+resolved and stored in a ScriptThread’s SCharacter dictionary.</p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Note
+that the URL can be absolute or relative.<span style="mso-spacerun: yes"> 
+</span>If it's relative, it's resolved relative to the location of the
+importing Macromedia Flash .SWF.</p>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<table border=1 cellspacing=0 cellpadding=0 width=561 style='width:420.95pt;
+ margin-left:19.65pt;border-collapse:collapse;border:none;mso-border-alt:solid navy .75pt;
+ mso-padding-alt:0in 4.2pt 0in 4.2pt'>
+ <tr>
+  <td width=561 colspan=3 valign=top style='width:420.95pt;border:solid navy .75pt;
+  background:navy;mso-shading:white;mso-pattern:solid navy;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='font-family:Tahoma;mso-bidi-font-family:
+  "Times New Roman";color:white'>ImportAssets<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Field</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Type</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Comment</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Header</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>RECORDHEADER</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Tag ID = 57</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>URL<o:p></o:p></span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Null-terminated <a
+  href="BasicTypes.doc#STRING">STRING</a>. (0 is NULL)<o:p></o:p></span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>URL points to the asset in the “server” SWF and includes
+  the asset identifier string<span style='color:windowtext'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>count<span style="mso-spacerun: yes">   </span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>U16<span style="mso-spacerun: yes">      </span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>number of assets to import from URL</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>tag1 <span style="mso-spacerun: yes">   </span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>U16<span style="mso-spacerun: yes">      </span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal style='margin-left:0in;mso-layout-grid-align:none;
+  text-autospace:none'>character tag to assign asset 1</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>asset1<span style="mso-spacerun: yes">  </span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Null-terminated <a
+  href="BasicTypes.doc#STRING">STRING</a>. (0 is NULL)</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal style='margin-left:0in;mso-layout-grid-align:none;
+  text-autospace:none'>identifier string of asset 1</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>...</p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>tagN<span style="mso-spacerun: yes">    </span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>U16<span style="mso-spacerun: yes">      </span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal style='margin-left:0in;mso-layout-grid-align:none;
+  text-autospace:none'>character tag to assign asset N</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>assetN<span style="mso-spacerun: yes">  </span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Null-terminated <a
+  href="BasicTypes.doc#STRING">STRING</a>. (0 is NULL)</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal style='margin-left:0in;mso-layout-grid-align:none;
+  text-autospace:none'>identifier string of asset N</p>
+  </td>
+ </tr>
+</table>
+
+<h4><a name="_Toc496326797"></a><a name="_EnableDebugger"></a><span
+style='mso-bookmark:_Toc496326797'>EnableDebugger</span></h4>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>The
+EnableDebugger tag enables debugging.<span style="mso-spacerun: yes">  
+</span>Note that the password in the EnableDebugger tag is encrypted using the
+MD5 algorithm, in the same way as the Protect tag. (Macromedia Flash (SWF) 5) </p>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<table border=1 cellspacing=0 cellpadding=0 width=561 style='width:420.95pt;
+ margin-left:19.65pt;border-collapse:collapse;border:none;mso-border-alt:solid navy .75pt;
+ mso-padding-alt:0in 4.2pt 0in 4.2pt'>
+ <tr>
+  <td width=561 colspan=3 valign=top style='width:420.95pt;border:solid navy .75pt;
+  background:navy;mso-shading:white;mso-pattern:solid navy;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='font-family:Tahoma;mso-bidi-font-family:
+  "Times New Roman";color:white'>EnableDebugger<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Field</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Type</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Comment</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Header</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>RECORDHEADER</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Tag ID = 58</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Password<o:p></o:p></span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Null-terminated <a
+  href="BasicTypes.doc#STRING">STRING</a>. (0 is NULL)<o:p></o:p></span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Password authenticates the
+  Splayer’s ScriptPlayer<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h4><a name="_Toc496326798"></a><a name="_DefineBitsPtr"></a><span
+style='mso-bookmark:_Toc496326798'>DefineBitsPtr</span></h4>
+
+<p>The DefineBitsPtr tag creates a bitmap that references another bitmap that
+has already been allocated.<span style="mso-spacerun: yes">  </span>This
+special tag is for performance optimization in the editor only. (Macromedia
+Flash (SWF) 5)</p>
+
+<p><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<table border=1 cellspacing=0 cellpadding=0 width=561 style='width:420.95pt;
+ margin-left:19.65pt;border-collapse:collapse;border:none;mso-border-alt:solid navy .75pt;
+ mso-padding-alt:0in 4.2pt 0in 4.2pt'>
+ <tr>
+  <td width=561 colspan=3 valign=top style='width:420.95pt;border:solid navy .75pt;
+  background:navy;mso-shading:white;mso-pattern:solid navy;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='font-family:Tahoma;mso-bidi-font-family:
+  "Times New Roman";color:white'>DefineBitsPtr<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Field</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Type</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;background:white;
+  padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><b><span style='color:windowtext'>Comment</span></b><b><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Header</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>RECORDHEADER</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Tag ID = 1023</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=169 valign=top style='width:126.45pt;border:solid navy .75pt;
+  border-top:none;mso-border-top-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>Bitmap Bits<o:p></o:p></span></p>
+  </td>
+  <td width=195 valign=top style='width:146.05pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal><span style='color:windowtext'>U32<o:p></o:p></span></p>
+  </td>
+  <td width=198 valign=top style='width:148.45pt;border-top:none;border-left:
+  none;border-bottom:solid navy .75pt;border-right:solid navy .75pt;mso-border-top-alt:
+  solid navy .75pt;mso-border-left-alt:solid navy .75pt;padding:0in 4.2pt 0in 4.2pt'>
+  <p class=MsoNormal>Reference to another bitmap that has already been
+  allocated<span style='color:windowtext'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h4><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></h4>
+
+</div>
+
+</body>
+
+</html>
